@@ -1,0 +1,13 @@
+{
+    "name": "@azure-iot/ux-fluent-css",
+    "description": "Common styles library for CSS, Colors and Themes",
+    "version": "1.0.0",
+    "private": true,
+    "license": "ISC",
+    "engines": {
+        "node": "^8.0.0"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {}
+}
