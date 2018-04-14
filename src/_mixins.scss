@@ -1,0 +1,41 @@
+/** 
+ * Mixins
+ */
+
+/// Prefix of the top level theme class
+/// e.g. #{$default-prefix}-light -> theme-light
+///
+/// @type String
+$default-prefix: 'theme' !default;
+
+/// Creates theme variations 
+///
+/// @param {Map} $themes - Theme map to loop through
+@mixin themify($themes: $themes) {
+    @each $theme, $colors in $themes {
+        .#{$default-prefix}-#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $colors {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+/// Gets a value from the color map.
+///
+/// @param {String} $key - Name of the color variable 
+///
+/// @returns {String} The color for the given key
+@function themed($key) {
+    $value: map-get($theme-map, $key);
+
+    @if not $value {
+        @error 'There is no `#{$key}` in your theme colors.';
+    }
+
+    @return $value;
+}

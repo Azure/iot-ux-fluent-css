@@ -2,191 +2,144 @@
  * Color Palette
  */
 
-// primary colors
-$color-theme-dark: #005a9e !default;
-$color-theme-primary: #0078d6 !default;
-$color-theme-primary-alt: #4ba0e4 !default;
-$color-theme-light: #b3d6f2 !default;
-$color-theme-lighter: #deecf9 !default;
-$color-theme-error: #d02e00 !default;
 
-// base colors
-$color-white: #fff !default;
-$color-red: #e81123 !default;
-$color-green: #107c10 !default;
-$color-orange: #ff8c00 !default;
-$color-black: #000 !default;
+// Principal Colors
 
-$color-true-red: #f00 !default;
-$color-true-orange: #fa0 !default;
-$color-true-green: #0f0 !default;
+$color-black: #000000;
+$color-grey-1500: #0D0E0F;
+$color-grey-1400: #1A1D1E;
+$color-grey-1300: #292D30;
+$color-grey-1200: #212121;
+$color-grey-1100: #252728;
+$color-grey-1000: #2D2F33;
+$color-grey-900: #31373E;
+$color-grey-800: #3F3F3F;
+$color-grey-700: #434343;
+$color-grey-600: #666666;
+$color-grey-500: #A6A6A6;
+$color-grey-400: #AEAEAE;
+$color-grey-300: #C8C8C8;
+$color-grey-200: #DADADA;
+$color-grey-100: #F2F2F2;
+$color-white: #FFFFFF;
 
-// primary - grayscale
-$color-neutral-primary: #333333 !default;
-$color-neutral-primary-alt-2: #212121 !default;
-$color-neutral-primary-alt: #444444 !default;
-$color-neutral-secondary: #3c3c3c !default;
-$color-neutral-secondary-alt: #666 !default;
-$color-neutral-secondary-alt-2: #515151 !default;
-$color-neutral-secondary-alt-3: #4a4a4a !default;
-$color-neutral-secondary-alt-4: #767676 !default;
-$color-neutral-secondary-alt-5: #888 !default;
-$color-neutral-tertiary: #a6a6a6 !default;
-$color-neutral-tertiary-2: #bcbcbc !default;
-$color-neutral-tertiary-alt: #c8c8c8 !default;
-$color-neutral-tertiary-alt-2: #dcdcdc !default;
-$color-neutral-light: #eaeaea !default;
-$color-neutral-lighter: #f4f4f4 !default;
-$color-neutral-lighter-alt: #f8f8f8 !default;
 
-// primary - alt
-$color-cool-grey-1: #1f2328 !default;
-$color-cool-grey-2: #31373e !default;
-$color-cool-grey-3: #3d4147 !default;
-$color-cool-grey-4: #4b5157 !default;
-$color-cool-grey-5: #62666c !default;
-$color-cool-grey-6: #414953 !default;
-$color-cool-grey-7: #7a7a7a !default;
-$color-cool-grey-8: #4a5156 !default;
+// Chart & Measurement Colors
 
-$color-shark: #1b1e22 !default;
+$color-data-green-100: #01b8aa;
+$color-data-green-101: #99E3DD;
+$color-data-green-102: #6be8dc;
+$color-data-green-103: #67D4CC;
+$color-data-green-104: #59cec3;
+$color-data-green-105: #34C6BB;
+$color-data-green-106: #08bca6;
+$color-data-green-107: #0aa58e;
+$color-data-green-108: #12937d;
+$color-data-green-109: #018A80;
+$color-data-green-110: #015C55;
+$color-data-grey-200: #374649;
+$color-data-grey-201: #FFFFFF;
+$color-data-grey-202: #F2F2F2;
+$color-data-grey-203: #E6E6E6;
+$color-data-grey-204: #CCCCCC;
+$color-data-grey-205: #B3B3B3;
+$color-data-grey-206: #999999;
+$color-data-grey-207: #AFB5B6;
+$color-data-grey-208: #879092;
+$color-data-grey-209: #5F6B6D;
+$color-data-grey-210: #293537;
+$color-data-red-300: #FD625E;
+$color-data-red-301: #FEC0BF;
+$color-data-red-302: #FEA19E;
+$color-data-red-303: #FD817E;
+$color-data-red-304: #fd625e;
+$color-data-red-305: #ff7878;
+$color-data-red-306: #fc5454;
+$color-data-red-307: #fc3232;
+$color-data-red-308: #e81818;
+$color-data-red-309: #BE4A47;
+$color-data-red-310: #b21f1f;
+$color-data-yellow-400: #F2C80F;
+$color-data-yellow-401: #FAE99F;
+$color-data-yellow-402: #F7DE6F;
+$color-data-yellow-403: #fcdf65;
+$color-data-yellow-404: #FFD629;
+$color-data-yellow-405: #F5D33F;
+$color-data-yellow-406: #ffce00;
+$color-data-yellow-407: #e5bd13;
+$color-data-yellow-408: #c9a611;
+$color-data-yellow-409: #B6960B;
+$color-data-yellow-410: #796408;
+$color-data-lightblue-600: #8AD4EB;
+$color-data-lightblue-601: #caf8ff;
+$color-data-lightblue-602: #b0f8ff;
+$color-data-lightblue-603: #D0EEF7;
+$color-data-lightblue-604: #B9E5F3;
+$color-data-lightblue-605: #B7DDE9;
+$color-data-lightblue-606: #A1DDEF;
+$color-data-lightblue-607: #8BC5D7;
+$color-data-lightblue-608: #689FB0;
+$color-data-lightblue-609: #456A76;
+$color-data-lightblue-610: #17323B;
+$color-data-orange-700: #FE9666;
+$color-data-orange-701: #ffcdbb;
+$color-data-orange-702: #FFD5C2;
+$color-data-orange-703: #FEC0A3;
+$color-data-orange-704: #FEAB85;
+$color-data-orange-705: #f7a389;
+$color-data-orange-706: #F98855;
+$color-data-orange-707: #f9724e;
+$color-data-orange-708: #BF714D;
+$color-data-orange-709: #A47159;
+$color-data-orange-710: #7F4B33;
+$color-data-purple-800: #A66999;
+$color-data-purple-801: #CAA5C2;
+$color-data-purple-802: #B887AD;
+$color-data-purple-803: #efa5e1;
+$color-data-purple-804: #ea78d9;
+$color-data-purple-805: #e247db;
+$color-data-purple-806: #DBC3D6;
+$color-data-purple-807: #d313d3;
+$color-data-purple-808: #921e9b;
+$color-data-purple-809: #7D4F73;
+$color-data-purple-810: #53354D;
 
-$color-grey-1: #999 !default;
-$color-grey-2: #a1a1a1 !default;
-$color-grey-3: #808080 !default;
-$color-grey-4: #6f6f6f !default;
-$color-grey-5: #6E6F71 !default;
-$color-grey-6: #929293 !default;
 
-$color-light-grey-1: #ccc !default;
-$color-light-grey-2: #cbcbcb !default;
-$color-light-grey-4: #ddd !default;
-$color-light-grey-5: #eee !default;
-$color-pale-yellow: #f4f2bd !default;
+// Alert Colors
 
-$color-blue-1: #1a37d3 !default;
-$color-blue-2: #3062d6 !default;
-$color-blue-3: #0078d6 !default;
-$color-blue-4: #0e447a !default;
-$color-blue-5: #219DFC !default;
+$color-warning-100: #FFD629;
+$color-warning-200: #F2C80F;
+$color-warning-300: #D58E00;
+$color-error-local-100: #FF2828;
+$color-error-local-200: #A50606;
+$color-error-global-100: #D02E00;
+$color-information-100: #DCDCDC;
+$color-information-200: #879092;
+$color-success-100: #3BB44A;
+$color-success-200: #89FF98;
 
-$color-malibu: #5fc2ff !default;
 
-$color-pale-blue: #d0e6f7 !default;
-$color-dark-lavender: #b9c3d7 !default;
+// Input Control Colors
 
-$color-yellow-1: #ffe294 !default;
-$color-yellow-2: #DCB303 !default;
-$color-yellow-3: #f9e385 !default;
-$color-yellow-4: #df0 !default;
-$color-yellow-5: #f2c80f !default;
+$color-blue-100: #136BFB;
+$color-blue-200: #0065D9;
+$color-blue-300: #0053B3;
+$color-blue-400: #00418C;
+$color-blue-500: #60AAFF;
+$color-blue-600: #2F7FDB;
+$color-blue-700: #A1AAB6;
+$color-blue-800: #DEECF9;
 
-$color-spicy-mustard: #826d11 !default;
-$color-goldenrod: #daa520 !default;
 
-$color-red-1: $color-red !default;
-$color-red-2: #ef4810 !default;
-$color-red-3: #FF0039 !default;
-$color-red-4: #cc002e !default;
-$color-red-5: #d02e00 !default;
-$color-red-6: #ff6464 !default;
-$color-red-7: #890e0e !default;
+// Red Colors
 
-$color-green-1: $color-green !default;
-$color-green-2: $color-true-green !default;
-$color-green-3: #3bb44a !default;
+$color-red-100: #b21f1f;
+$color-red-200: #e81818;
+$color-red-300: #fc3232;
 
-// shared colors
-$color-semi-transparent-black: rgba($color-black, 0.8) !default;
-$color-half-opacity-black: rgba($color-black, 0.5) !default;
-$color-third-opacity-black: rgba($color-black,0.32) !default;
-$color-half-opacity-neutral-secondary-alt: rgba($color-neutral-secondary-alt-4, 0.5) !default;
 
-$color-bg-addon: transparent !default;
-$color-bg-alert-error: $color-red-5 !default;
-$color-bg-alert-info: $color-neutral-tertiary-alt-2 !default;
-$color-bg-alert-warning: $color-yellow-3 !default;
-$color-bg-balloon: $color-neutral-primary !default;
-$color-bg-blastshield: $color-half-opacity-black !default;
-$color-bg-btn-danger-default: $color-red-3 !default;
-$color-bg-btn-danger-hover: $color-red-4 !default;
-$color-bg-btn-danger-pressed: $color-red-4 !default;
-$color-bg-btn-inline: $color-light-grey-4 !default;
-$color-bg-btn-primary-default: $color-theme-primary !default;
-$color-bg-btn-primary-disabled: $color-blue-3 !default;
-$color-bg-builder-icon-active-default: $color-theme-primary !default;
-$color-bg-dark: $color-black !default;
-$color-bg-masthead-hover: $color-cool-grey-3 !default;
-$color-bg-masthead: $color-black !default;
-$color-bg-navbar-active: $color-neutral-primary-alt !default;
-$color-bg-pressed: $color-theme-primary-alt !default;
-$color-bg-search-facet: $color-theme-primary !default;
-$color-bg-selected-disabled: $color-neutral-tertiary !default;
-$color-bg-selected: $color-theme-primary-alt !default;
-$color-bg-sidebar-active: $color-cool-grey-5 !default;
-$color-bg-sidebar: $color-cool-grey-6 !default;
-$color-bg-subheader-action-menu-active: $color-light-grey-5 !default;
-$color-bg-subheader-builder: $color-theme-dark !default;
-$color-bg-table-status-tick-green: $color-green !default;
-$color-bg-table-status-tick-organge: $color-orange !default;
-$color-bg-thumbnail-user: $color-cool-grey-5 !default;
-$color-bg-design-mode: $color-theme-primary !default;
-$color-border-context-menu: $color-light-grey-1 !default;
-$color-border-dropdown: $color-light-grey-1 !default;
-$color-border-editable-header-input-hover: $color-neutral-tertiary !default;
-$color-border-error: $color-theme-error !default;
-$color-border-inactive: $color-neutral-tertiary-alt !default;
-$color-border-masthead-toolbar: $color-light-grey-4 !default;
-$color-border-masthead: $color-cool-grey-4 !default;
-$color-border-searchbar: none !default;
-$color-border-selected-hover: $color-theme-dark !default;
-$color-border-selected: $color-theme-primary !default;
-$color-border-subheader-action-menu: $color-light-grey-4 !default;
-$color-border-table-header: $color-light-grey-4 !default;
-$color-border-tooltip: $color-neutral-secondary-alt !default;
-$color-disabled-light: $color-light-grey-1 !default;
-$color-disabled: $color-cool-grey-5 !default;
-$color-chart-multiple-events: $color-neutral-tertiary !default;
-$color-chart-multi-state-pattern: $color-neutral-secondary-alt !default;
-$color-grid-hover: $color-pale-blue !default;
-$color-grid-selected: $color-dark-lavender !default;
-$color-grid-status-default: $color-light-grey-2 !default;
-$color-grid-status-green: $color-green !default;
-$color-grid-status-orange : $color-orange !default;
-$color-guidance: $color-pale-yellow !default;
-$color-header-disabled: $color-neutral-light !default;
-$color-icon-placeholder: $color-goldenrod !default;
-$color-link-disabled: $color-neutral-tertiary !default;
-$color-link-pressed: $color-blue-1 !default;
-$color-link-visited: $color-blue-2 !default;
-$color-link-design-mode: $color-theme-light !default;
-$color-link-design-mode-hover: $color-malibu !default;
-$color-nav-gradient: $color-semi-transparent-black !default;
-$color-shadow-gradient-pane: $color-half-opacity-neutral-secondary-alt !default;
-$color-shadow-gradient: $color-semi-transparent-black !default;
-$color-standard-shadow: $color-third-opacity-black !default;
-$color-stroke-gap: $color-neutral-tertiary !default;
-$color-symbol-fill: $color-white !default;
-$color-symbol-stroke: $color-white !default;
-$color-text-alert: $color-neutral-primary !default;
-$color-text-alpha: $color-true-orange !default;
-$color-text-beta: $color-yellow-4 !default;
-$color-text-bright: $color-white !default;
-$color-text-chevron: $color-neutral-tertiary !default;
-$color-text-dark: $color-black !default;
-$color-text-error: $color-theme-error !default;
-$color-text-gallery-card-banner: $color-white !default;
-$color-text-hover: $color-theme-primary-alt !default;
-$color-text-icon-placeholder: $color-grey-3 !default;
-$color-text-init: $color-true-red !default;
-$color-text-label: $color-cool-grey-2 !default;
-$color-text-link-disabled: $color-neutral-secondary-alt-5 !default;
-$color-text-link: $color-theme-primary !default;
-$color-text-masthead-sub-label: $color-light-grey-2 !default;
-$color-text-placeholder: $color-neutral-tertiary !default;
-$color-text-rc: $color-true-green !default;
-$color-text-required: $color-theme-error !default;
-$color-text-subtitle: $color-cool-grey-5 !default;
-$color-text-visited: $color-blue-2 !default;
-$color-theme-error: $color-red-6 !default;
-$color-track-border: $color-theme-primary !default;
+// Semi-transparent Colors
+
+$color-black-transparent-primary: rgba($color-black, 0.8);
+$color-black-transparent-half: rgba($color-black, 0.5);
+$color-black-transparent-third: rgba($color-black,0.33);

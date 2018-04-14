@@ -1,139 +1,234 @@
 /** 
- * Default light theme colors
+ * Default Light Theme Colors
  */
 
 @import "../color.palette";
 
-// Background colors
-$color-bg-block: $color-white !default;
-$color-bg-btn-light: $color-neutral-light !default;
-$color-bg-btn-primary-hover: $color-theme-dark !default;
-$color-bg-btn-primary-pressed: $color-theme-dark !default;
-$color-bg-btn-secondary-default: $color-grey-2 !default;
-$color-bg-btn-secondary-hover: $color-grey-4 !default;
-$color-bg-btn-secondary-pressed: $color-grey-4 !default;
-$color-bg-chart: $color-white !default;
-$color-bg-configure-pane-container: $color-neutral-lighter !default;
-$color-bg-content: $color-neutral-lighter !default;
-$color-bg-dashboard-actionbar: $color-neutral-secondary-alt-4 !default;
-$color-bg-default: $color-white !default;
-$color-bg-disabled: $color-neutral-tertiary-alt-2 !default;
-$color-bg-field-loading: $color-neutral-light !default;
-$color-bg-form: $color-white !default;
-$color-bg-gallery-card-banner: $color-neutral-primary !default;
-$color-bg-gallery-card-blue: $color-theme-primary !default;
-$color-bg-gallery-card-red: $color-red-5 !default;
-$color-bg-gallery-card-solid: $color-neutral-tertiary-2 !default;
-$color-bg-gallery-card-yellow: $color-yellow-5 !default;
-$color-bg-gallery-card: $color-neutral-light !default;
-$color-bg-hover: $color-theme-lighter !default;
-$color-bg-management-list: $color-white !default;
-$color-bg-measurement: $color-white !default;
-$color-bg-navbar: $color-neutral-primary !default;
-$color-bg-overlay: $color-half-opacity-black !default;
-$color-bg-pane: $color-neutral-light !default;
-$color-bg-panel: $color-white !default;
-$color-bg-react-grid-item: $color-neutral-tertiary-alt !default;
-$color-bg-searchbar: $color-neutral-lighter-alt !default;
-$color-bg-select-default: $color-neutral-light !default;
-$color-bg-selected-hover: $color-theme-dark !default;
-$color-bg-separator: $color-neutral-light !default;
-$color-bg-tabbed-pane-small: $color-neutral-light !default;
-$color-bg-table-status-tick: $color-neutral-tertiary-alt-2 !default;
-$color-bg-tile: $color-white !default;
-$color-bg-upload: $color-neutral-tertiary-2 !default;
 
-// Border color
-$color-border-active: $color-neutral-primary !default;
-$color-border-default: $color-neutral-tertiary-alt !default;
-$color-border-disabled: $color-neutral-tertiary-alt-2 !default;
-$color-border-gallery-card-default: $color-neutral-tertiary !default;
-$color-border-gallery-card-hover: $color-neutral-primary !default;
-$color-border-inactive: $color-neutral-tertiary-alt !default;
-$color-border-searchbox: $color-neutral-lighter !default;
-$color-border-section-separator: $color-neutral-tertiary-alt-2 !default;
-$color-border-selected-disabled: $color-neutral-secondary-alt-5 !default;
+// Theme map
 
-// Text color
-$color-text-cancel: $color-neutral-secondary-alt !default;
-$color-text-default: $color-black !default;
-$color-text-disabled: $color-grey-1 !default;
-$color-text-gallery-card-content: $color-neutral-secondary-alt-2 !default;
-$color-text-gallery-card-header: $color-neutral-primary !default;
-$color-text-inactive: $color-neutral-secondary-alt !default;
-$color-text-neutral-primary-alt-2: $color-neutral-primary-alt-2 !default;
-$color-text-neutral-primary: $color-neutral-primary !default;
-$color-text-neutral-secondary-alt-3: $color-neutral-secondary-alt-3 !default;
-$color-text-neutral-secondary-alt: $color-neutral-secondary-alt !default;
-$color-text-neutral-tertiary: $color-neutral-tertiary !default;
-$color-text-select-option-disabled: $color-grey-1 !default;
+$theme-light: () !default;
+$theme-light: map-merge((
 
-// Miscellaneous color
-$color-chart-ticks: $color-neutral-secondary-alt-4 !default;
-$color-chart-multi-state-pattern: $color-neutral-tertiary-alt-2 !default;
-$color-header-accent: $color-theme-primary !default;
-$color-header: $color-neutral-tertiary-alt-2 !default;
-$color-item-active: $color-theme-light !default;
-$color-item-hover: $color-theme-lighter !default;
-$color-layout-divider: $color-neutral-tertiary-alt-2 !default;
-$color-link-default: $color-blue-2 !default;
-$color-link-hover: $color-blue-1 !default;
-$color-loading: $color-neutral-secondary-alt-3 !default;
-$color-outline-default: $color-neutral-tertiary-alt-2 !default;
-$color-outline-focus: $color-neutral-primary !default;
-$color-picker-border-inner: $color-yellow-1 !default;
-$color-picker-border-outer: $color-red-2 !default;
-$color-shadow-neutral-tertiary-alt: $color-neutral-tertiary-alt-2 !default;
-$color-status-reported-error: $color-red !default;
-$color-status-reported-success: $color-green !default;
-$color-status-syncing: $color-yellow-2 !default;
-$color-stroke-default: $color-neutral-tertiary-alt !default;
+    // Layouts
+    color-bg-navbar: $color-grey-900,
+    color-bg-navbar-hover: $color-grey-200,
+    color-bg-header: $color-grey-100, 
+    color-bg-header-hover: $color-grey-200,
+    color-bg-masthead: $color-grey-1300,
+    color-bg-masthead-hover: $color-grey-200,
 
-// Data colors
-$data-color-1: #01B8AA !default;
-$data-color-2: #99E3DD !default;
-$data-color-3: #67D4CC !default;
-$data-color-4: #34C6BB !default;
-$data-color-5: #018A80 !default;
-$data-color-6: #015C55 !default;
-$data-color-7: #374649 !default;
-$data-color-8: #AFB5B6 !default;
-$data-color-9: #879092 !default;
-$data-color-10: #5F6B6D !default;
-$data-color-11: #293537 !default;
-$data-color-12: #1C2325 !default;
-$data-color-13: #FD625E !default;
-$data-color-14: #FEC0BF !default;
-$data-color-15: #FEA19E !default;
-$data-color-16: #FD817E !default;
-$data-color-17: #BE4A47 !default;
-$data-color-18: #7F312F !default;
-$data-color-19: #F2C80F !default;
-$data-color-20: #FAE99F !default;
-$data-color-21: #F7DE6F !default;
-$data-color-22: #F5D33F !default;
-$data-color-23: #B6960B !default;
-$data-color-24: #796408 !default;
-$data-color-25: #8AD4EB !default;
-$data-color-26: #D0EEF7 !default;
-$data-color-27: #B9E5F3 !default;
-$data-color-28: #A1DDEF !default;
-$data-color-29: #689FB0 !default;
-$data-color-30: #456A76 !default;
-$data-color-31: #FE9666 !default;
-$data-color-32: #FFD5C2 !default;
-$data-color-33: #FEC0A3 !default;
-$data-color-34: #FEAB85 !default;
-$data-color-35: #BF714D !default;
-$data-color-36: #7F4B33 !default;
-$data-color-37: #A66999 !default;
-$data-color-38: #DBC3D6 !default;
-$data-color-39: #CAA5C2 !default;
-$data-color-40: #B887AD !default;
-$data-color-41: #7D4F73 !default;
-$data-color-42: #53354D !default;
+    // Surfaces
+    color-bg-panel-primary: $color-grey-100,
+    color-bg-panel-secondary: $color-grey-100,
+    color-bg-content: $color-grey-100,
+    color-bg-panel-contextual: $color-white,
+    color-bg-action-bar: $color-grey-100,
+    color-border-panel: $color-grey-300,
+    color-border-grid: $color-grey-300,
 
-// Event category colors
-$color-event-category-informational: #879092 !default;
-$color-event-category-warning: #FFD629 !default;
-$color-event-category-error: #FC3232 !default;
+    // Controls
+    color-bg-blastshield: $color-black-transparent-half,
+    color-bg-balloon: $color-white,
+    color-bg-form: $color-white,
+    color-bg-table: $color-white,
+    color-bg-searchbar: $color-white,
+    color-bg-guidance: $color-blue-300,
+
+    // Interactions
+    color-bg-item-hover: $color-grey-200,
+    color-bg-item-selected: $color-grey-300,
+
+    // All Tiles
+    color-border-tile: $color-grey-300,
+    color-border-tile-hover: $color-blue-100,
+
+    // Gallery Tiles
+    color-bg-gallery-tile: $color-white,
+    color-bg-gallery-tile-banner: $color-black,
+    color-bg-gallery-tile-default: $color-grey-200,
+    color-bg-gallery-tile-blue: $color-blue-100,
+    color-bg-gallery-tile-red: $color-red-200,
+    color-bg-gallery-tile-yellow: $color-data-yellow-407,
+
+    // Dashboard Tiles
+    color-bg-dashboard-tile: $color-grey-100,
+    color-fill-tile-symbol: $color-grey-1200,
+    color-stroke-tile-symbol: $color-grey-1200,
+
+    // Input Fields
+    color-bg-input-rest: $color-white,
+    color-bg-input-hover: $color-white,
+    color-bg-input-selected: $color-white,
+    color-bg-input-disabled: $color-grey-200,
+
+    color-border-input-rest: $color-grey-300,
+    color-border-input-hover: $color-grey-600,
+    color-border-input-selected: $color-blue-100,
+    color-border-input-error: $color-error-local-200,
+
+    color-text-clear: $color-black,
+    color-text-placeholder: $color-grey-400,
+
+    // Radio button 
+    color-bg-radio-btn-rest: $color-white,
+    color-bg-radio-btn-hover: $color-white,
+    color-bg-radio-btn-selected: $color-white,
+    color-bg-radio-btn-focused: $color-white,
+    color-bg-radio-btn-disabled: $color-white,
+    color-border-radio-btn-rest: $color-grey-1200,
+    color-border-radio-btn-hover: $color-grey-1200,
+    color-border-radio-btn-selected: $color-blue-100,
+    color-border-radio-btn-focused: $color-grey-1200,
+    color-border-radio-btn-disabled: $color-grey-300,
+    color-center-radio-btn-hover: $color-grey-400,
+    color-center-radio-btn-selected: $color-grey-1200,
+    color-center-radio-btn-disabled: $color-grey-300,
+
+    // Toggle
+    color-bg-toggle-btn-rest-on: $color-blue-500,
+    color-bg-toggle-btn-rest-off: $color-white,
+    color-bg-toggle-btn-hover-on: $color-blue-300,
+    color-bg-toggle-btn-hover-off: $color-white,
+    color-bg-toggle-btn-focus-on: $color-blue-500,
+    color-bg-toggle-btn-focus-off: $color-white,
+    color-bg-toggle-btn-disabled-on: $color-grey-300,
+    color-bg-toggle-btn-disabled-off: $color-grey-100,
+    color-border-toggle-btn-rest-on: $color-white,
+    color-border-toggle-btn-rest-off: $color-grey-600,
+    color-border-toggle-btn-hover-on: $color-blue-300,
+    color-border-toggle-btn-hover-off: $color-grey-600,
+    color-border-toggle-btn-focus-on: $color-white,
+    color-border-toggle-btn-focus-off: $color-grey-600,
+    color-border-toggle-btn-disabled-on: $color-grey-300,
+    color-border-toggle-btn-disabled-off: $color-grey-500,
+    color-circle-toggle-btn-rest-on: $color-white,
+    color-circle-toggle-btn-rest-off: $color-grey-1200,
+    color-circle-toggle-btn-hover-on: $color-white,
+    color-circle-toggle-btn-hover-off: $color-blue-300,
+    color-circle-toggle-btn-focus-on: $color-white,
+    color-circle-toggle-btn-focus-off: $color-grey-1200,
+    color-circle-toggle-btn-disabled-on: $color-grey-500,
+    color-circle-toggle-btn-disabled-off: $color-grey-500,
+
+    // General Borders
+    color-border-rest: $color-grey-300,
+    color-border-hover: $color-blue-100,
+    color-border-focus: $color-blue-100,
+    color-border-selected: $color-grey-300,
+    color-border-disabled: $color-grey-500,
+    color-border-error: $color-error-local-200,
+    color-border-controls: $color-blue-100,
+
+    // General Texts
+    color-text-rest: $color-black,
+    color-text-chevron: $color-grey-600,
+    color-text-error: $color-error-local-200,
+    color-text-required: $color-error-local-200,
+    color-text-visited: $color-blue-400,
+    color-text-nodata:	$color-grey-400,
+    color-text-disabled: $color-grey-500,
+    color-text-white: $color-white,
+    color-text-black: $color-black,
+
+    // Buttons
+    color-bg-btn-standard-rest: $color-grey-100,
+    color-bg-btn-standard-hover: $color-grey-200,
+    color-bg-btn-standard-focus: $color-grey-100,
+    color-bg-btn-standard-pressed-selected: $color-grey-300,
+    color-bg-btn-standard-disabled: $color-grey-100,
+
+    color-bg-btn-primary-rest: $color-blue-100,
+    color-bg-btn-primary-hover: $color-blue-200,
+    color-bg-btn-primary-focus: $color-blue-200,
+    color-bg-btn-primary-pressed-selected: $color-blue-300,
+    color-bg-btn-primary-disabled: $color-grey-100,
+
+    color-bg-btn-danger-rest: $color-red-300,
+    color-bg-btn-danger-hover: $color-red-200,
+    color-bg-btn-danger-focus: $color-red-300,
+    color-bg-btn-danger-pressed-selected: $color-red-100,
+    color-bg-btn-danger-disabled: $color-grey-200,
+
+    // Hyperlinks
+    color-text-hyperlink-rest: $color-blue-200,
+    color-text-hyperlink-hover: $color-blue-400,
+    color-text-hyperlink-focus: $color-blue-200,
+    color-text-hyperlink-disabled: $color-grey-500,
+    color-border-hyperlink-focus: $color-grey-600,
+
+    // Loading
+    color-bg-loader-panel: $color-grey-200,
+    color-bg-loader-spinner: $color-grey-200,
+    color-border-loader-global-segment: $color-blue-100,
+    color-border-loader-global-track: $color-grey-800,
+
+    // Upload
+    color-bg-upload: $color-grey-400,
+    color-border-upload: $color-grey-300,
+
+    // Tabs
+    color-text-pivot-tab-device-rest: $color-grey-1200,
+    color-text-pivot-tab-device-hover:	$color-grey-1200,
+    color-text-pivot-tab-device-focus: $color-grey-1200,
+    color-text-pivot-tab-device-press:	$color-black,
+    color-text-pivot-tab-device-selected: $color-grey-1200,
+
+    // Charts
+    color-chart-X-Y-lines:	$color-grey-400,
+    color-chart-gap-stroke: $color-grey-500,
+
+    // Alerts
+    color-bg-alert-error: $color-error-global-100,
+    color-bg-alert-info: $color-information-100,
+    color-bg-alert-warning: $color-warning-100,
+
+    // Color picker
+    color-picker-border-inner: $color-white,
+    color-picker-border-outer: $color-error-global-100,
+
+    // Data colors
+    data-color-1: #01B8AA,
+    data-color-2: #99E3DD,
+    data-color-3: #67D4CC,
+    data-color-4: #34C6BB,
+    data-color-5: #018A80,
+    data-color-6: #015C55,
+    data-color-7: #374649,
+    data-color-8: #AFB5B6,
+    data-color-9: #879092,
+    data-color-10: #5F6B6D,
+    data-color-11: #293537,
+    data-color-12: #1C2325,
+    data-color-13: #FD625E,
+    data-color-14: #FEC0BF,
+    data-color-15: #FEA19E,
+    data-color-16: #FD817E,
+    data-color-17: #BE4A47,
+    data-color-18: #7F312F,
+    data-color-19: #F2C80F,
+    data-color-20: #FAE99F,
+    data-color-21: #F7DE6F,
+    data-color-22: #F5D33F,
+    data-color-23: #B6960B,
+    data-color-24: #796408,
+    data-color-25: #8AD4EB,
+    data-color-26: #D0EEF7,
+    data-color-27: #B9E5F3,
+    data-color-28: #A1DDEF,
+    data-color-29: #689FB0,
+    data-color-30: #456A76,
+    data-color-31: #FE9666,
+    data-color-32: #FFD5C2,
+    data-color-33: #FEC0A3,
+    data-color-34: #FEAB85,
+    data-color-35: #BF714D,
+    data-color-36: #7F4B33,
+    data-color-37: #A66999,
+    data-color-38: #DBC3D6,
+    data-color-39: #CAA5C2,
+    data-color-40: #B887AD,
+    data-color-41: #7D4F73,
+    data-color-42: #53354D,
+
+), $theme-light);
