@@ -1,0 +1,19 @@
+@import "color.overrides";
+@import "../src/colors";
+@import "../src/mixins";
+
+$icon-size: 76px;
+
+.symbol {
+    width: $icon-size;
+    height: $icon-size;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include themify {
+        fill: themed('color-fill-tile-symbol');
+        stroke: themed('color-stroke-tile-symbol');
+    }    
+}

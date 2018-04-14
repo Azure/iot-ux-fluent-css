@@ -7,31 +7,59 @@ Usage
 -----
 Install as a package via npm with the command `npm install @azure-iot/ux-fluent-css`.
 
-You have a few options when it comes to consuming the css.
-
-Option 1: Import the theme directly into your styles using SASS.
+In your custom.scss, you’ll import the library's source Sass files. You are free to pick and choose the parts that you need. 
 
 ```sass import
-@import "~@azure-iot/ux-fluent-css/src/[theme]/color.defaults";
+@import "~@azure-iot/ux-fluent-css/src/colors";
+@import "~@azure-iot/ux-fluent-css/src/mixins";
 ```
 
-Option 2: Import the theme into the build pipeline 
-
-```sass build
-const themePath = path.resolve(`./node_modules/@azure-iot/ux-fluent-css/src/${theme}`);
-
-{
-    loader: 'sass-loader',
-    options: {
-        includePaths: themePath
-    }
-}
-```
+With that setup in place, you can begin to modify any of the Sass variables and maps in your custom.scss. 
 
 Customization
 -------------
 It is easy to customize and build on top of the Common IoT Fluent CSS Library. 
+The library includes the colors in a Sass map of key value pairs. All Sass maps include the !default flag and can be overridden and extended without modifying the library's source code. 
 
-Each theme consists of two SASS files. `_color.palette.scss` contains a list of base colors standardized by the Azure IoT design studio. `_color.defaults.scss` introduces more extensive structural variables, providing a list of predefined colors that can be easily applied to common pieces of shared UI. 
+### Modify map
 
-Example coming soon...
+To modify an existing color in our $themes map, simply redefine the key value pair in your custom Sass file:
+
+```
+$theme-dark: (
+    color-fill-tile-symbol: #ff4136
+);
+```
+
+### Add to map
+
+To add a new color to one of our existing themes, add the new key and value:
+
+```
+$theme-dark: (
+    color-fill-tile-symbol-new: #aa4136
+);
+```
+
+### Remove from map
+
+To remove colors from $themes, use map-remove:
+
+```
+$theme-dark: map-remove($theme-dark, "color-fill-tile-symbol");
+```
+
+### Extend $themes with a custom theme
+
+To extend the $themes map with new themes, add the new map of colors:
+
+```
+$themes: (
+    christmas: (
+        color-fill-tile-symbol: #ff4136,
+        color-stroke-tile-symbol: #36FF53
+    )    
+);
+```
+
+See the `example` directory for sample consumption code. Use `npm run build` to see the sample css output.
