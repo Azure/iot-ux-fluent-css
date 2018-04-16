@@ -16,6 +16,43 @@ In your custom.scss, you’ll import the library's source Sass files. You are fr
 
 With that setup in place, you can begin to modify any of the Sass variables and maps in your custom.scss. 
 
+Theming
+-------
+
+To theme your app, wrap the themed properties in @themify mixin. 
+
+```
+.symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include themify {
+        fill: themed('color-fill-tile-symbol');
+        stroke: themed('color-stroke-tile-symbol');
+    }    
+}
+```
+
+The above SCSS will generate two separate theme variations. 
+
+```
+.symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .theme-dark .symbol {
+    fill: #FFFFFF;
+    stroke: #FFFFFF; }
+  .theme-light .symbol {
+    fill: #212121;
+    stroke: #212121; }
+```
+
+This technique is relatively efficient, as only the necessary css markups that vary between the themes are generated.
+
 Customization
 -------------
 It is easy to customize and build on top of the Common IoT Fluent CSS Library. 
