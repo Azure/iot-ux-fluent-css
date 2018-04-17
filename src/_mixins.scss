@@ -1,4 +1,4 @@
-/** 
+/**
  * Mixins
  */
 
@@ -8,29 +8,32 @@
 /// @type String
 $default-prefix: 'theme' !default;
 
-/// Creates theme variations 
+/// Creates theme variations
 ///
-/// @param {Map} $themes - Theme map to loop through
+/// @param {Map} $themes - Theme map to loop through. Optional.
 @mixin themify($themes: $themes) {
+    // for each theme, get its name and color variable map:
     @each $theme, $colors in $themes {
-        .#{$default-prefix}-#{$theme} & {
-            $theme-map: () !global;
-            @each $key, $submap in $colors {
-                $value: map-get(map-get($themes, $theme), '#{$key}');
-                $theme-map: map-merge($theme-map, ($key: $value)) !global;
-            }
+        // re-export the color map under the global scope so the
+        // `themed` function below can access it inside the content:
+        $theme-map: $colors !global;
+
+        :global(.#{$default-prefix}-#{$theme}) {
             @content;
-            $theme-map: null !global;
         }
+
+        // reset the theme-map global variable:
+        $theme-map: null !global;
     }
 }
 
 /// Gets a value from the color map.
 ///
-/// @param {String} $key - Name of the color variable 
+/// @param {String} $key - Name of the color variable
+/// @param {Map} $theme-map - Theme map to use. Optional.
 ///
 /// @returns {String} The color for the given key
-@function themed($key) {
+@function themed($key, $theme-map: $theme-map) {
     $value: map-get($theme-map, $key);
 
     @if not $value {
