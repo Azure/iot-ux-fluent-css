@@ -18,7 +18,7 @@ $default-prefix: 'theme' !default;
         // `themed` function below can access it inside the content:
         $theme-map: $colors !global;
 
-        :global(.#{$default-prefix}-#{$theme}) {
+        :global(.#{$default-prefix}-#{$theme}) & {
             @content;
         }
 
