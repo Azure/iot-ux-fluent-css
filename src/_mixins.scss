@@ -42,3 +42,37 @@ $default-prefix: 'theme' !default;
 
     @return $value;
 }
+
+/// Clickable button animation
+///
+/// @param {Number} $scale - Clickable scale
+/// @param {Number} $duration - Interaction timing.
+///
+@mixin clickable($scale, $duration) {
+    transition-property: transform, background-color !important;
+    transition-duration: $duration !important;
+
+    transform: scale(1);
+    cursor: pointer;
+    &:active {
+        transform: scale($scale);
+    }
+}
+
+/// Right to left 
+///
+@mixin rtl {
+    :global(.rtl) {
+        @content;
+    }
+}
+
+/// Box sizing
+///
+/// @param {String} $boxmodel - The box model e.g. border-box
+///
+@mixin box-sizing($boxmodel) {
+    -webkit-box-sizing: $boxmodel;
+    -moz-box-sizing: $boxmodel;
+    box-sizing: $boxmodel;
+}
