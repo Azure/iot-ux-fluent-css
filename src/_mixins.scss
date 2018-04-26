@@ -8,6 +8,11 @@
 /// @type String
 $default-prefix: 'theme' !default;
 
+/// Interaction constants
+///
+$interaction-timing: 200ms;
+$clickable-scale: 0.9;
+
 /// Creates theme variations
 ///
 /// @param {Map} $themes - Theme map to loop through. Optional.
@@ -48,7 +53,7 @@ $default-prefix: 'theme' !default;
 /// @param {Number} $scale - Clickable scale
 /// @param {Number} $duration - Interaction timing.
 ///
-@mixin clickable($scale, $duration) {
+@mixin clickable($scale: $clickable-scale, $duration: $interaction-timing) {
     transition-property: transform, background-color !important;
     transition-duration: $duration !important;
 
@@ -61,8 +66,8 @@ $default-prefix: 'theme' !default;
 
 /// Right to left 
 ///
-@mixin rtl {
-    :global(.rtl) {
+@mixin rtl() {
+    :global(.rtl) & {
         @content;
     }
 }
@@ -75,4 +80,13 @@ $default-prefix: 'theme' !default;
     -webkit-box-sizing: $boxmodel;
     -moz-box-sizing: $boxmodel;
     box-sizing: $boxmodel;
+}
+
+
+/// WebKit-style focus
+///
+@mixin tab-focus() {
+    // WebKit-specific. Other browsers will keep their default outline style.
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }

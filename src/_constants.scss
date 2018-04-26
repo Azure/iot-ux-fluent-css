@@ -1,0 +1,89 @@
+/**
+ * General constants
+ */
+
+// Gutters
+
+$gutter-xxsmall: 8px;
+$gutter-xsmall: 12px;
+$gutter-small: 16px;
+$gutter-normal: 20px;
+$gutter-big: 32px;
+$gutter-bigger: 40px;
+
+// Grid size
+
+$grid-size: 4px;
+
+
+// Z Index 
+
+$z-index-large-step: 1000;
+$z-index-medium-step: 100;
+$z-index-small-step: 10;
+
+$z-index-content-layer: 0; // this constant is here for informative purposes - we should always assume content starts at 0
+$z-index-flyout-layer: $z-index-content-layer + 6 * $z-index-large-step;
+$z-index-interruptable-layer: $z-index-content-layer + 9 * $z-index-large-step;
+
+$z-index-chart-tooltip: $z-index-content-layer + 1 * $z-index-small-step;
+$z-index-content-sidebar: $z-index-content-layer + 1 * $z-index-medium-step;
+$z-index-content-global-nav: $z-index-content-layer + 2 * $z-index-medium-step;
+$z-index-flyouts-masthead: $z-index-flyout-layer + 5 * $z-index-medium-step;
+$z-index-flyouts-dropdown: $z-index-flyout-layer + 6 * $z-index-medium-step;
+$z-index-flyouts-inline-btn: $z-index-flyout-layer + 7 * $z-index-medium-step;
+$z-index-tutorial-tips: $z-index-flyout-layer + 8 * $z-index-medium-step;
+
+
+// Icons
+
+$icon-font-family: "icons";
+$icon-size-base: 16px;
+$icon-size-xsmall: $icon-size-base;
+$icon-size-small: 1 * $icon-size-base;
+$icon-size-medium: 2 * $icon-size-base;
+$icon-size-large: 3 * $icon-size-base;
+$icon-size-xlarge: 4 * $icon-size-base;
+$icon-size-xxlarge: 5 * $icon-size-base;
+
+
+// The basis for larger building blocks
+
+$input-height: 8*$grid-size;
+$option-height: 8*$grid-size;
+$dropdown-max-height: 50*$grid-size;
+
+
+// Layout
+
+$layout-nav-item-height: 48px;
+$layout-header-large-height: $layout-nav-item-height * 3;
+$layout-header-medium-height: $layout-nav-item-height * 2;
+$layout-header-small-height: $layout-nav-item-height;
+$layout-split-panel-width: 300px;
+$layout-thumbnail-size: 100px;
+$layout-centered-text-width: 400px;
+$layout-masthead-height: 48px;
+$layout-nav-collapsed-width: 48px;
+$layout-chart-y-axis-width: $gutter-bigger;
+$layout-chart-x-axis-height: $gutter-big;
+$layout-chart-axis-tick-size: 6px;
+
+$nav-expanded-width: 220px;
+$nav-collapsed-width: $layout-nav-item-height;
+
+
+// Text overflow
+
+.inline-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+// Hidden
+
+.hidden {
+    display: none !important;
+}

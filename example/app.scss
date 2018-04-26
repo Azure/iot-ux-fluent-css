@@ -1,5 +1,11 @@
+// import color overrides 
+// Note: overrides must be imported before the default colors
 @import "color.overrides";
+
+// import default colors
 @import "../src/colors";
+
+// import mixins
 @import "../src/mixins";
 
 $icon-size: 76px;
