@@ -9,9 +9,7 @@
   "scripts": {
     "build": "node-sass-chokidar example/ -o example/"
   },
-  "dependencies": {
-    "normalize.css": "^3.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "node-sass-chokidar": "^1.2.2"
   },
