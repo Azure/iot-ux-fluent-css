@@ -1,0 +1,20 @@
+{
+  "name": "@azure-iot/ux-fluent-css",
+  "description": "Common styles library for CSS, Colors and Themes",
+  "version": "2.0.5",
+  "license": "ISC",
+  "engines": {
+    "node": "^8.0.0"
+  },
+  "scripts": {
+    "build": "node-sass-chokidar example/ -o example/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass-chokidar": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://msazure.visualstudio.com/DefaultCollection/One/_git/azure-iot-ux-fluent-css"
+  }
+}

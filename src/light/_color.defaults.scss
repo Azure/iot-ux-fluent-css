@@ -1,0 +1,279 @@
+/** 
+ * Default Light Theme Colors
+ */
+
+@import "../color.palette";
+
+
+// Theme map
+
+$theme-light: () !default;
+$theme-light: map-merge((
+
+    // Layouts
+    color-bg-navbar: $color-grey-900,
+    color-bg-navbar-hover: $color-grey-600,
+    color-bg-header: $color-grey-100, 
+    color-bg-header-hover: $color-grey-600,
+    color-bg-masthead: $color-grey-1300,
+    color-bg-masthead-hover: $color-grey-600,
+
+    // Surfaces
+    color-bg-panel-primary: $color-grey-100,
+    color-bg-panel-secondary: $color-grey-100,
+    color-bg-content: $color-grey-100,
+    color-bg-panel-contextual: $color-white,
+    color-bg-action-bar: $color-grey-100,
+    color-border-panel: $color-grey-300,
+    color-border-grid: $color-grey-300,
+
+    // Controls
+    color-bg-blastshield: $color-black-transparent-half,
+    color-bg-balloon: $color-white,
+    color-bg-form: $color-white,
+    color-bg-table: $color-white,
+    color-bg-searchbar: $color-white,
+    color-bg-guidance: $color-blue-300,
+
+    // Interactions
+    color-bg-item-hover: $color-grey-200,
+    color-bg-item-selected: $color-grey-300,
+
+    // All Tiles
+    color-border-tile: $color-grey-300,
+    color-border-tile-hover: $color-blue-100,
+
+    // Gallery Tiles
+    color-bg-gallery-tile: $color-white,
+    color-bg-gallery-tile-banner: $color-black,
+    color-bg-gallery-tile-default: $color-grey-200,
+    color-bg-gallery-tile-blue: $color-blue-100,
+    color-bg-gallery-tile-red: $color-red-500,
+    color-bg-gallery-tile-yellow: $color-yellow-500,
+
+    // Dashboard Tiles
+    color-bg-dashboard-tile: $color-grey-100,
+    color-fill-tile-symbol: $color-grey-1200,
+    color-stroke-tile-symbol: $color-grey-1200,
+
+    // Input Fields
+    color-bg-input-rest: $color-white,
+    color-bg-input-hover: $color-white,
+    color-bg-input-selected: $color-white,
+    color-bg-input-disabled: $color-grey-200,
+
+    color-border-input-rest: $color-grey-300,
+    color-border-input-hover: $color-grey-600,
+    color-border-input-selected: $color-blue-100,
+    color-border-input-error: $color-error-local-200,
+
+    color-text-clear: $color-black,
+    color-text-placeholder: $color-grey-400,
+
+    // Dropdowns
+    color-dropdown-rest: $color-white,
+    color-dropdown-hover: $color-grey-100,
+    color-dropdown-focus: $color-grey-100,
+    color-dropdown-pressed: $color-grey-200,
+    color-dropdown-disabled: $color-white,
+    color-border-dropdown-rest: $color-blue-100,
+    color-border-dropdown-focus: $color-grey-600,
+    color-dropdown-disabled-text: $color-grey-400,
+
+    // Radio button 
+    color-bg-radio-btn-rest: $color-white,
+    color-bg-radio-btn-hover: $color-white,
+    color-bg-radio-btn-selected: $color-white,
+    color-bg-radio-btn-focused: $color-white,
+    color-bg-radio-btn-disabled: $color-white,
+    color-border-radio-btn-rest: $color-grey-1200,
+    color-border-radio-btn-hover: $color-grey-1200,
+    color-border-radio-btn-selected: $color-blue-100,
+    color-border-radio-btn-focused: $color-grey-1200,
+    color-border-radio-btn-disabled: $color-grey-300,
+    color-center-radio-btn-hover: $color-grey-400,
+    color-center-radio-btn-selected: $color-grey-1200,
+    color-center-radio-btn-disabled: $color-grey-300,
+
+    // Toggle
+    color-bg-toggle-btn-rest-on: $color-blue-500,
+    color-bg-toggle-btn-rest-off: $color-white,
+    color-bg-toggle-btn-hover-on: $color-blue-300,
+    color-bg-toggle-btn-hover-off: $color-white,
+    color-bg-toggle-btn-focus-on: $color-blue-500,
+    color-bg-toggle-btn-focus-off: $color-white,
+    color-bg-toggle-btn-disabled-on: $color-grey-300,
+    color-bg-toggle-btn-disabled-off: $color-grey-100,
+    color-border-toggle-btn-rest-on: $color-white,
+    color-border-toggle-btn-rest-off: $color-grey-600,
+    color-border-toggle-btn-hover-on: $color-blue-300,
+    color-border-toggle-btn-hover-off: $color-grey-600,
+    color-border-toggle-btn-focus-on: $color-white,
+    color-border-toggle-btn-focus-off: $color-grey-600,
+    color-border-toggle-btn-disabled-on: $color-grey-300,
+    color-border-toggle-btn-disabled-off: $color-grey-500,
+    color-circle-toggle-btn-rest-on: $color-white,
+    color-circle-toggle-btn-rest-off: $color-grey-1200,
+    color-circle-toggle-btn-hover-on: $color-white,
+    color-circle-toggle-btn-hover-off: $color-blue-300,
+    color-circle-toggle-btn-focus-on: $color-white,
+    color-circle-toggle-btn-focus-off: $color-grey-1200,
+    color-circle-toggle-btn-disabled-on: $color-grey-500,
+    color-circle-toggle-btn-disabled-off: $color-grey-500,
+
+    // Checkbox
+    color-bg-checkbox-focused: $color-white,
+    color-bg-checkbox-selected-hover: $color-blue-300,
+    color-bg-checkbox-pressed-selected: $color-blue-100,
+    color-bg-checkbox-disabled: $color-white,
+    color-border-checkbox-hover: $color-grey-1200,
+    color-border-checkbox-focused: $color-grey-1200,    
+    color-border-checkbox-selected-hover: $color-blue-300,
+    color-border-checkbox-pressed-selected: $color-blue-100,
+    color-border-checkbox-disabled-selected: $color-grey-300,
+    color-border-checkbox-disabled: $color-grey-300,
+
+    // Calendar
+    color-bg-calendar-btn-current: $color-blue-100,
+    color-bg-calendar-btn-hover: $color-grey-200,
+    color-bg-calendar-btn-focus: $color-transparent,
+    color-border-calendar-btn-focus: $color-grey-600,
+
+    // General Borders
+    color-border-rest: $color-grey-300,
+    color-border-hover: $color-blue-100,
+    color-border-focus: $color-blue-100,
+    color-border-selected: $color-grey-300,
+    color-border-disabled: $color-grey-500,
+    color-border-error: $color-error-local-200,
+    color-border-controls: $color-blue-100,
+
+    // General Texts
+    color-text-rest: $color-black,
+    color-text-chevron: $color-grey-600,
+    color-text-error: $color-error-local-200,
+    color-text-required: $color-error-local-200,
+    color-text-visited: $color-blue-400,
+    color-text-nodata:	$color-grey-400,
+    color-text-disabled: $color-grey-500,
+    color-text-white: $color-white,
+    color-text-black: $color-black,
+
+    // Buttons
+    color-bg-btn-standard-rest: $color-grey-100,
+    color-bg-btn-standard-hover: $color-grey-200,
+    color-bg-btn-standard-focus: $color-grey-100,
+    color-bg-btn-standard-pressed-selected: $color-grey-300,
+    color-bg-btn-standard-disabled: $color-grey-100,
+
+    color-bg-btn-primary-rest: $color-blue-100,
+    color-bg-btn-primary-hover: $color-blue-200,
+    color-bg-btn-primary-focus: $color-blue-200,
+    color-bg-btn-primary-pressed-selected: $color-blue-300,
+    color-bg-btn-primary-disabled: $color-grey-100,
+
+    color-bg-btn-danger-rest: $color-red-400,
+    color-bg-btn-danger-hover: $color-red-500,
+    color-bg-btn-danger-focus: $color-red-400,
+    color-bg-btn-danger-pressed-selected: $color-red-600,
+    color-bg-btn-danger-disabled: $color-grey-200,
+
+    // Layout Buttons
+    color-bg-btn-layout-rest: $color-white,
+    color-bg-btn-layout-hover: $color-grey-600,
+    color-bg-btn-layout-focus: $color-grey-100,
+    color-bg-btn-layout-pressed-selected: $color-grey-300,
+    color-bg-btn-layout-disabled: $color-grey-200,
+    color-bg-btn-layout-header-pressed-selected: $color-grey-1200,
+    color-bg-btn-layout-sidenavbar-pressed-selected: $color-grey-1200,
+    color-border-btn-layout-rest: $color-blue-100,
+    color-border-btn-layout-hover: $color-grey-600,
+    color-border-btn-layout-focus: $color-grey-600,
+    color-border-btn-layout-pressed-selected: $color-grey-300,
+    color-border-btn-layout-disabled: $color-grey-200,
+    color-border-btn-layout-header-pressed-selected: $color-grey-1200,
+    color-border-btn-layout-sidenavbar-pressed-selected: $color-grey-1200,
+
+    // Hyperlinks
+    color-text-hyperlink-rest: $color-blue-200,
+    color-text-hyperlink-hover: $color-blue-400,
+    color-text-hyperlink-focus: $color-blue-200,
+    color-text-hyperlink-disabled: $color-grey-500,
+    color-border-hyperlink-focus: $color-grey-600,
+
+    // Loading
+    color-bg-loader-panel: $color-grey-200,
+    color-bg-loader-spinner: $color-grey-200,
+    color-border-loader-global-segment: $color-blue-100,
+    color-border-loader-global-track: $color-grey-800,
+
+    // Upload
+    color-bg-upload: $color-grey-400,
+    color-border-upload: $color-grey-300,
+
+    // Tabs
+    color-text-pivot-tab-device-rest: $color-grey-1200,
+    color-text-pivot-tab-device-hover:	$color-grey-1200,
+    color-text-pivot-tab-device-focus: $color-grey-1200,
+    color-text-pivot-tab-device-press:	$color-black,
+    color-text-pivot-tab-device-selected: $color-grey-1200,
+    color-border-pivot-tab: $color-blue-100,
+
+    // Charts
+    color-chart-X-Y-lines:	$color-grey-400,
+    color-chart-gap-stroke: $color-grey-500,
+
+    // Alerts
+    color-bg-alert-error: $color-error-global-100,
+    color-bg-alert-info: $color-information-100,
+    color-bg-alert-warning: $color-warning-100,
+
+    // Color picker
+    color-picker-border-inner: $color-white,
+    color-picker-border-outer: $color-error-global-100,
+
+    // Data colors
+    data-color-1: $color-green-100,
+    data-color-2: $color-green-700,
+    data-color-3: $color-green-800,
+    data-color-4: $color-green-900,
+    data-color-5: $color-green-1000,
+    data-color-6: $color-green-1100,
+    data-color-7: $color-lightgrey-700,
+    data-color-8: $color-lightgrey-800,
+    data-color-9: $color-lightgrey-900,
+    data-color-10: $color-lightgrey-1000,
+    data-color-11: $color-lightgrey-1100,
+    data-color-12: $color-lightgrey-1200,
+    data-color-13: $color-red-100,
+    data-color-14: $color-red-700,
+    data-color-15: $color-red-800,
+    data-color-16: $color-red-900,
+    data-color-17: $color-red-1000,
+    data-color-18: $color-red-1100,
+    data-color-19: $color-yellow-100,
+    data-color-20: $color-yellow-700,
+    data-color-21: $color-yellow-800,
+    data-color-22: $color-yellow-900,
+    data-color-23: $color-yellow-1000,
+    data-color-24: $color-yellow-1100,
+    data-color-25: $color-lightblue-100,
+    data-color-26: $color-lightblue-700,
+    data-color-27: $color-lightblue-800,
+    data-color-28: $color-lightblue-900,
+    data-color-29: $color-lightblue-1000,
+    data-color-30: $color-lightblue-1100,
+    data-color-31: $color-orange-100,
+    data-color-32: $color-orange-700,
+    data-color-33: $color-orange-800,
+    data-color-34: $color-orange-900,
+    data-color-35: $color-orange-1000,
+    data-color-36: $color-orange-1100,
+    data-color-37: $color-purple-100,
+    data-color-38: $color-purple-700,
+    data-color-39: $color-purple-800,
+    data-color-40: $color-purple-900,
+    data-color-41: $color-purple-1000,
+    data-color-42: $color-purple-1100,
+
+), $theme-light);
