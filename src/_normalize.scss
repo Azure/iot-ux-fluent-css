@@ -1,4 +1,4 @@
-/** 
+/**
  * Normalize
  */
 
@@ -136,4 +136,18 @@ dt {
 
 dd {
   margin-left: 0; // Undo browser default
+}
+
+// define some common css classes that everyone needs to use. These
+// need to be declared as global so they're not mangled:
+:global {
+  .inline-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hidden {
+    display: none !important;
+  }
 }

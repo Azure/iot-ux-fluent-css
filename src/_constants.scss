@@ -16,7 +16,7 @@ $gutter-bigger: 40px;
 $grid-size: 4px;
 
 
-// Z Index 
+// Z Index
 
 $z-index-large-step: 1000;
 $z-index-medium-step: 100;
@@ -71,19 +71,3 @@ $layout-chart-axis-tick-size: 6px;
 
 $nav-expanded-width: 220px;
 $nav-collapsed-width: $layout-nav-item-height;
-
-
-// Text overflow
-
-.inline-text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-
-// Hidden
-
-.hidden {
-    display: none !important;
-}
