@@ -164,13 +164,13 @@ $theme-light: map-merge((
     color-bg-btn-standard-hover: $color-grey-200,
     color-bg-btn-standard-focus: $color-grey-100,
     color-bg-btn-standard-pressed-selected: $color-grey-300,
-    color-bg-btn-standard-disabled: $color-grey-100,
+    color-bg-btn-standard-disabled: $color-grey-200,
 
     color-bg-btn-primary-rest: $color-blue-100,
     color-bg-btn-primary-hover: $color-blue-200,
     color-bg-btn-primary-focus: $color-blue-200,
     color-bg-btn-primary-pressed-selected: $color-blue-300,
-    color-bg-btn-primary-disabled: $color-grey-100,
+    color-bg-btn-primary-disabled: $color-grey-200,
 
     color-bg-btn-danger-rest: $color-red-400,
     color-bg-btn-danger-hover: $color-red-500,
@@ -205,7 +205,7 @@ $theme-light: map-merge((
     color-bg-loader-panel: $color-grey-200,
     color-bg-loader-spinner: $color-grey-200,
     color-border-loader-global-segment: $color-blue-100,
-    color-border-loader-global-track: $color-grey-800,
+    color-border-loader-global-track: $color-grey-300,
 
     // Upload
     color-bg-upload: $color-grey-400,
