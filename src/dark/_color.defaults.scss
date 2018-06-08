@@ -1,4 +1,4 @@
-/** 
+/**
  * Default Dark Theme Colors
  */
 
@@ -13,7 +13,7 @@ $theme-dark: map-merge((
     // Layouts
     color-bg-navbar: $color-grey-900,
     color-bg-navbar-hover: $color-grey-700,
-    color-bg-header: $color-grey-1400, 
+    color-bg-header: $color-grey-1400,
     color-bg-header-hover: $color-grey-700,
     color-bg-masthead: $color-grey-1300,
     color-bg-masthead-hover: $color-grey-700,
@@ -127,7 +127,7 @@ $theme-dark: map-merge((
     color-bg-checkbox-pressed-selected: $color-blue-100,
     color-bg-checkbox-disabled: $color-grey-1100,
     color-border-checkbox-hover: $color-grey-600,
-    color-border-checkbox-focused: $color-grey-600,    
+    color-border-checkbox-focused: $color-grey-600,
     color-border-checkbox-selected-hover: $color-blue-300,
     color-border-checkbox-pressed-selected: $color-blue-100,
     color-border-checkbox-disabled-selected: $color-grey-1100,
@@ -143,7 +143,7 @@ $theme-dark: map-merge((
     color-border-rest: $color-grey-700,
     color-border-hover: $color-blue-100,
     color-border-focus: $color-blue-100,
-    color-border-selected: $color-grey-700,
+    color-border-selected: $color-blue-100,
     color-border-disabled: $color-grey-500,
     color-border-error: $color-error-local-100,
     color-border-controls: $color-blue-100,
