@@ -17,6 +17,7 @@ $theme-dark: map-merge((
     color-bg-header-hover: $color-grey-700,
     color-bg-masthead: $color-grey-1300,
     color-bg-masthead-hover: $color-grey-700,
+    color-border-masthead-item: $color-grey-600,
 
     // Surfaces
     color-bg-panel-primary: $color-grey-1400,
@@ -28,7 +29,7 @@ $theme-dark: map-merge((
     color-border-grid: $color-grey-700,
 
     // Controls
-    color-bg-blastshield: $color-black-transparent-half,
+    color-bg-blastshield: $color-black-transparent-primary,
     color-bg-balloon: $color-grey-1500,
     color-bg-form: $color-grey-1500,
     color-bg-table: $color-grey-1500,
