@@ -35,6 +35,8 @@ $theme-dark: map-merge((
     color-bg-table: $color-grey-1500,
     color-bg-searchbar: $color-grey-1500,
     color-bg-guidance: $color-blue-400,
+    color-bg-thumbnail: $color-grey-600,
+    color-text-thumbnail: $color-grey-100,
 
     // Interactions
     color-bg-item-hover: $color-grey-700,
@@ -161,23 +163,23 @@ $theme-dark: map-merge((
     color-text-black: $color-black,
 
     // Buttons
-    color-bg-btn-standard-rest: $color-grey-100,
-    color-bg-btn-standard-hover: $color-grey-200,
-    color-bg-btn-standard-focus: $color-grey-100,
-    color-bg-btn-standard-pressed-selected: $color-grey-300,
-    color-bg-btn-standard-disabled: $color-grey-200,
+    color-bg-btn-standard-rest: $color-grey-200,
+    color-bg-btn-standard-hover: $color-grey-300,
+    color-bg-btn-standard-focus: $color-grey-300,
+    color-bg-btn-standard-pressed-selected: $color-grey-400,
+    color-bg-btn-standard-disabled: $color-grey-1000,
 
     color-bg-btn-primary-rest: $color-blue-100,
     color-bg-btn-primary-hover: $color-blue-200,
     color-bg-btn-primary-focus: $color-blue-200,
     color-bg-btn-primary-pressed-selected: $color-blue-300,
-    color-bg-btn-primary-disabled: $color-grey-200,
+    color-bg-btn-primary-disabled: $color-grey-1000,
 
     color-bg-btn-danger-rest: $color-red-400,
     color-bg-btn-danger-hover: $color-red-500,
-    color-bg-btn-danger-focus: $color-red-400,
+    color-bg-btn-danger-focus: $color-red-500,
     color-bg-btn-danger-pressed-selected: $color-red-600,
-    color-bg-btn-danger-disabled: $color-grey-200,
+    color-bg-btn-danger-disabled: $color-grey-1000,
 
     // Layout Buttons
     color-bg-btn-layout-rest: $color-grey-1500,
