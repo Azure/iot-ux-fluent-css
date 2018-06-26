@@ -1,4 +1,4 @@
-/** 
+/**
  * Default Dark Theme Colors
  */
 
@@ -13,10 +13,11 @@ $theme-dark: map-merge((
     // Layouts
     color-bg-navbar: $color-grey-900,
     color-bg-navbar-hover: $color-grey-700,
-    color-bg-header: $color-grey-1400, 
+    color-bg-header: $color-grey-1400,
     color-bg-header-hover: $color-grey-700,
     color-bg-masthead: $color-grey-1300,
     color-bg-masthead-hover: $color-grey-700,
+    color-border-masthead-item: $color-grey-600,
 
     // Surfaces
     color-bg-panel-primary: $color-grey-1400,
@@ -28,12 +29,14 @@ $theme-dark: map-merge((
     color-border-grid: $color-grey-700,
 
     // Controls
-    color-bg-blastshield: $color-black-transparent-half,
+    color-bg-blastshield: $color-black-transparent-primary,
     color-bg-balloon: $color-grey-1500,
     color-bg-form: $color-grey-1500,
     color-bg-table: $color-grey-1500,
     color-bg-searchbar: $color-grey-1500,
     color-bg-guidance: $color-blue-400,
+    color-bg-thumbnail: $color-grey-600,
+    color-text-thumbnail: $color-grey-100,
 
     // Interactions
     color-bg-item-hover: $color-grey-700,
@@ -127,7 +130,7 @@ $theme-dark: map-merge((
     color-bg-checkbox-pressed-selected: $color-blue-100,
     color-bg-checkbox-disabled: $color-grey-1100,
     color-border-checkbox-hover: $color-grey-600,
-    color-border-checkbox-focused: $color-grey-600,    
+    color-border-checkbox-focused: $color-grey-600,
     color-border-checkbox-selected-hover: $color-blue-300,
     color-border-checkbox-pressed-selected: $color-blue-100,
     color-border-checkbox-disabled-selected: $color-grey-1100,
@@ -143,7 +146,7 @@ $theme-dark: map-merge((
     color-border-rest: $color-grey-700,
     color-border-hover: $color-blue-100,
     color-border-focus: $color-blue-100,
-    color-border-selected: $color-grey-700,
+    color-border-selected: $color-blue-100,
     color-border-disabled: $color-grey-500,
     color-border-error: $color-error-local-100,
     color-border-controls: $color-blue-100,
@@ -160,23 +163,23 @@ $theme-dark: map-merge((
     color-text-black: $color-black,
 
     // Buttons
-    color-bg-btn-standard-rest: $color-grey-100,
-    color-bg-btn-standard-hover: $color-grey-200,
-    color-bg-btn-standard-focus: $color-grey-100,
-    color-bg-btn-standard-pressed-selected: $color-grey-300,
-    color-bg-btn-standard-disabled: $color-grey-100,
+    color-bg-btn-standard-rest: $color-grey-200,
+    color-bg-btn-standard-hover: $color-grey-300,
+    color-bg-btn-standard-focus: $color-grey-300,
+    color-bg-btn-standard-pressed-selected: $color-grey-400,
+    color-bg-btn-standard-disabled: $color-grey-1000,
 
     color-bg-btn-primary-rest: $color-blue-100,
     color-bg-btn-primary-hover: $color-blue-200,
     color-bg-btn-primary-focus: $color-blue-200,
     color-bg-btn-primary-pressed-selected: $color-blue-300,
-    color-bg-btn-primary-disabled: $color-grey-1100,
+    color-bg-btn-primary-disabled: $color-grey-1000,
 
     color-bg-btn-danger-rest: $color-red-400,
     color-bg-btn-danger-hover: $color-red-500,
-    color-bg-btn-danger-focus: $color-red-400,
+    color-bg-btn-danger-focus: $color-red-500,
     color-bg-btn-danger-pressed-selected: $color-red-600,
-    color-bg-btn-danger-disabled: $color-grey-200,
+    color-bg-btn-danger-disabled: $color-grey-1000,
 
     // Layout Buttons
     color-bg-btn-layout-rest: $color-grey-1500,

@@ -27,6 +27,7 @@ To theme your app, wrap the themed properties in @themify mixin.
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: $gutter-small;
 
     @include themify {
         fill: themed('color-fill-tile-symbol');
@@ -39,16 +40,22 @@ The above SCSS will generate two separate theme variations.
 
 ```
 .symbol {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .theme-dark .symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+}
+
+.theme-dark .symbol {
     fill: #FFFFFF;
-    stroke: #FFFFFF; }
-  .theme-light .symbol {
+    stroke: #FFFFFF; 
+}
+
+.theme-light .symbol {
     fill: #212121;
-    stroke: #212121; }
+    stroke: #212121;
+}
 ```
 
 This technique is relatively efficient, as only the necessary css markups that vary between the themes are generated.
@@ -100,3 +107,18 @@ $themes: (
 ```
 
 See the `example` directory for sample consumption code. Use `npm run build` to see the sample css output.
+
+Contributing
+============
+
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.microsoft.com.
+
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

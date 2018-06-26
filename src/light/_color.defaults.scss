@@ -1,4 +1,4 @@
-/** 
+/**
  * Default Light Theme Colors
  */
 
@@ -13,10 +13,11 @@ $theme-light: map-merge((
     // Layouts
     color-bg-navbar: $color-grey-900,
     color-bg-navbar-hover: $color-grey-600,
-    color-bg-header: $color-grey-100, 
+    color-bg-header: $color-grey-100,
     color-bg-header-hover: $color-grey-600,
     color-bg-masthead: $color-grey-1300,
     color-bg-masthead-hover: $color-grey-600,
+    color-border-masthead-item: $color-grey-500,
 
     // Surfaces
     color-bg-panel-primary: $color-grey-100,
@@ -28,12 +29,14 @@ $theme-light: map-merge((
     color-border-grid: $color-grey-300,
 
     // Controls
-    color-bg-blastshield: $color-black-transparent-half,
+    color-bg-blastshield: $color-black-transparent-primary,
     color-bg-balloon: $color-white,
     color-bg-form: $color-white,
     color-bg-table: $color-white,
     color-bg-searchbar: $color-white,
     color-bg-guidance: $color-blue-300,
+    color-bg-thumbnail: $color-grey-600,
+    color-text-thumbnail: $color-grey-100,
 
     // Interactions
     color-bg-item-hover: $color-grey-200,
@@ -80,7 +83,7 @@ $theme-light: map-merge((
     color-border-dropdown-focus: $color-grey-600,
     color-dropdown-disabled-text: $color-grey-400,
 
-    // Radio button 
+    // Radio button
     color-bg-radio-btn-rest: $color-white,
     color-bg-radio-btn-hover: $color-white,
     color-bg-radio-btn-selected: $color-white,
@@ -106,7 +109,7 @@ $theme-light: map-merge((
     color-bg-toggle-btn-disabled-off: $color-grey-100,
     color-border-toggle-btn-rest-on: $color-white,
     color-border-toggle-btn-rest-off: $color-grey-600,
-    color-border-toggle-btn-hover-on: $color-blue-300,
+    color-border-toggle-btn-hover-on: $color-white,
     color-border-toggle-btn-hover-off: $color-grey-600,
     color-border-toggle-btn-focus-on: $color-white,
     color-border-toggle-btn-focus-off: $color-grey-600,
@@ -127,7 +130,7 @@ $theme-light: map-merge((
     color-bg-checkbox-pressed-selected: $color-blue-100,
     color-bg-checkbox-disabled: $color-white,
     color-border-checkbox-hover: $color-grey-1200,
-    color-border-checkbox-focused: $color-grey-1200,    
+    color-border-checkbox-focused: $color-grey-1200,
     color-border-checkbox-selected-hover: $color-blue-300,
     color-border-checkbox-pressed-selected: $color-blue-100,
     color-border-checkbox-disabled-selected: $color-grey-300,
@@ -143,7 +146,7 @@ $theme-light: map-merge((
     color-border-rest: $color-grey-300,
     color-border-hover: $color-blue-100,
     color-border-focus: $color-blue-100,
-    color-border-selected: $color-grey-300,
+    color-border-selected: $color-blue-100,
     color-border-disabled: $color-grey-500,
     color-border-error: $color-error-local-200,
     color-border-controls: $color-blue-100,
@@ -160,21 +163,21 @@ $theme-light: map-merge((
     color-text-black: $color-black,
 
     // Buttons
-    color-bg-btn-standard-rest: $color-grey-100,
-    color-bg-btn-standard-hover: $color-grey-200,
-    color-bg-btn-standard-focus: $color-grey-100,
-    color-bg-btn-standard-pressed-selected: $color-grey-300,
-    color-bg-btn-standard-disabled: $color-grey-100,
+    color-bg-btn-standard-rest: $color-grey-200,
+    color-bg-btn-standard-hover: $color-grey-300,
+    color-bg-btn-standard-focus: $color-grey-300,
+    color-bg-btn-standard-pressed-selected: $color-grey-400,
+    color-bg-btn-standard-disabled: $color-grey-200,
 
     color-bg-btn-primary-rest: $color-blue-100,
     color-bg-btn-primary-hover: $color-blue-200,
     color-bg-btn-primary-focus: $color-blue-200,
     color-bg-btn-primary-pressed-selected: $color-blue-300,
-    color-bg-btn-primary-disabled: $color-grey-100,
+    color-bg-btn-primary-disabled: $color-grey-200,
 
     color-bg-btn-danger-rest: $color-red-400,
     color-bg-btn-danger-hover: $color-red-500,
-    color-bg-btn-danger-focus: $color-red-400,
+    color-bg-btn-danger-focus: $color-red-500,
     color-bg-btn-danger-pressed-selected: $color-red-600,
     color-bg-btn-danger-disabled: $color-grey-200,
 
@@ -203,9 +206,9 @@ $theme-light: map-merge((
 
     // Loading
     color-bg-loader-panel: $color-grey-200,
-    color-bg-loader-spinner: $color-grey-200,
+    color-bg-loader-spinner: $color-grey-700,
     color-border-loader-global-segment: $color-blue-100,
-    color-border-loader-global-track: $color-grey-800,
+    color-border-loader-global-track: $color-grey-300,
 
     // Upload
     color-bg-upload: $color-grey-400,
