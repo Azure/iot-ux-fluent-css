@@ -1,17 +1,17 @@
-Common IoT Fluent CSS Library
+Azure IoT Fluent CSS Library
 ================================
 
-The Common IoT Fluent CSS Library is a minimal set of styles, themes and colors that are standardized across the Azure IoT organization. It is created to help unify the look and feel of common experiences across the various teams. The library provides extremely easy theming using predefined color variables.
+The Azure IoT Fluent CSS Library is a minimal set of styles, themes and colors that are standardized across the Azure IoT organization. It is created to help unify the look and feel of common experiences across the various teams. The library provides extremely easy theming using predefined color variables.
 
 Usage
 -----
-Install as a package via npm with the command `npm install @azure-iot/ux-fluent-css`.
+Install as a package via npm with the command `npm install @microsoft/azure-iot-ux-fluent-css`.
 
 In your custom.scss, you’ll import the library's source Sass files. You are free to pick and choose the parts that you need. 
 
 ```sass import
-@import "~@azure-iot/ux-fluent-css/src/colors";
-@import "~@azure-iot/ux-fluent-css/src/mixins";
+@import "~@microsoft/azure-iot-ux-fluent-css/src/colors";
+@import "~@microsoft/azure-iot-ux-fluent-css/src/mixins";
 ```
 
 With that setup in place, you can begin to modify any of the Sass variables and maps in your custom.scss. 
@@ -62,8 +62,7 @@ This technique is relatively efficient, as only the necessary css markups that v
 
 Customization
 -------------
-It is easy to customize and build on top of the Common IoT Fluent CSS Library. 
-The library includes the colors in a Sass map of key value pairs. All Sass maps include the !default flag and can be overridden and extended without modifying the library's source code. 
+It is easy to customize and build on top of the Common IoT Fluent CSS Library. The library includes the colors in a Sass map of key value pairs. All Sass maps include the !default flag and can be overridden and extended without modifying the library's source code. 
 
 ### Modify map
 
