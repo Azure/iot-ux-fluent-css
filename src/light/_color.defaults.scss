@@ -230,6 +230,9 @@ $theme-light: map-merge((
     color-bg-alert-error: $color-error-global-100,
     color-bg-alert-info: $color-information-100,
     color-bg-alert-warning: $color-warning-100,
+    color-bg-alert-error-close-hover: $color-red-1100,
+    color-bg-alert-info-close-hover: $color-grey-500,
+    color-bg-alert-warning-close-hover: $color-yellow-600,
 
     // Color picker
     color-picker-border-inner: $color-white,
