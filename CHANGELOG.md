@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.0.3
+### Fixed
+- danger button should have a white outline
+
 ## v3.0.2
 ### Fixed
 - add color for primary button focus
