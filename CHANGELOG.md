@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v3.0.2
+### Fixed
+- add color for primary button focus
+- change license from ics to mit
+
 ## v3.0.1
 ### Fixed
 - new green for success on light theme
