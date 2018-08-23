@@ -331,3 +331,6 @@ ASALocalRun/
 
 # Node modules
 node_modules
+
+# Package-lock
+package-lock.json

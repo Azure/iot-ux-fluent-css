@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.0.4
+### Added
+- colors for title bars
+
 ## v3.0.3
 ### Fixed
 - danger button should have a white outline
