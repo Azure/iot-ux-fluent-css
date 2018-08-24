@@ -1,5 +1,5 @@
 {
-  "name": "@microsoft/ux-fluent-css",
+  "name": "@microsoft/azure-iot-ux-fluent-css",
   "description": "Azure IoT common styles library for CSS, Colors and Themes",
   "version": "4.0.0",
   "license": "MIT",
