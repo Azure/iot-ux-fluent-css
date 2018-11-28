@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.1.0
+### Changed
+- remove font files
+
 ## v4.0.0
 ### Changed
 - move to @microsoft npm scope
