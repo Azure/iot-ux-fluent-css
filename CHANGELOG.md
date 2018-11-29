@@ -3,6 +3,7 @@
 ## v5.0.0
 ### Changed
 - remove font files
+- remove icons.scss
 
 ## v4.0.0
 ### Changed
