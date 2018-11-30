@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.0.1
+### Changed
+- changed to transparent the color background on input for dark-theme 
+
 ## v5.0.0
 ### Changed
 - remove font files
