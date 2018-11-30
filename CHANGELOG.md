@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.0.2
+### Changed
+- reverted changes on color background input for dark-theme 
+
 ## v5.0.1
 ### Changed
 - changed to transparent the color background on input for dark-theme 
