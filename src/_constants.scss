@@ -65,9 +65,15 @@ $layout-thumbnail-size: 100px;
 $layout-centered-text-width: 400px;
 $layout-masthead-height: 48px;
 $layout-nav-collapsed-width: 48px;
+$layout-nav-expanded-width: 220px;
 $layout-chart-y-axis-width: $gutter-bigger;
 $layout-chart-x-axis-height: $gutter-big;
 $layout-chart-axis-tick-size: 6px;
 
-$nav-expanded-width: 220px;
-$nav-collapsed-width: $layout-nav-item-height;
+// Media query breakpoints:
+
+$screen-xs: 320px;
+$screen-sm: 480px;
+$screen-md: 640px;
+$screen-lg: 1024px;
+$screen-xl: 1366px;

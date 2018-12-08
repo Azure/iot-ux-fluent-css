@@ -52,16 +52,10 @@ $clickable-scale: 0.9;
 ///
 /// @param {Number} $scale - Clickable scale
 /// @param {Number} $duration - Interaction timing.
+/// @deprecated New Fluent design doesn't require clickable behavior
 ///
 @mixin clickable($scale: $clickable-scale, $duration: $interaction-timing) {
-    transition-property: transform, background-color !important;
-    transition-duration: $duration !important;
-
-    transform: scale(1);
-    cursor: pointer;
-    &:active {
-        transform: scale($scale);
-    }
+    // deprecated
 }
 
 /// Right to left 

@@ -12,12 +12,17 @@ $theme-light: map-merge((
 
     // Layouts
     color-bg-navbar: $color-grey-900,
-    color-bg-navbar-hover: $color-grey-600,
+    color-bg-navbar-hover: $color-grey-550,
+    color-bg-navbar-selected: $color-grey-1100,
+    color-bg-navbar-hover-selected: $color-black,
     color-bg-header: $color-grey-100,
     color-bg-header-hover: $color-grey-600,
     color-bg-masthead: $color-grey-1300,
     color-bg-masthead-hover: $color-grey-600,
     color-border-masthead-item: $color-grey-500,
+    color-border-navbar-separator: $color-grey-300,
+    color-border-masthead-focus: $color-white,
+    color-border-navbar-focus: $color-white,
 
     // Surfaces
     color-bg-panel-primary: $color-grey-100,
@@ -146,7 +151,7 @@ $theme-light: map-merge((
     // General Borders
     color-border-rest: $color-grey-300,
     color-border-hover: $color-blue-100,
-    color-border-focus: $color-blue-100,
+    color-border-focus: $color-black,
     color-border-selected: $color-blue-100,
     color-border-disabled: $color-grey-500,
     color-border-error: $color-error-local-200,
