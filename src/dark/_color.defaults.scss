@@ -29,6 +29,8 @@ $theme-dark: map-merge((
     color-bg-panel-secondary: $color-grey-1400,
     color-bg-content: $color-grey-1400,
     color-bg-panel-contextual: $color-grey-1500,
+    color-border-panel-contextual-separator: $color-grey-300,
+    shadow-panel-contextual: -5px 0 15.0px 0 rgba(0, 0, 0, .85),
     color-bg-action-bar: $color-grey-1400,
     color-bg-title-bar: $color-grey-1500,
     color-border-panel: $color-grey-700,
