@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v6.0.0
+### Added
+- Media query breakpoints
+
+### Changed
+- Various colors to match the new design language.
+
 ## v5.0.2
 ### Changed
 - reverted changes on color background input for dark-theme 
