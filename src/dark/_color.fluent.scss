@@ -155,6 +155,7 @@
     --color-bg-btn-standard-focus: var(--color-grey-20);
     --color-bg-btn-standard-selected: var(--color-grey-40);
     --color-bg-btn-standard-disabled: var(--color-text-30);
+    --color-text-btn-standard: var(--color-black);
 
     --color-bg-btn-primary-rest: var(--color-blue-10);
     --color-bg-btn-primary-hover: var(--color-blue-20);
@@ -162,12 +163,15 @@
     --color-bg-btn-primary-selected: var(--color-blue-30);
     --color-bg-btn-primary-disabled: var(--color-text-20);
     --color-outline-btn-primary-focus: var(--color-white);
+    --color-text-btn-primary: var(--color-white);
 
     --color-bg-btn-negative-rest: var(--color-status-30);
     --color-bg-btn-negative-hover: var(--color-status-30);
     --color-bg-btn-negative-focus: var(--color-status-30);
+    --color-bg-btn-negative-selected: var(--color-status-30);
     --color-bg-btn-negative-disabled: var(--color-text-30);
     --color-outline-btn-negative-focus: var(--color-white);
+    --color-text-btn-negative: var(--color-white);
 
     // Hyperlinks
     --color-hyperlink-rest: var(--color-blue-20);

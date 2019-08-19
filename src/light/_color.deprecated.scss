@@ -176,20 +176,20 @@ $theme-light: map-merge((
     color-bg-btn-standard-rest: $color-grey-200,
     color-bg-btn-standard-hover: $color-grey-300,
     color-bg-btn-standard-focus: $color-grey-300,
-    color-bg-btn-standard-pressed-selected: $color-grey-400,
+    color-bg-btn-standard-pressed-selected: $color-grey-400, //rename
     color-bg-btn-standard-disabled: $color-grey-200,
 
     color-bg-btn-primary-rest: $color-blue-100,
     color-bg-btn-primary-hover: $color-blue-200,
     color-bg-btn-primary-focus: $color-blue-200,
-    color-bg-btn-primary-pressed-selected: $color-blue-300,
+    color-bg-btn-primary-pressed-selected: $color-blue-300, //rename
     color-bg-btn-primary-disabled: $color-grey-200,
     color-outline-btn-primary-focus: $color-white,
 
     color-bg-btn-danger-rest: $color-red-400, //rename
     color-bg-btn-danger-hover: $color-red-500, //rename
     color-bg-btn-danger-focus: $color-red-500, //rename
-    color-bg-btn-danger-pressed-selected: $color-red-600, //deprecated
+    color-bg-btn-danger-pressed-selected: $color-red-600, //rename
     color-bg-btn-danger-disabled: $color-grey-200, //rename
     color-outline-btn-danger-focus: $color-white, //rename
 
