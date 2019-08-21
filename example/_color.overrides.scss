@@ -1,12 +1,10 @@
 // Modify a color in existing theme
-$theme-dark: (
-    color-fill-tile-symbol: #ff4136
-);
+:root[theme='dark'] {
+    --color-fill-tile-symbol: #FF4136;
+}
 
-// Extend $themes with custom christmas theme
-$themes: (
-    christmas: (
-        color-fill-tile-symbol: #ff4136,
-        color-stroke-tile-symbol: #36FF53
-    )    
-);
+// Add a new theme by specifying all colors with the theme value
+:root[theme='christmas'] {
+    --color-fill-tile-symbol: #FF4136,
+    --color-stroke-tile-symbol: #36FF53
+}

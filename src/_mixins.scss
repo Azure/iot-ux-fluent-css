@@ -8,14 +8,17 @@
 /// @type String
 $default-prefix: 'theme' !default;
 
-/// Interaction constants
-///
+// @todo remove
+/// Interaction constants 
+/// @deprecated Moved to constants
 $interaction-timing: 200ms;
 $clickable-scale: 0.9;
 
+// @todo remove
 /// Creates theme variations
 ///
 /// @param {Map} $themes - Theme map to loop through. Optional.
+/// @deprecated Not needed by using css custom properties
 @mixin themify($themes: $themes) {
     // for each theme, get its name and color variable map:
     @each $theme, $colors in $themes {
@@ -32,12 +35,14 @@ $clickable-scale: 0.9;
     }
 }
 
+// @todo remove
 /// Gets a value from the color map.
 ///
 /// @param {String} $key - Name of the color variable
 /// @param {Map} $theme-map - Theme map to use. Optional.
 ///
 /// @returns {String} The color for the given key
+/// @deprecated Not needed by using css custom properties
 @function themed($key, $theme-map: $theme-map) {
     $value: map-get($theme-map, $key);
 
@@ -48,6 +53,7 @@ $clickable-scale: 0.9;
     @return $value;
 }
 
+// @todo remove
 /// Clickable button animation
 ///
 /// @param {Number} $scale - Clickable scale

@@ -1,0 +1,149 @@
+/**
+ * Color Palette
+ */
+
+
+// Principal Colors
+
+$color-black: #000000;
+$color-grey-1500: #0D0E0F; //90
+$color-grey-1400: #1A1D1E; //14
+$color-grey-1300: #292D30; //80
+$color-grey-1200: #212121; //12
+$color-grey-1100: #252728; //11
+$color-grey-1000: #2D2F33; //01
+$color-grey-900: #31373E; //70
+$color-grey-800: #3F3F3F;
+$color-grey-700: #434343; //60
+$color-grey-600: #666666; //text-20
+$color-grey-550: #515151; //55
+$color-grey-500: #A6A6A6; //text-30
+$color-grey-400: #AEAEAE; //4
+$color-grey-300: #C8C8C8; //40
+$color-grey-200: #DADADA; //30
+$color-grey-100: #F2F2F2; //1
+$color-white: #FFFFFF;
+
+
+// Chart & Measurement Colors
+
+$color-green-100: #01b8aa;
+$color-green-200: #6be8dc;
+$color-green-300: #59cec3;
+$color-green-400: #08bca6;
+$color-green-500: #0aa58e;
+$color-green-600: #12937d;
+$color-green-700: #99E3DD;
+$color-green-800: #67D4CC;
+$color-green-900: #34C6BB;
+$color-green-1000: #018A80;
+$color-green-1100: #015C55;
+
+$color-lightgrey-100: #ffffff;
+$color-lightgrey-200: #f2f2f2;
+$color-lightgrey-300: #e6e6e6;
+$color-lightgrey-400: #cccccc;
+$color-lightgrey-500: #b3b3b3;
+$color-lightgrey-600: #999999;
+$color-lightgrey-700: #374649;
+$color-lightgrey-800: #AFB5B6;
+$color-lightgrey-900: #879092;
+$color-lightgrey-1000: #5F6B6D;
+$color-lightgrey-1100: #293537;
+$color-lightgrey-1200: #1C2325;
+
+$color-red-100: #fd625e;
+$color-red-200: #ff7878;
+$color-red-300: #fc5454;
+$color-red-400: #fc3232; //4
+$color-red-500: #e81818; //5
+$color-red-600: #b21f1f; //6
+$color-red-700: #FEC0BF;
+$color-red-800: #FEA19E;
+$color-red-900: #FD817E;
+$color-red-1000: #BE4A47;
+$color-red-1100: #7F312F; //11
+
+$color-yellow-100: #f2c80f;
+$color-yellow-200: #fcdf65;
+$color-yellow-300: #ffd629;
+$color-yellow-400: #ffce00;
+$color-yellow-500: #e5bd13;
+$color-yellow-600: #c9a611; //6
+$color-yellow-700: #FAE99F;
+$color-yellow-800: #F7DE6F;
+$color-yellow-900: #F5D33F;
+$color-yellow-1000: #B6960B;
+$color-yellow-1100: #796408;
+
+$color-lightblue-100: #8ad4eb;
+$color-lightblue-200: #caf8ff;
+$color-lightblue-300: #b0f8ff;
+$color-lightblue-400: #73f8ff;
+$color-lightblue-500: #27e2dd;
+$color-lightblue-600: #1bb2a7;
+$color-lightblue-700: #D0EEF7;
+$color-lightblue-800: #B9E5F3;
+$color-lightblue-900: #A1DDEF;
+$color-lightblue-1000: #689FB0;
+$color-lightblue-1100: #456A76;
+
+$color-orange-100: #fe9666;
+$color-orange-200: #ffcdbb;
+$color-orange-300: #f7a389;
+$color-orange-400: #f9724e;
+$color-orange-500: #DC5F31;
+$color-orange-600: #db220f;
+$color-orange-700: #FFD5C2;
+$color-orange-800: #FEC0A3;
+$color-orange-900: #FEAB85;
+$color-orange-1000: #BF714D;
+$color-orange-1100: #7F4B33;
+
+$color-purple-100: #a66999;
+$color-purple-200: #efa5e1;
+$color-purple-300: #ea78d9;
+$color-purple-400: #e247db;
+$color-purple-500: #d313d3;
+$color-purple-600: #921e9b;
+$color-purple-700: #DFC5D9;
+$color-purple-800: #CAA5C2;
+$color-purple-900: #B887AD;
+$color-purple-1000: #7D4F73;
+$color-purple-1100: #53354D;
+
+
+// Alert Colors
+
+$color-warning-100: #FFD629; //warn-1
+$color-warning-200: #F2C80F;
+$color-warning-300: #D58E00;
+$color-error-local-100: #FF2828; //status-60
+$color-error-local-200: #A50606; //status-30
+$color-error-global-100: #D02E00; //err-1
+$color-information-100: #DCDCDC;  //info-1
+$color-information-200: #879092; //status-10
+$color-success-100: #3BB44A;
+$color-success-200: #89FF98;
+$color-success-300: #007D0F;
+
+
+// Input Control Colors
+
+$color-blue-100: #136BFB; //10
+$color-blue-200: #0065D9;
+$color-blue-300: #0053B3; //30
+$color-blue-400: #00418C;
+$color-blue-500: #60AAFF; //50
+$color-blue-600: #2F7FDB;
+$color-blue-700: #A1AAB6;
+$color-blue-800: #DEECF9;
+
+
+// Semi-transparent Colors
+
+$color-black-transparent-primary: rgba($color-black, 0.8);
+$color-black-transparent-half: rgba($color-black, 0.5);
+$color-black-transparent-third: rgba($color-black,0.33);
+$color-black-transparent-tenth: rgba($color-black,0.1);
+$color-transparent: transparent;

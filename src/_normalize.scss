@@ -3,17 +3,18 @@
  */
 
 @import "normalize.vendor";
-@import "constants";
+@import "colors";
 @import "typography";
+@import "constants";
 @import "mixins";
 
 :global {
   body {
     margin: 0;
     padding: 0;
-    font-family: $font-family-default;
-    font-size: $font-size-default;
-    line-height: $line-height-base;
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+    line-height: var(--line-height-base);
   }
 
   * {
@@ -49,9 +50,9 @@
 
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: $font-family-default;
-    font-weight: $headings-font-weight;
-    line-height: $headings-line-height;
+    font-family: var(--font-family-default);
+    font-weight: var(--headings-font-weight);
+    line-height: var(--headings-line-height);
 
     small,
     .small {
@@ -84,17 +85,17 @@
     }
   }
 
-  h1, .h1 { font-size: $font-size-h1; }
-  h2, .h2 { font-size: $font-size-h2; }
-  h3, .h3 { font-size: $font-size-h3; }
-  h4, .h4 { font-size: $font-size-h4; }
+  h1, .h1 { font-size: var(--font-size-h1) }
+  h2, .h2 { font-size: var(--font-size-h2) }
+  h3, .h3 { font-size: var(--font-size-h3) }
+  h4, .h4 { font-size: var(--font-size-h4) }
 
 
   // Body text
   // -------------------------
 
   p {
-    margin: 0 0 ($line-height-computed / 2);
+    margin: 0 0 calc(var(--line-height-computed) / 2);
   }
 
   label {
@@ -109,7 +110,7 @@
   ul,
   ol {
     margin-top: 0;
-    margin-bottom: ($line-height-computed / 2);
+    margin-bottom: calc(var(--line-height-computed) / 2);
 
     ul,
     ol {
@@ -120,12 +121,12 @@
   // Description Lists
   dl {
     margin-top: 0; // Remove browser default
-    margin-bottom: $line-height-computed;
+    margin-bottom: var(--line-height-computed);
   }
 
   dt,
   dd {
-    line-height: $line-height-base;
+    line-height: var(--line-height-base);
   }
 
   dt {

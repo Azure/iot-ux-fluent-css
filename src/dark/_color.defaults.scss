@@ -2,296 +2,218 @@
  * Default Dark Theme Colors
  */
 
-@import "../color.palette";
-
-
-// Theme Map
-
-$theme-dark: () !default;
-$theme-dark: map-merge((
-
-    // Layouts
-    color-bg-navbar: $color-grey-900,
-    color-bg-navbar-hover: $color-grey-550,
-    color-bg-navbar-selected: $color-grey-1100,
-    color-bg-navbar-hover-selected: $color-black,
-    color-bg-header: $color-grey-1400,
-    color-bg-header-hover: $color-grey-700,
-    color-bg-masthead: $color-grey-1300,
-    color-bg-masthead-hover: $color-grey-700,
-    color-border-masthead-item: $color-grey-600,
-    color-border-navbar-separator: $color-grey-300,
-    color-border-masthead-focus: $color-white,
-    color-border-navbar-focus: $color-white,
+:root[theme='dark'] {
+    // Shell
+    --color-bg-navbar: var(--color-grey-70);
+    --color-bg-navbar-hover: var(--color-grey-55);
+    --color-bg-navbar-selected: var(--color-grey-11);
+    --color-bg-navbar-selected-hover: var(--color-black);
+    --color-bg-header: var(--color-grey-14);
+    --color-bg-header-hover: var(--color-grey-60);
+    --color-bg-masthead: var(--color-grey-80);
+    --color-bg-masthead-hover: var(--color-grey-60);
+    --color-outline-masthead: var(--color-white);
+    --color-border-masthead-focus: var(--color-white);
+    --color-border-navbar-focus: var(--color-white);
 
     // Surfaces
-    color-bg-panel-primary: $color-grey-1400,
-    color-bg-panel-secondary: $color-grey-1400,
-    color-bg-content: $color-grey-1400,
-    color-bg-panel-contextual: $color-grey-1500,
-    color-border-panel-contextual-separator: $color-grey-300,
-    shadow-panel-contextual: -5px 0 15.0px 0 rgba(0, 0, 0, .85),
-    color-bg-action-bar: $color-grey-1400,
-    color-bg-title-bar: $color-grey-1500,
-    color-border-panel: $color-grey-700,
-    color-border-grid: $color-grey-700,
+    --color-bg-panel: var(--color-grey-14);
+    --color-bg-container: var(--color-grey-14);
+    --color-bg-container-panel: var(--color-grey-90);
+    --color-border-container-panel: var(--color-grey-40);
+    --shadow-container-panel: -5px 0 15.0px 0 var(--color-black-transparent-primary);
+    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
+    --color-bg-cmdbar: var(--color-grey-14);
+    --color-bg-titlebar: var(--color-grey-90);
+    --color-border-panel: var(--color-grey-60);
+    --color-border-grid: var(--color-grey-60);
+    --shadow-balloon: 0 8px 10px 0 var(--color-black-transparent-tenth);
 
     // Controls
-    color-bg-blastshield: $color-black-transparent-primary,
-    color-bg-balloon: $color-grey-1500,
-    color-bg-form: $color-grey-1500,
-    color-bg-table: $color-grey-1500,
-    color-bg-searchbar: $color-grey-1500,
-    color-bg-searchbar-rest: $color-grey-400,
-    color-bg-searchbar-focus: $color-white,
-    color-bg-guidance: $color-blue-400,
-    color-bg-thumbnail: $color-grey-600,
-    color-text-thumbnail: $color-grey-100,
+    --color-bg-blastshield: var(--color-black-transparent-primary);
+    --color-bg-balloon: var(--color-grey-90);
+    --color-bg-form: var(--color-grey-90);
+    --color-bg-table: var(--color-grey-90);
+    --color-bg-searchbar-active: var(--color-grey-90);
+    --color-bg-searchbar-rest: var(--color-grey-4);
+    --color-bg-searchbar-focus: var(--color-white);
+    --color-text-searchbar: var(--color-black);
+    --color-icon-searchbar-btn: var(--color-white);
+    --color-bg-thumbnail: var(--color-text-20);
+    --color-icon-thumbnail: var(--color-grey-1);
 
     // Interactions
-    color-bg-item-hover: $color-grey-700,
-    color-bg-item-selected: $color-grey-1000,
+    --color-bg-hover: var(--color-grey-60);
+    --color-bg-selected: var(--color-grey-01);
+    --color-text-selected: var(--color-white);
 
     // All Tiles
-    color-border-tile: $color-grey-700,
-    color-border-tile-hover: $color-blue-100,
+    --color-border-tile: var(--color-grey-60); // 0.5px border
+    --color-border-tile-hover: var(--color-blue-10);
 
     // Gallery Tiles
-    color-bg-gallery-tile: $color-grey-1500,
-    color-bg-gallery-tile-banner: $color-black,
-    color-bg-gallery-tile-default: $color-grey-1200,
-    color-bg-gallery-tile-blue: $color-blue-400,
-    color-bg-gallery-tile-red: $color-red-600,
-    color-bg-gallery-tile-yellow: $color-yellow-1000,
+    --color-bg-gallery-tile: var(--color-grey-90);
+    --color-bg-gallery-tile-default: var(--color-grey-12);
+    --color-bg-gallery-tile-blue: var(--color-blue-10);
+    --color-bg-gallery-tile-banner: var(--color-black);
+    --color-text-gallery-tile-banner: var(--color-white);
 
     // Dashboard Tiles
-    color-bg-dashboard-tile: $color-grey-1500,
-    color-fill-tile-symbol: $color-white,
-    color-stroke-tile-symbol: $color-white,
+    --color-bg-dashboard: var(--color-grey-90);
+    --color-tile-symbol: var(--color-white);
+    --color-stroke-tile-symbol: var(--color-white);
 
     // Input Fields
-    color-bg-input-rest: $color-grey-1400,
-    color-bg-input-hover: $color-grey-1400,
-    color-bg-input-selected: $color-grey-1400,
-    color-bg-input-disabled: $color-grey-1100,
+    --color-bg-input-rest: var(--color-grey-14);
+    --color-bg-input-hover: var(--color-grey-14);
+    --color-bg-input-selected: var(--color-grey-14);
+    --color-bg-input-disabled: var(--color-grey-11);
 
-    color-border-input-rest: $color-grey-800,
-    color-border-input-hover: $color-grey-600,
-    color-border-input-selected: $color-blue-100,
-    color-border-input-error: $color-error-local-100,
+    --color-border-input-hover: var(--color-text-20);
+    --color-border-input-selected: var(--color-blue-10);
+    --color-border-input-error: var(--color-status-30);
 
-    color-text-clear: $color-white,
-    color-text-placeholder: $color-grey-400,
+    --color-text-regular: var(--color-white);
+    --color-text-placeholder: var(--color-grey-4);
 
     // Dropdowns
-    color-dropdown-rest: $color-grey-1500,
-    color-dropdown-hover: $color-grey-1500,
-    color-dropdown-focus: $color-grey-1400,
-    color-dropdown-pressed: $color-grey-700,
-    color-dropdown-disabled: $color-grey-1500,
-    color-border-dropdown-rest: $color-blue-100,
-    color-border-dropdown-focus: $color-grey-100,
-    color-dropdown-disabled-text: $color-grey-500,
+    --color-dropdown-rest: var(--color-grey-90);
+    --color-dropdown-hover: var(--color-grey-90);
+    --color-dropdown-focus: var(--color-grey-14);
+    --color-dropdown-pressed: var(--color-grey-60);
+    --color-dropdown-disabled: var(--color-grey-90);
+    --color-border-dropdown-rest: var(--color-blue-10);
+    --color-border-dropdown-focus: var(--color-grey-1);
+    --color-text-dropdown-disabled: var(--color-text-30);
 
     // Radio button
-    color-bg-radio-btn-rest: $color-grey-1400,
-    color-bg-radio-btn-hover: $color-grey-1400,
-    color-bg-radio-btn-selected: $color-grey-1400,
-    color-bg-radio-btn-focused: $color-grey-1400,
-    color-bg-radio-btn-disabled: $color-grey-1400,
-    color-border-radio-btn-rest: $color-white,
-    color-border-radio-btn-hover: $color-white,
-    color-border-radio-btn-selected: $color-blue-500,
-    color-border-radio-btn-focused: $color-white,
-    color-border-radio-btn-disabled: $color-grey-500,
-    color-center-radio-btn-hover: $color-grey-400,
-    color-center-radio-btn-selected: $color-white,
-    color-center-radio-btn-disabled: $color-grey-500,
+    --color-bg-radio-rest: var(--color-grey-14);
+    --color-bg-radio-hover: var(--color-grey-14);
+    --color-bg-radio-selected: var(--color-grey-14);
+    --color-bg-radio-focused: var(--color-grey-14);
+    --color-bg-radio-disabled: var(--color-grey-14);
+    --color-border-radio-rest: var(--color-white);
+    --color-border-radio-hover: var(--color-white);
+    --color-border-radio-selected: var(--color-blue-50);
+    --color-border-radio-focused: var(--color-white);
+    --color-border-radio-disabled: var(--color-text-30);
+    --color-center-radio-hover: var(--color-grey-4); //On hover center will reduce to 2px circle
+    --color-center-radio-selected: var(--color-white); //On selected center will return to normal size
+    --color-center-radio-disabled: var(--color-text-30);
 
     // Toggle
-    color-bg-toggle-btn-rest-on: $color-blue-500,
-    color-bg-toggle-btn-rest-off: $color-white,
-    color-bg-toggle-btn-hover-on: $color-blue-300,
-    color-bg-toggle-btn-hover-off: $color-white,
-    color-bg-toggle-btn-focus-on: $color-blue-500,
-    color-bg-toggle-btn-focus-off: $color-white,
-    color-bg-toggle-btn-disabled-on: $color-grey-300,
-    color-bg-toggle-btn-disabled-off: $color-grey-100,
-    color-border-toggle-btn-rest-on: $color-blue-500,
-    color-border-toggle-btn-rest-off: $color-grey-600,
-    color-border-toggle-btn-hover-on: $color-blue-300,
-    color-border-toggle-btn-hover-off: $color-grey-600,
-    color-border-toggle-btn-focus-on: $color-white,
-    color-border-toggle-btn-focus-off: $color-grey-600,
-    color-border-toggle-btn-disabled-on: $color-grey-300,
-    color-border-toggle-btn-disabled-off: $color-grey-500,
-    color-circle-toggle-btn-rest-on: $color-white,
-    color-circle-toggle-btn-rest-off: $color-grey-1200,
-    color-circle-toggle-btn-hover-on: $color-white,
-    color-circle-toggle-btn-hover-off: $color-blue-300,
-    color-circle-toggle-btn-focus-on: $color-white,
-    color-circle-toggle-btn-focus-off: $color-grey-1200,
-    color-circle-toggle-btn-disabled-on: $color-grey-500,
-    color-circle-toggle-btn-disabled-off: $color-grey-500,
+    --color-bg-toggle-on-rest: var(--color-blue-50);
+    --color-bg-toggle-off-rest: var(--color-white);
+    --color-bg-toggle-on-hover: var(--color-blue-30);
+    --color-bg-toggle-off-hover: var(--color-white);
+    --color-bg-toggle-on-focus: var(--color-blue-50);
+    --color-bg-toggle-off-focus: var(--color-white);
+    --color-bg-toggle-on-disabled: var(--color-grey-40);
+    --color-bg-toggle-off-disabled: var(--color-grey-1);
+    --color-border-toggle-on-rest: var(--color-blue-50);
+    --color-border-toggle-off-rest: var(--color-text-20);
+    --color-border-toggle-on-hover: var(--color-blue-30);
+    --color-border-toggle-off-hover: var(--color-text-20);
+    --color-border-toggle-on-focus: var(--color-white);
+    --color-border-toggle-off-focus: var(--color-text-20);
+    --color-border-toggle-on-disabled: var(--color-grey-40);
+    --color-border-toggle-off-disabled: var(--color-text-30);
+    --color-circle-toggle-on-rest: var(--color-white);
+    --color-circle-toggle-off-rest: var(--color-grey-12);
+    --color-circle-toggle-on-hover: var(--color-white); //Size circle reduce to half
+    --color-circle-toggle-off-hover: var(--color-blue-30);
+    --color-circle-toggle-on-focus: var(--color-white);
+    --color-circle-toggle-off-focus: var(--color-grey-12);
+    --color-circle-toggle-on-disabled: var(--color-text-30);
+    --color-circle-toggle-off-disabled: var(--color-text-30);
 
     // Checkbox
-    color-bg-checkbox-focused: $color-grey-1400,
-    color-bg-checkbox-selected-hover: $color-blue-300,
-    color-bg-checkbox-pressed-selected: $color-blue-100,
-    color-bg-checkbox-disabled: $color-grey-1100,
-    color-border-checkbox-hover: $color-grey-600,
-    color-border-checkbox-focused: $color-grey-600,
-    color-border-checkbox-selected-hover: $color-blue-300,
-    color-border-checkbox-pressed-selected: $color-blue-100,
-    color-border-checkbox-disabled-selected: $color-grey-1100,
-    color-border-checkbox-disabled: $color-grey-1000,
-
-    // Calendar
-    color-bg-calendar-btn-current: $color-blue-100,
-    color-bg-calendar-btn-hover: $color-grey-700,
-    color-bg-calendar-btn-focus: $color-transparent,
-    color-border-calendar-btn-focus: $color-grey-600,
+    --color-checkmark-checkbox: var(--color-white);
 
     // General Borders
-    color-border-rest: $color-grey-700,
-    color-border-hover: $color-blue-100,
-    color-border-focus: $color-white,
-    color-border-selected: $color-blue-100,
-    color-border-disabled: $color-grey-500,
-    color-border-error: $color-error-local-100,
-    color-border-controls: $color-blue-100,
+    --color-border-rest: var(--color-grey-40);
+    --color-border-hover: var(--color-blue-10);
+    --color-border-focus: var(--color-white);
+    --color-border-selected: var(--color-blue-10);
+    --color-border-disabled: var(--color-text-30);
+    --color-border-error: var(--color-status-30);
+    --color-border-controls: var(--color-blue-10);
+    --color-outline: var(--color-white);
 
     // General Texts
-    color-text-rest: $color-white,
-    color-text-chevron: $color-grey-300,
-    color-text-error: $color-error-local-100,
-    color-text-required: $color-error-local-100,
-    color-text-visited: $color-blue-600,
-    color-text-nodata:	$color-grey-600,
-    color-text-disabled: $color-grey-500,
-    color-text-white: $color-white,
-    color-text-black: $color-black,
+    --color-text-rest: var(--color-white);
+    --color-text-chevron: var(--color-grey-40);
+    --color-text-error: var(--color-status-60);
+    --color-text-required: var(--color-status-60);
+    --color-text-nodata: var(--color-text-20);
+    --color-text-disabled: var(--color-text-30);
+    --color-text-masthead: var(--color-white);
+    --color-text-navbar: var(--color-white);
 
     // Buttons
-    color-bg-btn-standard-rest: $color-grey-200,
-    color-bg-btn-standard-hover: $color-grey-300,
-    color-bg-btn-standard-focus: $color-grey-300,
-    color-bg-btn-standard-pressed-selected: $color-grey-400,
-    color-bg-btn-standard-disabled: $color-grey-1000,
+    --color-bg-btn-standard-rest: var(--color-grey-30);
+    --color-bg-btn-standard-hover: var(--color-grey-40);
+    --color-bg-btn-standard-focus: var(--color-grey-40);
+    --color-bg-btn-standard-selected: var(--color-grey-4);
+    --color-bg-btn-standard-disabled: var(--color-grey-01);
+    --color-text-btn-standard: var(--color-black);
 
-    color-bg-btn-primary-rest: $color-blue-100,
-    color-bg-btn-primary-hover: $color-blue-200,
-    color-bg-btn-primary-focus: $color-blue-200,
-    color-bg-btn-primary-pressed-selected: $color-blue-300,
-    color-bg-btn-primary-disabled: $color-grey-1000,
-    color-outline-btn-primary-focus: $color-white,
+    --color-bg-btn-primary-rest: var(--color-blue-10);
+    --color-bg-btn-primary-hover: var(--color-blue-20);
+    --color-bg-btn-primary-focus: var(--color-blue-20);
+    --color-bg-btn-primary-selected: var(--color-blue-30);
+    --color-bg-btn-primary-disabled: var(--color-grey-01);
+    --color-outline-btn-primary-focus: var(--color-white);
+    --color-text-btn-primary: var(--color-white);
 
-    color-bg-btn-danger-rest: $color-red-400,
-    color-bg-btn-danger-hover: $color-red-500,
-    color-bg-btn-danger-focus: $color-red-500,
-    color-bg-btn-danger-pressed-selected: $color-red-600,
-    color-bg-btn-danger-disabled: $color-grey-1000,
-    color-outline-btn-danger-focus: $color-white,
-
-    // Layout Buttons
-    color-bg-btn-layout-rest: $color-grey-1500,
-    color-bg-btn-layout-hover: $color-grey-700,
-    color-bg-btn-layout-focus: $color-grey-1400,
-    color-bg-btn-layout-pressed-selected: $color-grey-1000,
-    color-bg-btn-layout-disabled: $color-grey-1100,
-    color-bg-btn-layout-header-pressed-selected: $color-grey-1200,
-    color-bg-btn-layout-sidenavbar-pressed-selected: $color-grey-1200,
-    color-border-btn-layout-rest: $color-blue-100,
-    color-border-btn-layout-hover: $color-grey-700,
-    color-border-btn-layout-focus: $color-white,
-    color-border-btn-layout-pressed-selected: $color-grey-1000,
-    color-border-btn-layout-disabled: $color-grey-1100,
-    color-border-btn-layout-header-pressed-selected: $color-grey-1200,
-    color-border-btn-layout-sidenavbar-pressed-selected: $color-grey-1200,
+    --color-bg-btn-negative-rest: var(--color-red-4);
+    --color-bg-btn-negative-hover: var(--color-red-5);
+    --color-bg-btn-negative-focus: var(--color-red-5);
+    --color-bg-btn-negative-selected: var(--color-red-6);
+    --color-bg-btn-negative-disabled: var(--color-grey-01);
+    --color-outline-btn-negative-focus: var(--color-white);
+    --color-text-btn-negative: var(--color-white);
 
     // Hyperlinks
-    color-text-hyperlink-rest: $color-blue-500,
-    color-text-hyperlink-hover: $color-blue-600,
-    color-text-hyperlink-focus: $color-blue-600,
-    color-text-hyperlink-disabled: $color-grey-500,
-    color-border-hyperlink-focus: $color-grey-600,
+    --color-hyperlink-rest: var(--color-blue-50);
+    --color-hyperlink-hover: var(--color-blue-60);
+    --color-hyperlink-focus: var(--color-blue-60);
+    --color-hyperlink-disabled: var(--color-text-30);
 
     // Loading
-    color-bg-loader-panel: $color-grey-1000,
-    color-bg-loader-spinner: $color-white,
-    color-border-loader-global-segment: $color-blue-100,
-    color-border-loader-global-track: $color-grey-300,
+    --color-bg-loader-panel: var(--color-grey-01);
+    --color-bg-loader-spinner: var(--color-white);
+    --color-border-loader-global-segment: var(--color-blue-10);
+    --color-border-loader-global-track: var(--color-grey-40);
 
     // Upload
-    color-bg-upload: $color-grey-1300,
-    color-border-upload: $color-grey-700,
+    --color-bg-upload: var(--color-grey-80);
+    --color-border-upload: var(--color-grey-60);
 
     // Tabs
-    color-text-pivot-tab-device-rest: $color-grey-400,
-    color-text-pivot-tab-device-hover:	$color-white,
-    color-text-pivot-tab-device-focus: $color-white,
-    color-text-pivot-tab-device-press:	$color-grey-100,
-    color-text-pivot-tab-device-selected: $color-white,
-    color-border-pivot-tab: $color-blue-100,
+    --color-pivot-rest: var(--color-grey-4);
+    --color-pivot-hover: var(--color-white);
+    --color-pivot-focus: var(--color-white);
+    --color-pivot-press: var(--color-grey-1);
+    --color-pivot-selected: var(--color-white);
+    --color-border-pivot: var(--color-blue-10);
 
     // Charts
-    color-chart-X-Y-lines:	$color-grey-400,
-    color-chart-gap-stroke: $color-grey-500,
+    --color-chart-xy-lines: var(--color-grey-4);
+    --color-chart-gap-stroke: var(--color-text-30);
 
     // Alerts
-    color-bg-alert-error: $color-error-global-100,
-    color-bg-alert-info: $color-information-200,
-    color-bg-alert-warning: $color-warning-100,
-    color-bg-alert-error-close-hover: $color-red-1100,
-    color-bg-alert-info-close-hover: $color-grey-700,
-    color-bg-alert-warning-close-hover: $color-yellow-600,
+    --color-bg-alert-info: var(--color-status-10);
+    --color-bg-alert-info-close-hover: var(--color-grey-60);
+    --color-bg-alert-warning: var(--color-warn-1);
+    --color-bg-alert-warning-close-hover: var(--color-yellow-6);
+    --color-text-alert-warning: var(--color-black);
+    --color-bg-alert-error: var(--color-err-1);
+    --color-bg-alert-error-close-hover: var(--color-red-11);
+    --color-text-alert-error: var(--color-white);
+
 
     // Color picker
-    color-picker-border-inner: $color-white,
-    color-picker-border-outer: $color-error-global-100,
-
-    // Data color
-    data-color-1: $color-green-100,
-    data-color-2: $color-green-200,
-    data-color-3: $color-green-300,
-    data-color-4: $color-green-400,
-    data-color-5: $color-green-500,
-    data-color-6: $color-green-600,
-    data-color-7: $color-lightgrey-100,
-    data-color-8: $color-lightgrey-200,
-    data-color-9: $color-lightgrey-300,
-    data-color-10: $color-lightgrey-400,
-    data-color-11: $color-lightgrey-500,
-    data-color-12: $color-lightgrey-600,
-    data-color-13: $color-red-100,
-    data-color-14: $color-red-200,
-    data-color-15: $color-red-300,
-    data-color-16: $color-red-400,
-    data-color-17: $color-red-500,
-    data-color-18: $color-red-600,
-    data-color-19: $color-yellow-100,
-    data-color-20: $color-yellow-200,
-    data-color-21: $color-yellow-300,
-    data-color-22: $color-yellow-400,
-    data-color-23: $color-yellow-500,
-    data-color-24: $color-yellow-600,
-    data-color-25: $color-lightblue-100,
-    data-color-26: $color-lightblue-200,
-    data-color-27: $color-lightblue-300,
-    data-color-28: $color-lightblue-400,
-    data-color-29: $color-lightblue-500,
-    data-color-30: $color-lightblue-600,
-    data-color-31: $color-orange-100,
-    data-color-32: $color-orange-200,
-    data-color-33: $color-orange-300,
-    data-color-34: $color-orange-400,
-    data-color-35: $color-orange-500,
-    data-color-36: $color-orange-600,
-    data-color-37: $color-purple-100,
-    data-color-38: $color-purple-200,
-    data-color-39: $color-purple-300,
-    data-color-40: $color-purple-400,
-    data-color-41: $color-purple-500,
-    data-color-42: $color-purple-600,
-
-), $theme-dark);
+    --color-border-colorpicker-in: var(--color-white);
+    --color-border-colorpicker-out: var(--color-err-1);
+}
