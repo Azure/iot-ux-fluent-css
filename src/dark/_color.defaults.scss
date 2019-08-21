@@ -13,6 +13,7 @@
     --color-bg-masthead: var(--color-grey-80);
     --color-bg-masthead-hover: var(--color-grey-60);
     --color-outline-masthead: var(--color-white);
+    --color-border-navbar-separator: var(--color-white);
     --color-border-masthead-focus: var(--color-white);
     --color-border-navbar-focus: var(--color-white);
 
@@ -45,7 +46,6 @@
     // Interactions
     --color-bg-hover: var(--color-grey-60);
     --color-bg-selected: var(--color-grey-01);
-    --color-text-selected: var(--color-white);
 
     // All Tiles
     --color-border-tile: var(--color-grey-60); // 0.5px border
@@ -149,6 +149,7 @@
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
     --color-text-navbar: var(--color-white);
+    --color-text-active: var(--color-white);
 
     // Buttons
     --color-bg-btn-standard-rest: var(--color-grey-30);
@@ -205,6 +206,7 @@
     // Alerts
     --color-bg-alert-info: var(--color-status-10);
     --color-bg-alert-info-close-hover: var(--color-grey-60);
+    --color-text-alert-info: var(--color-text-rest);
     --color-bg-alert-warning: var(--color-warn-1);
     --color-bg-alert-warning-close-hover: var(--color-yellow-6);
     --color-text-alert-warning: var(--color-black);
@@ -212,8 +214,57 @@
     --color-bg-alert-error-close-hover: var(--color-red-11);
     --color-text-alert-error: var(--color-white);
 
-
     // Color picker
     --color-border-colorpicker-in: var(--color-white);
     --color-border-colorpicker-out: var(--color-err-1);
+
+    // Calendar
+    --color-bg-calendar-btn-current: var(--color-blue-10);
+    --color-bg-calendar-btn-hover: var(--color-grey-60);
+    --color-bg-calendar-btn-focus: transparent;
+    --color-border-calendar-btn-focus: var(--color-text-20);
+
+    // Data color
+    --data-color-1: var(--color-green-1);
+    --data-color-2: var(--color-green-2);
+    --data-color-3: var(--color-green-3);
+    --data-color-4: var(--color-green-4);
+    --data-color-5: var(--color-green-5);
+    --data-color-6: var(--color-green-6);
+    --data-color-7: var(--color-lightgrey-1);
+    --data-color-8: var(--color-lightgrey-2);
+    --data-color-9: var(--color-lightgrey-3);
+    --data-color-10: var(--color-lightgrey-4);
+    --data-color-11: var(--color-lightgrey-5);
+    --data-color-12: var(--color-lightgrey-6);
+    --data-color-13: var(--color-red-1);
+    --data-color-14: var(--color-red-2);
+    --data-color-15: var(--color-red-3);
+    --data-color-16: var(--color-red-4);
+    --data-color-17: var(--color-red-5);
+    --data-color-18: var(--color-red-6);
+    --data-color-19: var(--color-yellow-1);
+    --data-color-20: var(--color-yellow-2);
+    --data-color-21: var(--color-yellow-3);
+    --data-color-22: var(--color-yellow-4);
+    --data-color-23: var(--color-yellow-5);
+    --data-color-24: var(--color-yellow-6);
+    --data-color-25: var(--color-lightblue-1);
+    --data-color-26: var(--color-lightblue-2);
+    --data-color-27: var(--color-lightblue-3);
+    --data-color-28: var(--color-lightblue-4);
+    --data-color-29: var(--color-lightblue-5);
+    --data-color-30: var(--color-lightblue-6);
+    --data-color-31: var(--color-orange-1);
+    --data-color-32: var(--color-orange-2);
+    --data-color-33: var(--color-orange-3);
+    --data-color-34: var(--color-orange-4);
+    --data-color-35: var(--color-orange-5);
+    --data-color-36: var(--color-orange-6);
+    --data-color-37: var(--color-purple-1);
+    --data-color-38: var(--color-purple-2);
+    --data-color-39: var(--color-purple-3);
+    --data-color-40: var(--color-purple-4);
+    --data-color-41: var(--color-purple-5);
+    --data-color-42: var(--color-purple-6);
 }

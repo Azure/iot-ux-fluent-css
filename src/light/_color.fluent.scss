@@ -14,19 +14,20 @@
     --color-bg-masthead-hover: var(--color-text-20);
     --color-outline-masthead: var(--color-white);
     --color-border-masthead-focus: var(--color-white);
-    --color-border-navbar-focus: var(--color-black);
+    --color-border-navbar-separator: var(--color-grey-30);
+    --color-border-navbar-focus: var(--color-blue-10);
 
     // Surfaces
     --color-bg-panel: var(--color-grey-10);
     --color-bg-container: var(--color-white);
     --color-bg-container-panel: var(--color-white);
     --color-border-container-panel: var(--color-grey-40);
-    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-black-transparent-tenth);
-    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
     --color-bg-cmdbar: var(--color-white);
-    --color-bg-titlebar: var(--color-grey-40);
+    --color-bg-titlebar: var(--color-grey-30);
     --color-border-panel: var(--color-grey-40);
     --color-border-grid: var(--color-grey-40);
+    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-black-transparent-tenth);
+    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
     --shadow-balloon: 0 8px 10px 0 var(--color-black-transparent-tenth);
 
     // Controls
@@ -37,15 +38,14 @@
     --color-bg-searchbar-active: var(--color-white);
     --color-bg-searchbar-rest: var(--color-white-transparent-third);
     --color-bg-searchbar-focus: var(--color-white);
+    --color-bg-thumbnail: var(--color-text-20);
     --color-text-searchbar: var(--color-black);
     --color-icon-searchbar-btn: var(--color-white);
-    --color-bg-thumbnail: var(--color-text-20);
     --color-icon-thumbnail: var(--color-white);
 
     // Interactions
     --color-bg-hover: var(--color-grey-20);
     --color-bg-selected: var(--color-grey-30);
-    --color-text-selected: var(--color-white);
 
     // All Tiles
     --color-border-tile: var(--color-grey-30); // 0.5px border
@@ -53,8 +53,8 @@
 
     // Gallery Tiles
     --color-bg-gallery-tile: var(--color-white);
+    --color-bg-gallery-tile-blue: var(--color-blue-40);
     --color-bg-gallery-tile-default: var(--color-white);
-    --color-bg-gallery-tile-blue: var(--color-blue-10);
     --color-bg-gallery-tile-banner: var(--color-black);
     --color-text-gallery-tile-banner: var(--color-white);
 
@@ -67,7 +67,7 @@
     --color-bg-input-rest: var(--color-white);
     --color-bg-input-hover: var(--color-white);
     --color-bg-input-selected: var(--color-white);
-    --color-bg-input-disabled: var(--color-grey-30);
+    --color-bg-input-disabled: var(--color-grey-20);
 
     --color-border-input-hover: var(--color-text-20);
     --color-border-input-selected: var(--color-blue-10);
@@ -78,11 +78,11 @@
 
     // Dropdowns
     --color-dropdown-rest: var(--color-white);
-    --color-dropdown-hover: var(--color-grey-30);
-    --color-dropdown-focus: var(--color-grey-30);
-    --color-dropdown-pressed: var(--color-grey-40);
-    --color-dropdown-disabled: var(--color-grey-30);
-    --color-border-dropdown-rest: var(--color-blue-10);
+    --color-dropdown-hover: var(--color-grey-20);
+    --color-dropdown-focus: var(--color-white);
+    --color-dropdown-pressed: var(--color-grey-30);
+    --color-dropdown-disabled: var(--color-white);
+    --color-border-dropdown-rest: var(--color-grey-40);
     --color-border-dropdown-focus: var(--color-text-20);
     --color-text-dropdown-disabled: var(--color-text-30);
 
@@ -94,54 +94,54 @@
     --color-bg-radio-disabled: var(--color-white);
     --color-border-radio-rest: var(--color-text-10);
     --color-border-radio-hover: var(--color-text-10);
-    --color-border-radio-selected: var(--color-blue-10);
+    --color-border-radio-selected: var(--color-text-10);
     --color-border-radio-focused: var(--color-text-10);
     --color-border-radio-disabled: var(--color-text-30);
-    --color-center-radio-hover: var(--color-blue-10); //On hover center will reduce to 2px circle
+    --color-center-radio-hover: var(--color-text-10); //On hover center will reduce to 2px circle
     --color-center-radio-selected: var(--color-blue-20); //On selected center will return to normal size
-    --color-center-radio-disabled: var(--color-text-30);
+    --color-center-radio-disabled: var(--color-grey-40);
 
     // Toggle
     --color-bg-toggle-on-rest: var(--color-blue-10);
     --color-bg-toggle-off-rest: var(--color-white);
-    --color-bg-toggle-on-hover: var(--color-blue-30);
+    --color-bg-toggle-on-hover: var(--color-blue-20);
     --color-bg-toggle-off-hover: var(--color-white);
     --color-bg-toggle-on-focus: var(--color-blue-10);
     --color-bg-toggle-off-focus: var(--color-white);
-    --color-bg-toggle-on-disabled: var(--color-text-30);
-    --color-bg-toggle-off-disabled: var(--color-grey-30);
-    --color-border-toggle-on-rest: var(--color-white);
+    --color-bg-toggle-on-disabled: var(--color-grey-40);
+    --color-bg-toggle-off-disabled: var(--color-white);
+    --color-border-toggle-on-rest: var(--color-blue-10);
     --color-border-toggle-off-rest: var(--color-text-20);
-    --color-border-toggle-on-hover: var(--color-text-20);
-    --color-border-toggle-off-hover: var(--color-text-20);
-    --color-border-toggle-on-focus: var(--color-white);
-    --color-border-toggle-off-focus: var(--color-text-20);
-    --color-border-toggle-on-disabled: var(--color-text-30);
-    --color-border-toggle-off-disabled: var(--color-text-20);
+    --color-border-toggle-on-hover: var(--color-blue-20);
+    --color-border-toggle-off-hover: var(--color-text-10);
+    --color-border-toggle-on-focus: var(--color-blue-10);
+    --color-border-toggle-off-focus: var(--color-text-10);
+    --color-border-toggle-on-disabled: var(--color-grey-40);
+    --color-border-toggle-off-disabled: var(--color-text-10);
     --color-circle-toggle-on-rest: var(--color-white);
-    --color-circle-toggle-off-rest: var(--color-black);
+    --color-circle-toggle-off-rest: var(--color-text-20);
     --color-circle-toggle-on-hover: var(--color-white); //Size circle reduce to have
-    --color-circle-toggle-off-hover: var(--color-blue-30);
+    --color-circle-toggle-off-hover: var(--color-text-10);
     --color-circle-toggle-on-focus: var(--color-white);
-    --color-circle-toggle-off-focus: var(--color-black);
-    --color-circle-toggle-on-disabled: var(--color-text-20);
-    --color-circle-toggle-off-disabled: var(--color-text-20);
+    --color-circle-toggle-off-focus: var(--color-text-20);
+    --color-circle-toggle-on-disabled: var(--color-grey-20);
+    --color-circle-toggle-off-disabled: var(--color-grey-40);
 
     // Checkbox
     --color-checkmark-checkbox: var(--color-white);
 
     // General Borders
     --color-border-rest: var(--color-grey-40);
-    --color-border-hover: var(--color-blue-10);
-    --color-border-focus: var(--color-black);
+    --color-border-hover: var(--color-text-10);
+    --color-border-focus: var(--color-blue-10);
     --color-border-selected: var(--color-blue-10);
-    --color-border-disabled: var(--color-text-30);
+    --color-border-disabled: var(--color-grey-40);
     --color-border-error: var(--color-status-30);
-    --color-border-controls: var(--color-blue-10);
+    --color-border-controls: var(--color-grey-40);
     --color-outline: var(--color-blue-10);
 
     // General Texts
-    --color-text-rest: var(--color-text-10);
+    --color-text-rest: var(--color-text-20);
     --color-text-chevron: var(--color-text-20);
     --color-text-error: var(--color-status-30);
     --color-text-required: var(--color-text-20);
@@ -149,12 +149,13 @@
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
     --color-text-navbar: var(--color-text-rest);
+    --color-text-active: var(--color-text-10);
 
     // Buttons
-    --color-bg-btn-standard-rest: var(--color-grey-20);
-    --color-bg-btn-standard-hover: var(--color-grey-30);
-    --color-bg-btn-standard-focus: var(--color-grey-20);
-    --color-bg-btn-standard-selected: var(--color-grey-40);
+    --color-bg-btn-standard-rest: var(--color-white);
+    --color-bg-btn-standard-hover: var(--color-grey-20);
+    --color-bg-btn-standard-focus: var(--color-white);
+    --color-bg-btn-standard-selected: var(--color-grey-30);
     --color-bg-btn-standard-disabled: var(--color-grey-20);
     --color-text-btn-standard: var(--color-black);
 
@@ -177,7 +178,7 @@
     // Hyperlinks
     --color-hyperlink-rest: var(--color-blue-20);
     --color-hyperlink-hover: var(--color-blue-30);
-    --color-hyperlink-focus: var(--color-blue-20);
+    --color-hyperlink-focus: var(--color-blue-10);
     --color-hyperlink-disabled: var(--color-text-30);
 
     // Loading
@@ -199,20 +200,46 @@
     --color-border-pivot: var(--color-blue-10);
 
     // Charts
-    --color-chart-xy-lines: var(--color-grey-40);
-    --color-chart-gap-stroke: var(--color-text-30);
+    --color-chart-xy-lines: var(--color-grey-30);
+    --color-chart-gap-stroke: var(--color-grey-30);
 
     // Alerts
-    --color-bg-alert-info: var(--color-status-10);
-    --color-bg-alert-info-close-hover: transparent;
-    --color-bg-alert-warning: var(--color-status-20);
+    --color-bg-alert-info: var(--color-global-30);
+    --color-bg-alert-info-close-hover:  transparent;
+    --color-text-alert-info: var(--color-blue-40);
+
+    --color-bg-alert-warning: var(--color-global-10);
     --color-bg-alert-warning-close-hover: transparent;
-    --color-text-alert-warning: var(--color-black);
-    --color-bg-alert-error: var(--color-status-30);
+    --color-text-alert-warning: var(--color-text-10);
+
+    --color-bg-alert-error: var(--color-global-40);
     --color-bg-alert-error-close-hover: transparent;
-    --color-text-alert-error: var(--color-white);
+    --color-text-alert-error: var(--color-status-30);
+
+    --color-bg-alert-success: var(--color-global-20);
+    --color-bg-alert-success-close-hover: transparent;
+    --color-text-alert-success: var(--color-status-40);
 
     // Color picker
     --color-border-colorpicker-in: var(--color-white);
     --color-border-colorpicker-out: var(--color-text-20);
+
+    // Calendar
+    --color-bg-calendar-btn-current: var(--color-blue-10);
+    --color-bg-calendar-btn-hover: var(--color-grey-20);
+    --color-bg-calendar-btn-focus: transparent;
+    --color-border-calendar-btn-focus: var(--color-text-20);
+
+    // Data Colors
+    --data-color-1: var(--LT-Azul);
+    --data-color-2: var(--LT-Atlantic);
+    --data-color-3: var(--LT-Mango);
+    --data-color-4: var(--LT-Blush);
+    --data-color-5: var(--LT-Pacific);
+    --data-color-6: var(--LT-Grape);
+    --data-color-7: var(--LT-Lilac);
+    --data-color-8: var(--LT-Scarlet);
+    --data-color-9: var(--LT-Sahara);
+    --data-color-10: var(--LT-Leaf);
+    --data-color-11: var(--LT-Empty-data);
 }
