@@ -21,11 +21,13 @@
     --color-bg-container: var(--color-white);
     --color-bg-container-panel: var(--color-white);
     --color-border-container-panel: var(--color-grey-40);
-    --shadow-container-panel: 0 25.6px 57.6px 0 rgba(0, 0, 0, .12);
+    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-black-transparent-tenth);
+    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
     --color-bg-cmdbar: var(--color-white);
     --color-bg-titlebar: var(--color-grey-40);
     --color-border-panel: var(--color-grey-40);
     --color-border-grid: var(--color-grey-40);
+    --shadow-balloon: 0 8px 10px 0 var(--color-black-transparent-tenth);
 
     // Controls
     --color-bg-blastshield: var(--color-black-transparent-primary);
@@ -35,18 +37,26 @@
     --color-bg-searchbar-active: var(--color-white);
     --color-bg-searchbar-rest: var(--color-white-transparent-third);
     --color-bg-searchbar-focus: var(--color-white);
+    --color-text-searchbar: var(--color-black);
+    --color-icon-searchbar-btn: var(--color-white);
+    --color-bg-thumbnail: var(--color-text-20);
+    --color-icon-thumbnail: var(--color-white);
 
     // Interactions
     --color-bg-hover: var(--color-grey-20);
     --color-bg-selected: var(--color-grey-30);
+    --color-text-selected: var(--color-white);
 
     // All Tiles
     --color-border-tile: var(--color-grey-30); // 0.5px border
     --color-border-tile-hover: var(--color-blue-10);
 
     // Gallery Tiles
-    --color-bg-gallery-tile-top: var(--color-white);
-    --color-bg-gallery-tile-bottom: var(--color-blue-10);
+    --color-bg-gallery-tile: var(--color-white);
+    --color-bg-gallery-tile-default: var(--color-white);
+    --color-bg-gallery-tile-blue: var(--color-blue-10);
+    --color-bg-gallery-tile-banner: var(--color-black);
+    --color-text-gallery-tile-banner: var(--color-white);
 
     // Dashboard Tiles
     --color-bg-dashboard: var(--color-grey-10);
@@ -118,20 +128,11 @@
     --color-circle-toggle-off-disabled: var(--color-text-20);
 
     // Checkbox
-    --color-bg-checkbox-focused: var(--color-color-white);
-    --color-bg-checkbox-selected-hover: var(--color-blue-30);
-    --color-bg-checkbox-pressed: var(--color-blue-10);
-    --color-bg-checkbox-disabled: var(--color-grey-20);
-    --color-border-checkbox-hover: var(--color-text-10);
-    --color-border-checkbox-focused: var(--color-text-10);
-    --color-border-checkbox-selected-hover: var(--color-blue-30);
-    --color-border-checkbox-pressed-selected: var(--color-blue-10);
-    --color-border-checkbox-disabled-selected: var(--color-text-30);
-    --color-border-checkbox-disabled: var(--color-text-30);
+    --color-checkmark-checkbox: var(--color-white);
 
     // General Borders
     --color-border-rest: var(--color-grey-40);
-    --color-border-hover: var(--color-blue-10); //duplicate?
+    --color-border-hover: var(--color-blue-10);
     --color-border-focus: var(--color-black);
     --color-border-selected: var(--color-blue-10);
     --color-border-disabled: var(--color-text-30);
@@ -174,7 +175,7 @@
     --color-text-btn-negative: var(--color-white);
 
     // Hyperlinks
-    --color-hyperlink-rest: var(--color-blue-20);
+    --color-hyperlink-rest: var(--color-blue-blue20);
     --color-hyperlink-hover: var(--color-blue-30);
     --color-hyperlink-focus: var(--color-blue-20);
     --color-hyperlink-disabled: var(--color-text-30);
@@ -202,9 +203,14 @@
     --color-chart-gap-stroke: var(--color-text-30);
 
     // Alerts
-    --color-bg-alert-error: var(--color-status-30);
     --color-bg-alert-info: var(--color-status-10);
+    --color-bg-alert-info-close-hover: transparent;
     --color-bg-alert-warning: var(--color-status-20);
+    --color-bg-alert-warning-close-hover: transparent;
+    --color-text-alert-warning: var(--color-black);
+    --color-bg-alert-error: var(--color-status-30);
+    --color-bg-alert-error-close-hover: transparent;
+    --color-text-alert-error: var(--color-white);
 
     // Color picker
     --color-border-colorpicker-in: var(--color-white);

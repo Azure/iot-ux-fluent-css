@@ -46,18 +46,18 @@ $theme-light: map-merge((
     color-bg-searchbar-focus: $color-white,
     color-bg-guidance: $color-blue-300, //deprecated
     color-bg-thumbnail: $color-grey-600, //deprecated
-    color-text-thumbnail: $color-grey-100, //deprecated
+    color-text-thumbnail: $color-grey-100, //rename
 
     // Interactions
-    color-bg-item-hover: $color-grey-200,
-    color-bg-item-selected: $color-grey-300,
+    color-bg-item-hover: $color-grey-200, //rename
+    color-bg-item-selected: $color-grey-300, //rename
 
     // All Tiles
     color-border-tile: $color-grey-300,
     color-border-tile-hover: $color-blue-100,
 
     // Gallery Tiles
-    color-bg-gallery-tile: $color-white, //rename
+    color-bg-gallery-tile: $color-white,
     color-bg-gallery-tile-banner: $color-black, //deprecated
     color-bg-gallery-tile-default: $color-grey-200, //deprecated
     color-bg-gallery-tile-blue: $color-blue-100, //deprecated

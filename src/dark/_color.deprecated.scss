@@ -46,11 +46,11 @@ $theme-dark: map-merge((
     color-bg-searchbar-focus: $color-white,
     color-bg-guidance: $color-blue-400, //deprecated
     color-bg-thumbnail: $color-grey-600, //deprecated
-    color-text-thumbnail: $color-grey-100, //deprecated
+    color-text-thumbnail: $color-grey-100, //rename
 
     // Interactions
-    color-bg-item-hover: $color-grey-700,
-    color-bg-item-selected: $color-grey-1000,
+    color-bg-item-hover: $color-grey-700, //rename
+    color-bg-item-selected: $color-grey-1000, //rename
 
     // All Tiles
     color-border-tile: $color-grey-700,
