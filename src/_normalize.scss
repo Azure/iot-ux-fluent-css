@@ -148,4 +148,9 @@
   .hidden {
     display: none !important;
   }
+
+  ::selection {
+      color: var(--color-white);
+      background: var(--color-blue-10) !important;
+  }
 }

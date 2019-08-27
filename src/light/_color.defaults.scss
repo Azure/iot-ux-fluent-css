@@ -2,7 +2,7 @@
  * Default Light Theme Colors
  */
 
- // light theme is the default); therefore store everything in root 
+ // light theme is the default therefore store everything in root 
  // without any attribute
 :root {
     // Shell
@@ -24,12 +24,12 @@
     --color-bg-container: var(--color-grey-1);
     --color-bg-container-panel: var(--color-white);
     --color-border-container-panel: var(--color-grey-40);
-    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-black-transparent-tenth);
-    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
     --color-bg-cmdbar: var(--color-grey-1);
     --color-bg-titlebar: var(--color-grey-40);
     --color-border-panel: var(--color-grey-40);
     --color-border-grid: var(--color-grey-40);
+    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-black-transparent-tenth);
+    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
     --shadow-balloon: 0 8px 10px 0 var(--color-black-transparent-tenth);
 
     // Controls
@@ -44,6 +44,7 @@
     --color-icon-searchbar-btn: var(--color-white);
     --color-bg-thumbnail: var(--color-text-20);
     --color-icon-thumbnail: var(--color-grey-1);
+    --color-icon-tile: var(--color-white);
 
     // Interactions
     --color-bg-hover: var(--color-grey-30);
@@ -71,6 +72,7 @@
     --color-bg-input-selected: var(--color-white);
     --color-bg-input-disabled: var(--color-grey-30);
 
+    --color-border-input-rest: var(--color-grey-40);
     --color-border-input-hover: var(--color-text-20);
     --color-border-input-selected: var(--color-blue-10);
     --color-border-input-error: var(--color-status-30);
@@ -131,6 +133,8 @@
 
     // Checkbox
     --color-checkmark-checkbox: var(--color-white);
+    --color-border-checkbox-hover: var(--color-blue-10);
+    --color-bg-checkbox-selected: var(--color-blue-10);
 
     // General Borders
     --color-border-rest: var(--color-grey-40);
@@ -147,6 +151,7 @@
     --color-text-chevron: var(--color-text-20);
     --color-text-error: var(--color-status-30);
     --color-text-required: var(--color-status-30);
+    --color-text-visited: var(--color-blue-40);
     --color-text-nodata: var(--color-grey-4);
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
@@ -160,6 +165,7 @@
     --color-bg-btn-standard-selected: var(--color-grey-4);
     --color-bg-btn-standard-disabled: var(--color-grey-30);
     --color-text-btn-standard: var(--color-black);
+    --color-border-btn-standard: transparent;
 
     --color-bg-btn-primary-rest: var(--color-blue-10);
     --color-bg-btn-primary-hover: var(--color-blue-20);
@@ -168,6 +174,7 @@
     --color-bg-btn-primary-disabled: var(--color-grey-30);
     --color-outline-btn-primary-focus: var(--color-white);
     --color-text-btn-primary: var(--color-white);
+    --color-border-btn-primary: transparent;
 
     --color-bg-btn-negative-rest: var(--color-red-4);
     --color-bg-btn-negative-hover: var(--color-red-5);
@@ -176,6 +183,7 @@
     --color-bg-btn-negative-selected: var(--color-red-6);
     --color-outline-btn-negative-focus: var(--color-white);
     --color-text-btn-negative: var(--color-white);
+    --color-border-btn-negative: transparent;
 
     // Hyperlinks
     --color-hyperlink-rest: var(--color-blue-20);
@@ -200,6 +208,8 @@
     --color-pivot-press: var(--color-black);
     --color-pivot-selected: var(--color-grey-12);
     --color-border-pivot: var(--color-blue-10);
+    --color-text-pivot-rest: var(--color-text-10);
+    --color-text-pivot-selected: var(--color-text-10);
 
     // Charts
     --color-chart-xy-lines: var(--color-grey-4);
@@ -209,9 +219,11 @@
     --color-bg-alert-info: var(--color-info-1);
     --color-bg-alert-info-close-hover: var(--color-text-30);
     --color-text-alert-info: var(--color-text-rest);
+
     --color-bg-alert-warning: var(--color-warn-1);
     --color-bg-alert-warning-close-hover: var(--color-yellow-6);
     --color-text-alert-warning: var(--color-black);
+    
     --color-bg-alert-error: var(--color-err-1);
     --color-bg-alert-error-close-hover: var(--color-red-11);
     --color-text-alert-error: var(--color-white);
