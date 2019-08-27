@@ -12,10 +12,12 @@
     --color-bg-header-hover: var(--color-grey-20);
     --color-bg-masthead: var(--color-grey-50);
     --color-bg-masthead-hover: var(--color-text-20);
+    --color-bg-masthead-active: var(--color-grey-30);
     --color-outline-masthead: var(--color-white);
-    --color-border-masthead-focus: var(--color-white);
     --color-border-navbar-separator: var(--color-grey-30);
+    --color-border-masthead-focus: var(--color-white);
     --color-border-navbar-focus: var(--color-blue-10);
+    --color-border-navbar-selected: var(--color-blue-10);
 
     // Surfaces
     --color-bg-panel: var(--color-grey-10);
@@ -38,10 +40,11 @@
     --color-bg-searchbar-active: var(--color-white);
     --color-bg-searchbar-rest: var(--color-white-transparent-third);
     --color-bg-searchbar-focus: var(--color-white);
+    --color-icon-searchbar-btn: var(--color-white);
     --color-bg-thumbnail: var(--color-text-20);
     --color-text-searchbar: var(--color-black);
-    --color-icon-searchbar-btn: var(--color-white);
     --color-icon-thumbnail: var(--color-white);
+    --color-icon-tile: var(--color-white);
 
     // Interactions
     --color-bg-hover: var(--color-grey-20);
@@ -53,8 +56,8 @@
 
     // Gallery Tiles
     --color-bg-gallery-tile: var(--color-white);
-    --color-bg-gallery-tile-blue: var(--color-blue-40);
     --color-bg-gallery-tile-default: var(--color-white);
+    --color-bg-gallery-tile-blue: var(--color-blue-40);
     --color-bg-gallery-tile-banner: var(--color-black);
     --color-text-gallery-tile-banner: var(--color-white);
 
@@ -69,6 +72,7 @@
     --color-bg-input-selected: var(--color-white);
     --color-bg-input-disabled: var(--color-grey-20);
 
+    --color-border-input-rest: var(--color-grey-40);
     --color-border-input-hover: var(--color-text-20);
     --color-border-input-selected: var(--color-blue-10);
     --color-border-input-error: var(--color-status-30);
@@ -121,7 +125,7 @@
     --color-circle-toggle-on-rest: var(--color-white);
     --color-circle-toggle-off-rest: var(--color-text-20);
     --color-circle-toggle-on-hover: var(--color-white); //Size circle reduce to have
-    --color-circle-toggle-off-hover: var(--color-text-10);
+    --color-circle-toggle-off-hover: var(--color-black);
     --color-circle-toggle-on-focus: var(--color-white);
     --color-circle-toggle-off-focus: var(--color-text-20);
     --color-circle-toggle-on-disabled: var(--color-grey-20);
@@ -129,6 +133,8 @@
 
     // Checkbox
     --color-checkmark-checkbox: var(--color-white);
+    --color-border-checkbox-hover: var(--color-text-10);
+    --color-bg-checkbox-selected: var(--color-blue-10);
 
     // General Borders
     --color-border-rest: var(--color-grey-40);
@@ -145,11 +151,12 @@
     --color-text-chevron: var(--color-text-20);
     --color-text-error: var(--color-status-30);
     --color-text-required: var(--color-text-20);
+    --color-text-visited: var(--color-blue-40);
     --color-text-nodata: var(--color-text-20);
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
     --color-text-navbar: var(--color-text-rest);
-    --color-text-active: var(--color-text-10);
+    --color-text-active: var(--color-white);
 
     // Buttons
     --color-bg-btn-standard-rest: var(--color-white);
@@ -158,6 +165,7 @@
     --color-bg-btn-standard-selected: var(--color-grey-30);
     --color-bg-btn-standard-disabled: var(--color-grey-20);
     --color-text-btn-standard: var(--color-black);
+    --color-border-btn-standard: var(--color-text-20);
 
     --color-bg-btn-primary-rest: var(--color-blue-10);
     --color-bg-btn-primary-hover: var(--color-blue-20);
@@ -166,6 +174,7 @@
     --color-bg-btn-primary-disabled: var(--color-grey-20);
     --color-outline-btn-primary-focus: var(--color-white);
     --color-text-btn-primary: var(--color-white);
+    --color-border-btn-primary: var(--color-blue-10);
 
     --color-bg-btn-negative-rest: var(--color-status-30);
     --color-bg-btn-negative-hover: var(--color-status-30);
@@ -174,6 +183,7 @@
     --color-bg-btn-negative-disabled: var(--color-grey-20);
     --color-outline-btn-negative-focus: var(--color-white);
     --color-text-btn-negative: var(--color-white);
+    --color-border-btn-negative: var(--color-status-30);
 
     // Hyperlinks
     --color-hyperlink-rest: var(--color-blue-20);
@@ -198,6 +208,8 @@
     --color-pivot-press: var(--color-black);
     --color-pivot-selected: var(--color-text-10);
     --color-border-pivot: var(--color-blue-10);
+    --color-text-pivot-rest: var(--color-text-20);
+    --color-text-pivot-selected: var(--color-text-10);
 
     // Charts
     --color-chart-xy-lines: var(--color-grey-30);

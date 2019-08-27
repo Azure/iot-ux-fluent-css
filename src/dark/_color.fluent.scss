@@ -12,14 +12,16 @@
     --color-bg-header-hover: var(--color-grey-80);
     --color-bg-masthead: var(--color-grey-50);
     --color-bg-masthead-hover: var(--color-text-20);
+    --color-bg-masthead-active: var(--color-grey-60);
     --color-outline-masthead: var(--color-white);
-    --color-border-masthead-focus: var(--color-white);
     --color-border-navbar-separator: var(--color-white);
+    --color-border-masthead-focus: var(--color-white);
     --color-border-navbar-focus: var(--color-black);
+    --color-border-navbar-selected: var(--color-blue-10);
 
     // Surfaces
-    --color-bg-panel: var(--color-grey-80);
-    --color-bg-container: var(--color-black);
+    --color-bg-panel: var(--color-grey-90);
+    --color-bg-container: var(--color-grey-80);
     --color-bg-container-panel: var(--color-black);
     --color-border-container-panel: var(--color-grey-60);
     --color-bg-cmdbar: var(--color-grey-90);
@@ -38,10 +40,11 @@
     --color-bg-searchbar-active: var(--color-white);
     --color-bg-searchbar-rest: var(--color-white-transparent-third);
     --color-bg-searchbar-focus: var(--color-white);
-    --color-bg-thumbnail: var(--color-text-20);
     --color-text-searchbar: var(--color-black);
     --color-icon-searchbar-btn: var(--color-white);
+    --color-bg-thumbnail: var(--color-text-20);
     --color-icon-thumbnail: var(--color-white);
+    --color-icon-tile: var(--color-white);
 
     // Interactions
     --color-bg-hover: var(--color-grey-80);
@@ -53,8 +56,8 @@
 
     // Gallery Tiles
     --color-bg-gallery-tile: var(--color-grey-90);
-    --color-bg-gallery-tile-blue: var(--color-blue-40);
     --color-bg-gallery-tile-default: var(--color-black);
+    --color-bg-gallery-tile-blue: var(--color-blue-40);
     --color-bg-gallery-tile-banner: var(--color-black);
     --color-text-gallery-tile-banner: var(--color-white);
 
@@ -69,6 +72,7 @@
     --color-bg-input-selected: transparent;
     --color-bg-input-disabled: var(--color-grey-60);
 
+    --color-border-input-rest: var(--color-grey-8);
     --color-border-input-hover: var(--color-white);
     --color-border-input-selected: var(--color-blue-10);
     --color-border-input-error: var(--color-status-60);
@@ -92,13 +96,13 @@
     --color-bg-radio-selected: transparent;
     --color-bg-radio-focused: transparent;
     --color-bg-radio-disabled: var(--color-grey-60);
-    --color-border-radio-rest: var(--color-text-30);
-    --color-border-radio-hover: var(--color-text-10);
+    --color-border-radio-rest: var(--color-white);
+    --color-border-radio-hover: var(--color-blue-10);
     --color-border-radio-selected: var(--color-white);
     --color-border-radio-focused: var(--color-white);
-    --color-border-radio-disabled: var(--color-white);
+    --color-border-radio-disabled: var(--color-grey-60);
     --color-center-radio-hover: var(--color-blue-10); //On hover center will reduce to 2px circle
-    --color-center-radio-selected: var(--color-blue-20); //On selected center will return to normal size
+    --color-center-radio-selected: var(--color-white); //On selected center will return to normal size
     --color-center-radio-disabled: var(--color-text-30);
 
     // Toggle
@@ -119,9 +123,9 @@
     --color-border-toggle-on-disabled: var(--color-text-30);
     --color-border-toggle-off-disabled: var(--color-text-30);
     --color-circle-toggle-on-rest: var(--color-white);
-    --color-circle-toggle-off-rest: var(--color-black);
+    --color-circle-toggle-off-rest: var(--color-text-10);
     --color-circle-toggle-on-hover: var(--color-white); //Size circle reduce to have
-    --color-circle-toggle-off-hover: var(--color-blue-30);
+    --color-circle-toggle-off-hover: var(--color-black);
     --color-circle-toggle-on-focus: var(--color-white);
     --color-circle-toggle-off-focus: var(--color-black);
     --color-circle-toggle-on-disabled: var(--color-text-20);
@@ -129,6 +133,8 @@
 
     // Checkbox
     --color-checkmark-checkbox: var(--color-white);
+    --color-border-checkbox-hover: var(--color-white);
+    --color-bg-checkbox-selected: transparent;
 
     // General Borders
     --color-border-rest: var(--color-grey-60);
@@ -145,6 +151,7 @@
     --color-text-chevron: var(--color-white);
     --color-text-error: var(--color-status-60);
     --color-text-required: var(--color-white);
+    --color-text-visited: var(--color-blue-60);
     --color-text-nodata: var(--color-text-30);
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
@@ -153,19 +160,21 @@
 
     // Buttons
     --color-bg-btn-standard-rest: transparent;
-    --color-bg-btn-standard-hover: var(--color-blue-30);
+    --color-bg-btn-standard-hover: var(--color-grey-90);
     --color-bg-btn-standard-focus: transparent;
-    --color-bg-btn-standard-selected: var(--color-blue-20);
-    --color-bg-btn-standard-disabled: transparent;
+    --color-bg-btn-standard-selected: var(--color-grey-70);
+    --color-bg-btn-standard-disabled: var(--color-grey-20);
     --color-text-btn-standard: var(--color-white);
+    --color-border-btn-standard: var(--color-text-20);
 
-    --color-bg-btn-primary-rest: var(--color-grey-10);
-    --color-bg-btn-primary-hover: var(--color-grey-30);
-    --color-bg-btn-primary-focus: var(--color-grey-20);
-    --color-bg-btn-primary-selected: var(--color-grey-40);
+    --color-bg-btn-primary-rest: var(--color-blue-10);
+    --color-bg-btn-primary-hover: var(--color-blue-30);
+    --color-bg-btn-primary-focus: var(--color-blue-20);
+    --color-bg-btn-primary-selected: var(--color-blue-40);
     --color-bg-btn-primary-disabled: var(--color-grey-20);
     --color-outline-btn-primary-focus: var(--color-white);
-    --color-text-btn-primary: var(--color-black);
+    --color-text-btn-primary: var(--color-white);
+    --color-border-btn-primary: var(--color-blue-10);
 
     --color-bg-btn-negative-rest: var(--color-status-60);
     --color-bg-btn-negative-hover: var(--color-status-60);
@@ -174,6 +183,7 @@
     --color-bg-btn-negative-disabled: var(--color-grey-20);
     --color-outline-btn-negative-focus: var(--color-white);
     --color-text-btn-negative: var(--color-white);
+    --color-border-btn-negative: var(--color-status-30);
 
     // Hyperlinks
     --color-hyperlink-rest: var(--color-blue-50);
@@ -198,6 +208,8 @@
     --color-pivot-press: var(--color-white);
     --color-pivot-selected: var(--color-white);
     --color-border-pivot: var(--color-blue-10);
+    --color-text-pivot-rest: var(--color-grey-30);
+    --color-text-pivot-selected: var(--color-text-30);
 
     // Charts
     --color-chart-xy-lines: var(--color-grey-60);
