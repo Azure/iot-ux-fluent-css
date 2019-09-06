@@ -150,13 +150,14 @@
     --color-text-rest: var(--color-white);
     --color-text-chevron: var(--color-white);
     --color-text-error: var(--color-status-60);
-    --color-text-required: var(--color-white);
+    --color-text-required: var(--color-status-30);
     --color-text-visited: var(--color-blue-60);
     --color-text-nodata: var(--color-text-30);
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
-    --color-text-navbar: var(--color-text-rest);
+    --color-text-navbar: var(--color-text-30);
     --color-text-active: var(--color-text-50);
+    --color-text-action-trigger: var(--color-blue-10);
 
     // Buttons
     --color-bg-btn-standard-rest: transparent;

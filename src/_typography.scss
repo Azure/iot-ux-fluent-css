@@ -3,32 +3,30 @@
  */
 
 :root {
-    --font-size-h1: 36px; 
-    --font-size-h2: 24px; 
-    --font-size-h3: 18px;
-    --font-size-h4: 18px; 
-    --font-size-h5: 16px; 
-    --font-size-default: 14px;
-    --font-size-small: 12px;
-    --font-size-xsmall: 10px;
+    --font-size-hero: 4rem; //64px
+    --font-size-h1: 2rem; //32px
+    --font-size-h2: 1.25rem; //20px
+    --font-size-h3: 1rem; //16px
+    --font-size-h4: 0.875rem; //14px
+
+    --font-size-default: 0.875rem; //14px
+    --font-size-small: 0.75rem; //12px
+    --font-size-xsmall: 0.5rem; //8 px
 
     --font-family-default: Segoe UI Regular, Segoe UI, Segoe WP, Tahoma, Arial, sans-serif;
     --font-family-light: Segoe UI Semilight, Segoe UI, Segoe WP, Tahoma, Arial, sans-serif;
     --font-family-din-regular: DIN-Regular, var(--font-family-default);
     
-    // Icons
-    --icon-font-family: "icons";
-    --icon-size-base: 16px;
-    --icon-size-xsmall: var(--icon-size-base);
-    --icon-size-small: calc(1 * var(--icon-size-base));
-    --icon-size-medium: calc(2 * var(--icon-size-base));
-    --icon-size-large: calc(3 * var(--icon-size-base));
-    --icon-size-xlarge: calc(4 * var(--icon-size-base));
-    --icon-size-xxlarge: calc(5 * var(--icon-size-base));
+    --font-weight-headings: 600; //semibold
+    --font-weight-hero: 300; //semilight
 
-    --headings-font-weight: normal;
-    --headings-line-height: 1.5;
+    --line-height-hero: 5rem; //80px
+    --line-height-h1: 2.75rem; //44px
+    --line-height-h2: 1.75rem; //28px
+    --line-height-h3: 1.375rem; //22px
+    --line-height-h4: 1.25rem; //20px
 
-    // Computed line-height (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-    --line-height-computed: 20px;
+    --line-height-default: 1.25rem; //20px
+    --line-height-small: 1.125rem; //18px
+    --line-height-xsmall: 0.75rem; //12px
 }

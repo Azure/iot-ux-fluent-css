@@ -147,16 +147,17 @@
     --color-outline: var(--color-blue-10);
 
     // General Texts
-    --color-text-rest: var(--color-text-20);
-    --color-text-chevron: var(--color-text-20);
+    --color-text-rest: var(--color-text-10);
+    --color-text-chevron: var(--color-text-10);
     --color-text-error: var(--color-status-30);
-    --color-text-required: var(--color-text-20);
+    --color-text-required: var(--color-status-30);
     --color-text-visited: var(--color-blue-40);
     --color-text-nodata: var(--color-text-20);
-    --color-text-disabled: var(--color-text-30);
+    --color-text-disabled: var(--color-text-20);
     --color-text-masthead: var(--color-white);
-    --color-text-navbar: var(--color-text-rest);
+    --color-text-navbar: var(--color-text-10);
     --color-text-active: var(--color-white);
+    --color-text-action-trigger: var(--color-blue-10);
 
     // Buttons
     --color-bg-btn-standard-rest: var(--color-white);
