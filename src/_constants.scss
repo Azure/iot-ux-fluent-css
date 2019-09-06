@@ -33,18 +33,6 @@ $z-index-flyouts-dropdown: $z-index-flyout-layer + 6 * $z-index-medium-step;
 $z-index-flyouts-inline-btn: $z-index-flyout-layer + 7 * $z-index-medium-step;
 $z-index-tutorial-tips: $z-index-flyout-layer + 8 * $z-index-medium-step;
 
-// [Deprecated - moved to typography] Icons @todo remove 
-
-$icon-font-family: "icons";
-$icon-size-base: 16px;
-$icon-size-xsmall: $icon-size-base;
-$icon-size-small: 1 * $icon-size-base;
-$icon-size-medium: 2 * $icon-size-base;
-$icon-size-large: 3 * $icon-size-base;
-$icon-size-xlarge: 4 * $icon-size-base;
-$icon-size-xxlarge: 5 * $icon-size-base;
-
-
 // The basis for larger building blocks
 
 $input-height: 8*$grid-size;

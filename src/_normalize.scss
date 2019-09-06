@@ -14,7 +14,7 @@
     padding: 0;
     font-family: var(--font-family-default);
     font-size: var(--font-size-default);
-    line-height: var(--line-height-base);
+    line-height: var(--line-height-default);
   }
 
   * {
@@ -37,29 +37,19 @@
     color: inherit;
   }
 
-  // override bootstrap's vertical margins for headings since we override
-  // heading sizes in overrides.scss
-  h1, .h1,
-  h2, .h2,
-  h3, .h3 {
-    margin-top: $gutter-small / 2;
-    margin-bottom: $gutter-small / 2;
-  }
-
   // Headings
   // -------------------------
 
+  .hero {
+    font-family: var(--font-family-light);
+    font-size: var(--font-size-hero);
+    line-height: var(--line-height-hero);
+    font-weight: var(--font-weight-hero);
+  }
+
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--font-family-default);
-    font-weight: var(--headings-font-weight);
-    line-height: var(--headings-line-height);
-
-    small,
-    .small {
-      font-weight: normal;
-      line-height: 1;
-    }
+    font-weight: var(--font-weight-headings);
   }
 
   h1, .h1,
@@ -86,17 +76,32 @@
     }
   }
 
-  h1, .h1 { font-size: var(--font-size-h1) }
-  h2, .h2 { font-size: var(--font-size-h2) }
-  h3, .h3 { font-size: var(--font-size-h3) }
-  h4, .h4 { font-size: var(--font-size-h4) }
+  h1, .h1 { 
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+  }
+
+  h2, .h2 { 
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+  }
+
+  h3, .h3 { 
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+  }
+
+  h4, .h4 { 
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+  }
 
 
   // Body text
   // -------------------------
 
   p {
-    margin: 0 0 calc(var(--line-height-computed) / 2);
+    margin: 0 0 $gutter-normal / 2;
   }
 
   label {
@@ -105,13 +110,22 @@
 
   a {
     text-decoration: none;
+    color: var(--color-hyperlink-rest);
+
+    &:hover {
+      color: var(--color-hyperlink-hover);
+    }
+
+    &:focus {
+      color: var(--color-hyperlink-focus);
+    }
   }
 
   // Unordered and Ordered lists
   ul,
   ol {
     margin-top: 0;
-    margin-bottom: calc(var(--line-height-computed) / 2);
+    margin-bottom: $gutter-normal / 2;
 
     ul,
     ol {
@@ -122,12 +136,12 @@
   // Description Lists
   dl {
     margin-top: 0; // Remove browser default
-    margin-bottom: var(--line-height-computed);
+    margin-bottom: $gutter-normal;
   }
 
   dt,
   dd {
-    line-height: var(--line-height-base);
+    line-height: var(--line-height-default);
   }
 
   dt {
