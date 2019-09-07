@@ -29,4 +29,14 @@
     --line-height-default: 1.25rem; //20px
     --line-height-small: 1.125rem; //18px
     --line-height-xsmall: 0.75rem; //12px
+
+    // Icons
+    --icon-font-family: "icons";
+    --icon-size-base: 16px;
+    --icon-size-xsmall: var(--icon-size-base);
+    --icon-size-small: calc(1 * var(--icon-size-base));
+    --icon-size-medium: calc(2 * var(--icon-size-base));
+    --icon-size-large: calc(3 * var(--icon-size-base));
+    --icon-size-xlarge: calc(4 * var(--icon-size-base));
+    --icon-size-xxlarge: calc(5 * var(--icon-size-base));
 }
