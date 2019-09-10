@@ -159,7 +159,7 @@
     --color-text-masthead: var(--color-white);
     --color-text-navbar: var(--color-white);
     --color-text-active: var(--color-white);
-    --color-text-action-trigger: inherit;
+    --color-text-action-trigger: var(--color-text-rest);
 
     // Buttons
     --color-bg-btn-standard-rest: var(--color-grey-30);
