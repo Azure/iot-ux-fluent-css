@@ -4,16 +4,16 @@
 
 // Gutters
 
-$gutter-xxsmall: 8px;
-$gutter-xsmall: 12px;
-$gutter-small: 16px;
-$gutter-normal: 20px;
-$gutter-big: 32px;
-$gutter-bigger: 40px;
+$gutter-xxsmall: 0.5rem;
+$gutter-xsmall: 0.75rem;
+$gutter-small: 1rem;
+$gutter-normal: 1.25rem;
+$gutter-big: 2rem;
+$gutter-bigger: 2.5rem;
 
 // Grid size
 
-$grid-size: 4px;
+$grid-size: 0.25rem;
 
 // Z Index
 
@@ -42,7 +42,7 @@ $dropdown-max-height: 50*$grid-size;
 
 // Layout
 
-$layout-nav-item-height: 48px;
+$layout-nav-item-height: 3rem;
 $layout-header-large-height: $layout-nav-item-height * 3;
 $layout-header-medium-height: $layout-nav-item-height * 2;
 $layout-header-small-height: $layout-nav-item-height;
@@ -50,8 +50,9 @@ $layout-split-panel-width: 300px;
 $layout-thumbnail-size: 100px;
 $layout-centered-text-width: 400px;
 $layout-masthead-height: 48px;
-$layout-nav-collapsed-width: 48px;
-$layout-nav-expanded-width: 220px;
+$layout-nav-item-height: 2.5rem;
+$layout-nav-collapsed-width: 3rem;
+$layout-nav-expanded-width: 12.5rem;
 $layout-chart-y-axis-width: $gutter-bigger;
 $layout-chart-x-axis-height: $gutter-big;
 $layout-chart-axis-tick-size: 6px;
