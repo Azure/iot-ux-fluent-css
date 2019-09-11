@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v7.0.0
+### Changed
+- Moved to CSS Custom Properties
+- Moved sizes to rem
+- Adopted fluent colors
+
 ## v6.0.0
 ### Added
 - Media query breakpoints

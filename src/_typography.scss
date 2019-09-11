@@ -13,8 +13,9 @@
     --font-size-small: 0.75rem; //12px
     --font-size-xsmall: 0.5rem; //8 px
 
-    --font-family-default: Segoe UI Regular, Segoe UI, Segoe WP, Tahoma, Arial, sans-serif;
-    --font-family-light: Segoe UI Semilight, Segoe UI, Segoe WP, Tahoma, Arial, sans-serif;
+    --font-family-base: Segoe UI, Segoe WP, Tahoma, Arial, sans-serif;
+    --font-family-default: Segoe UI Regular, var(--font-family-base);
+    --font-family-light: Segoe UI Semilight, var(--font-family-base);
     --font-family-din-regular: DIN-Regular, var(--font-family-default);
     
     --font-weight-headings: 600; //semibold
@@ -31,12 +32,7 @@
     --line-height-xsmall: 0.75rem; //12px
 
     // Icons
-    --icon-font-family: "icons";
-    --icon-size-base: 1rem;
-    --icon-size-xsmall: var(--icon-size-base);
-    --icon-size-small: calc(1 * var(--icon-size-base));
-    --icon-size-medium: calc(2 * var(--icon-size-base));
-    --icon-size-large: calc(3 * var(--icon-size-base));
-    --icon-size-xlarge: calc(4 * var(--icon-size-base));
-    --icon-size-xxlarge: calc(5 * var(--icon-size-base));
+    --icon-size-compact: 0.75rem;
+    --icon-size-standard: 1rem;
+    --icon-size-large: 2.5rem;
 }

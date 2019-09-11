@@ -2,68 +2,6 @@
  * Mixins
  */
 
-/// Prefix of the top level theme class
-/// e.g. #{$default-prefix}-light -> theme-light
-///
-/// @type String
-$default-prefix: 'theme' !default;
-
-// @todo remove
-/// Interaction constants 
-/// @deprecated Moved to constants
-$interaction-timing: 200ms;
-$clickable-scale: 0.9;
-
-// @todo remove
-/// Creates theme variations
-///
-/// @param {Map} $themes - Theme map to loop through. Optional.
-/// @deprecated Not needed by using css custom properties
-@mixin themify($themes: $themes) {
-    // for each theme, get its name and color variable map:
-    @each $theme, $colors in $themes {
-        // re-export the color map under the global scope so the
-        // `themed` function below can access it inside the content:
-        $theme-map: $colors !global;
-
-        :global(.#{$default-prefix}-#{$theme}) & {
-            @content;
-        }
-
-        // reset the theme-map global variable:
-        $theme-map: null !global;
-    }
-}
-
-// @todo remove
-/// Gets a value from the color map.
-///
-/// @param {String} $key - Name of the color variable
-/// @param {Map} $theme-map - Theme map to use. Optional.
-///
-/// @returns {String} The color for the given key
-/// @deprecated Not needed by using css custom properties
-@function themed($key, $theme-map: $theme-map) {
-    $value: map-get($theme-map, $key);
-
-    @if not $value {
-        @error 'There is no `#{$key}` in your theme colors.';
-    }
-
-    @return $value;
-}
-
-// @todo remove
-/// Clickable button animation
-///
-/// @param {Number} $scale - Clickable scale
-/// @param {Number} $duration - Interaction timing.
-/// @deprecated New Fluent design doesn't require clickable behavior
-///
-@mixin clickable($scale: $clickable-scale, $duration: $interaction-timing) {
-    // deprecated
-}
-
 /// Right to left 
 ///
 @mixin rtl() {
