@@ -83,9 +83,9 @@
     // Dropdowns
     --color-dropdown-rest: var(--color-grey-90);
     --color-dropdown-hover: var(--color-grey-80);
-    --color-dropdown-focus: var(--color-grey-90);
-    --color-dropdown-pressed: var(--color-black);
-    --color-dropdown-disabled: var(--color-grey-60);
+    --color-dropdown-focus: var(--color-grey-70);
+    --color-dropdown-pressed: var(--color-grey-60);
+    --color-dropdown-disabled: var(--color-black);
     --color-border-dropdown-rest: var(--color-text-20);
     --color-border-dropdown-focus: var(--color-blue-10);
     --color-text-dropdown-disabled: var(--color-text-60);
@@ -242,6 +242,9 @@
     --color-bg-calendar-btn-hover: var(--color-grey-20);
     --color-bg-calendar-btn-focus: transparent;
     --color-border-calendar-btn-focus: var(--color-text-20);
+
+    // Icon
+    --color-icon-danger: var(--color-status-30);
 
     // Data Colors
     // @todo uncomment this when we update the color picker for fluent support

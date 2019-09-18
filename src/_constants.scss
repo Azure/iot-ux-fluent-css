@@ -68,3 +68,11 @@ $screen-xl: 1366px;
 
 $interaction-timing: 200ms;
 $clickable-scale: 0.9;
+
+
+// Styles
+
+%semibold {
+    font-family: var(--font-family-semibold);
+    font-weight: 600;
+}
