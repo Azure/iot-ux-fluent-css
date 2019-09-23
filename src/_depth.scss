@@ -1,0 +1,10 @@
+:root {
+    --depth-1-directional: 0 2px 4px rgba(0, 0, 0, 0.12);
+    --depth-1-ambient: 0 0 1px rgba(0, 0, 0, 0.18);
+    --depth-2-directional: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --depth-2-ambient: 0 0 1px rgba(0, 0, 0, 0.16);
+    --depth-3-directional: 0 8px 16px rgba(0, 0, 0, 0.12);
+    --depth-3-ambient: 0 0 1px rgba(0, 0, 0, 0.14);
+    --depth-4-directional: 0 24px 48px rgba(0, 0, 0, 0.20);
+    --depth-4-ambient: 0 0 1px rgba(0, 0, 0, 0.12);
+}
