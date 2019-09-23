@@ -61,6 +61,7 @@
     --color-bg-gallery-tile-banner: var(--color-black);
     --color-icon-gallery-tile-blue: var(--color-white);
     --color-text-gallery-tile-banner: var(--color-white);
+    --color-border-card-banner: transparent;
 
     // Dashboard Tiles
     --color-bg-dashboard: var(--color-grey-10);
@@ -158,7 +159,7 @@
     --color-text-masthead: var(--color-white);
     --color-text-navbar: var(--color-text-10);
     --color-text-active: var(--color-white);
-    --color-text-action-trigger: var(--color-blue-10);
+    --color-text-action-trigger: var(--color-text-rest);
 
     // Buttons
     --color-bg-btn-standard-rest: var(--color-white);

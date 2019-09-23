@@ -8,19 +8,19 @@
     --color-bg-navbar-hover: var(--color-grey-60);
     --color-bg-navbar-selected: var(--color-grey-80);
     --color-bg-navbar-selected-hover: var(--color-grey-90);
-    --color-bg-header: var(--color-grey-90);
+    --color-bg-header: var(--color-grey-80);
     --color-bg-header-hover: var(--color-grey-80);
     --color-bg-masthead: var(--color-grey-50);
     --color-bg-masthead-hover: var(--color-text-20);
     --color-bg-masthead-active: var(--color-grey-60);
     --color-outline-masthead: var(--color-white);
-    --color-border-navbar-separator: var(--color-grey-30);
+    --color-border-navbar-separator: var(--color-grey-60);
     --color-border-masthead-focus: var(--color-white);
-    --color-border-navbar-focus: var(--color-black);
+    --color-border-navbar-focus: var(--color-blue-10);
     --color-border-navbar-selected: var(--color-blue-10);
 
     // Surfaces
-    --color-bg-panel: var(--color-grey-90);
+    --color-bg-panel: var(--color-grey-80);
     --color-bg-container: var(--color-grey-80);
     --color-bg-container-panel: var(--color-black);
     --color-border-container-panel: var(--color-grey-60);
@@ -42,13 +42,13 @@
     --color-bg-searchbar-focus: var(--color-white);
     --color-text-searchbar: var(--color-black);
     --color-icon-searchbar-btn: var(--color-white);
-    --color-bg-thumbnail: var(--color-text-20);
+    --color-bg-thumbnail: var(--color-grey-60);
     --color-icon-thumbnail: var(--color-white);
     --color-icon-tile: var(--color-grey-40);
 
     // Interactions
-    --color-bg-hover: var(--color-grey-80);
-    --color-bg-selected: var(--color-text-30);
+    --color-bg-hover: var(--color-grey-90);
+    --color-bg-selected: var(--color-grey-60);
 
     // All Tiles
     --color-border-tile: var(--color-grey-60); // 0.5px border
@@ -58,9 +58,10 @@
     --color-bg-gallery-tile: var(--color-grey-90);
     --color-bg-gallery-tile-default: var(--color-black);
     --color-bg-gallery-tile-blue: var(--color-blue-40);
-    --color-bg-gallery-tile-banner: var(--color-black);
+    --color-bg-gallery-tile-banner: var(--color-grey-90);
     --color-icon-gallery-tile-blue: var(--color-white);
     --color-text-gallery-tile-banner: var(--color-white);
+    --color-border-card-banner: var(--color-grey-80);
 
     // Dashboard Tiles
     --color-bg-dashboard: var(--color-grey-80);
@@ -68,10 +69,10 @@
     --color-stroke-tile-symbol: var(--color-white);
 
     // Input Fields
-    --color-bg-input-rest: var(--color-black);
+    --color-bg-input-rest: var(--color-grey-80);
     --color-bg-input-hover: transparent;
     --color-bg-input-selected: transparent;
-    --color-bg-input-disabled: var(--color-grey-60);
+    --color-bg-input-disabled: var(--color-grey-70);
 
     --color-border-input-rest: var(--color-grey-8);
     --color-border-input-hover: var(--color-white);
@@ -84,12 +85,12 @@
     // Dropdowns
     --color-dropdown-rest: var(--color-grey-90);
     --color-dropdown-hover: var(--color-grey-80);
-    --color-dropdown-focus: var(--color-grey-70);
+    --color-dropdown-focus: var(--color-grey-60);
     --color-dropdown-pressed: var(--color-grey-60);
-    --color-dropdown-disabled: var(--color-black);
+    --color-dropdown-disabled: var(--color-grey-70);
     --color-border-dropdown-rest: var(--color-text-20);
     --color-border-dropdown-focus: var(--color-blue-10);
-    --color-text-dropdown-disabled: var(--color-text-60);
+    --color-text-dropdown-disabled: var(--color-text-disabled);
 
     // Radio button
     --color-bg-radio-rest: transparent;
@@ -107,7 +108,7 @@
     --color-center-radio-disabled: var(--color-text-30);
 
     // Toggle
-    --color-bg-toggle-on-rest: var(--color-blue-50);
+    --color-bg-toggle-on-rest: var(--color-blue-10);
     --color-bg-toggle-off-rest: var(--color-white);
     --color-bg-toggle-on-hover: var(--color-blue-20);
     --color-bg-toggle-off-hover: var(--color-white);
@@ -115,7 +116,7 @@
     --color-bg-toggle-off-focus: var(--color-white);
     --color-bg-toggle-on-disabled: var(--color-text-30);
     --color-bg-toggle-off-disabled: var(--color-text-30);
-    --color-border-toggle-on-rest: var(--color-blue-50);
+    --color-border-toggle-on-rest: var(--color-blue-10);
     --color-border-toggle-off-rest: var(--color-white);
     --color-border-toggle-on-hover: var(--color-text-20);
     --color-border-toggle-off-hover: var(--color-white);
@@ -138,11 +139,11 @@
     --color-bg-checkbox-selected: transparent;
 
     // General Borders
-    --color-border-rest: var(--color-grey-60);
+    --color-border-rest: var(--color-text-20);
     --color-border-hover: var(--color-white);
     --color-border-focus: var(--color-white);
     --color-border-selected: var(--color-blue-10);
-    --color-border-disabled: var(--color-text-30);
+    --color-border-disabled: var(--color-grey-60);
     --color-border-error: var(--color-status-60);
     --color-border-controls: var(--color-white);
     --color-outline: var(--color-blue-10);
@@ -156,9 +157,9 @@
     --color-text-nodata: var(--color-text-30);
     --color-text-disabled: var(--color-text-30);
     --color-text-masthead: var(--color-white);
-    --color-text-navbar: var(--color-text-30);
+    --color-text-navbar: var(--color-white);
     --color-text-active: var(--color-text-50);
-    --color-text-action-trigger: var(--color-blue-10);
+    --color-text-action-trigger: var(--color-text-rest);
 
     // Buttons
     --color-bg-btn-standard-rest: transparent;
@@ -245,7 +246,7 @@
     --color-border-calendar-btn-focus: var(--color-text-20);
 
     // Icon
-    --color-icon-danger: var(--color-status-30);
+    --color-icon-danger: var(--color-status-60);
 
     // Data Colors
     // @todo uncomment this when we update the color picker for fluent support
