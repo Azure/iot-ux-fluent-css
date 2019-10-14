@@ -45,6 +45,7 @@
     font-family: var(--font-family-light);
     font-size: var(--font-size-hero);
     line-height: var(--line-height-hero);
+    min-height: var(--line-height-hero);
     font-weight: var(--font-weight-hero);
   }
 
@@ -81,21 +82,26 @@
   h1, .h1 { 
     font-size: var(--font-size-h1);
     line-height: var(--line-height-h1);
+    min-height: var(--line-height-h1);
   }
 
   h2, .h2 { 
     font-size: var(--font-size-h2);
     line-height: var(--line-height-h2);
+    min-height: var(--line-height-h2);
+
   }
 
   h3, .h3 { 
     font-size: var(--font-size-h3);
     line-height: var(--line-height-h3);
+    min-height: var(--line-height-h3);
   }
 
   h4, .h4 { 
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
+    min-height: var(--line-height-h4);
   }
 
 
@@ -144,6 +150,7 @@
   dt,
   dd {
     line-height: var(--line-height-default);
+    min-height: var(--line-height-default);
   }
 
   dt {
