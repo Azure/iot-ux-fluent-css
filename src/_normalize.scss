@@ -2,7 +2,7 @@
  * Normalize
  */
 
-@import '~normalize.css/normalize';
+@import "~normalize.css/normalize";
 @import "colors";
 @import "typography";
 @import "depth";
@@ -49,15 +49,28 @@
     font-weight: var(--font-weight-hero);
   }
 
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
     font-weight: var(--font-weight-headings);
     font-family: var(--font-family-semibold);
   }
 
-  h1, .h1,
-  h2, .h2,
-  h3, .h3 {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3 {
     margin-top: ($gutter-small / 2);
     margin-bottom: ($gutter-small / 2);
 
@@ -67,9 +80,12 @@
     }
   }
 
-  h4, .h4,
-  h5, .h5,
-  h6, .h6 {
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
     margin-top: ($gutter-small / 2);
     margin-bottom: ($gutter-small / 2);
 
@@ -79,31 +95,33 @@
     }
   }
 
-  h1, .h1 { 
+  h1,
+  .h1 {
     font-size: var(--font-size-h1);
     line-height: var(--line-height-h1);
     min-height: var(--line-height-h1);
   }
 
-  h2, .h2 { 
+  h2,
+  .h2 {
     font-size: var(--font-size-h2);
     line-height: var(--line-height-h2);
     min-height: var(--line-height-h2);
-
   }
 
-  h3, .h3 { 
+  h3,
+  .h3 {
     font-size: var(--font-size-h3);
     line-height: var(--line-height-h3);
     min-height: var(--line-height-h3);
   }
 
-  h4, .h4 { 
+  h4,
+  .h4 {
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
     min-height: var(--line-height-h4);
   }
-
 
   // Body text
   // -------------------------
@@ -137,7 +155,7 @@
 
     ul,
     ol {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -174,17 +192,27 @@
   }
 
   ::selection {
-      color: var(--color-white);
-      background: var(--color-blue-10) !important;
+    color: var(--color-white);
+    background-color: var(--color-blue-10) !important;
   }
 }
 
 /* clears the 'X' from Internet Explorer */
-input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
-input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
 /* clears the 'X' from Chrome */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
