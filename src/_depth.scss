@@ -1,10 +1,24 @@
+/**
+ * All this custom properties are intended to be used with box-shadow
+ */
 :root {
-    --depth-1-directional: 0 2px 4px rgba(0, 0, 0, 0.12);
-    --depth-1-ambient: 0 0 1px rgba(0, 0, 0, 0.18);
-    --depth-2-directional: 0 4px 8px rgba(0, 0, 0, 0.12);
-    --depth-2-ambient: 0 0 1px rgba(0, 0, 0, 0.16);
-    --depth-3-directional: 0 8px 16px rgba(0, 0, 0, 0.12);
-    --depth-3-ambient: 0 0 1px rgba(0, 0, 0, 0.14);
-    --depth-4-directional: 0 24px 48px rgba(0, 0, 0, 0.20);
-    --depth-4-ambient: 0 0 1px rgba(0, 0, 0, 0.12);
+  /** 
+    * Dashboard tiles, Content panel, side nav hover, table row hover, list row hover, picker hover, button rest
+    */
+  --deph-1: 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.18);
+
+  /**
+    * Command bar dropdowns, locked dropdown, slider knob hover, button hover
+    */
+  --depth-2: 0 4px 8px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.16);
+
+  /**
+    * Header search panel, tooltips, callouts, transient dropdowns (which moves based on content or mouse position)
+    */
+  --depth-3: 0 8px 16px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.14);
+
+  /**
+    * Right panel, dialog boxes
+    */
+  --depth-4: 0 24px 48px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.12);
 }
