@@ -33,7 +33,7 @@
     --shadow-balloon: 0 8px 10px 0 var(--color-black-transparent-tenth);
 
     // Controls
-    --color-bg-blastshield: var(--color-black--transparent-primary);
+    --color-bg-blastshield: var(--color-black-transparent-primary);
     --color-bg-balloon: var(--color-black);
     --color-bg-form: transparent;
     --color-bg-table: transparent;
@@ -47,7 +47,7 @@
     --color-icon-tile: var(--color-grey-40);
 
     // Interactions
-    --color-bg-hover: var(--color-grey-90);
+    --color-bg-hover: var(--color-grey-70);
     --color-bg-selected: var(--color-grey-60);
 
     // All Tiles
@@ -84,7 +84,7 @@
 
     // Dropdowns
     --color-dropdown-rest: var(--color-grey-90);
-    --color-dropdown-hover: var(--color-grey-80);
+    --color-dropdown-hover: var(--color-grey-50);
     --color-dropdown-focus: var(--color-grey-60);
     --color-dropdown-pressed: var(--color-grey-60);
     --color-dropdown-disabled: var(--color-grey-70);
