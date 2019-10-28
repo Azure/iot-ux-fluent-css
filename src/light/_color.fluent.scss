@@ -2,7 +2,7 @@
  * Default Light Theme Colors
  */
 
-:root[theme='fluent-light'] {
+:root, :root[theme='light'] {
     // Shell
     --color-bg-navbar: var(--color-grey-20);
     --color-bg-navbar-hover: var(--color-grey-30);

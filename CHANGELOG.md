@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v7.0.1
+### Fixed
+- Rename fluent themes to default names
+- Make light theme the default
+
 ## v7.0.0
 ### Changed
 - Moved to CSS Custom Properties
