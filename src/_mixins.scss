@@ -5,7 +5,7 @@
 /// Right to left 
 ///
 @mixin rtl() {
-    :global(.rtl) & {
+    :root[dir='rtl'] & {
         @content;
     }
 }

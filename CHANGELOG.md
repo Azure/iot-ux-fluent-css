@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## v7.1.0
+## Changed
+- RTL is now handled by using the `dir` attribute in the root html element.
+
+## v7.0.4
+## Fixed
+- `--color-bg-loading-panel` color in dark mode to be a darker grey to decrease its contrast
+
+## v7.0.3
+## Fixed
+- Reverted container color change made in v7.0.2
+- Added appropriate dashboard background color.
+
+## v7.0.2
+## Changed
+- Container background color in light color to be light gray instead of white
+
 ## v7.0.1
 ### Fixed
 - Rename fluent themes to default names
