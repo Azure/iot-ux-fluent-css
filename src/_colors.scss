@@ -2,6 +2,25 @@
  * Common Azure IoT Colors
  */
 
-@import "color.palette";
-@import "./dark/color.fluent";
-@import "./light/color.fluent";
+
+/**
+ * These are the colors that are always constant, no matter what the theme is.
+ */
+:root {
+  // Semi-transparent Colors
+  --color-dark-transparent-primary: rgba(0, 0, 0, 0.8);
+  --color-dark-transparent-half: rgba(0, 0, 0, 0.5);
+  --color-dark-transparent-third: rgba(0, 0, 0, 0.3);
+  --color-dark-transparent-tenth: rgba(0, 0, 0, 0.1);
+
+  --color-light-transparent-primary: rgba(255, 255, 255, 0.8);
+  --color-light-transparent-half: rgba(255, 255, 255, 0.5);
+  --color-light-transparent-third: rgba(255, 255, 255, 0.3);
+  --color-light-transparent-tenth: rgba(255, 255, 255, 0.1);
+}
+
+/**
+ * Import palettes for different supported themes
+ */
+@import "./themes/color.light";
+@import "./themes/color.dark";

@@ -143,14 +143,14 @@
 
   a {
     text-decoration: none;
-    color: var(--color-hyperlink-rest);
+    color: var(--color-accent-hover);
 
     &:hover {
-      color: var(--color-hyperlink-hover);
+      color: var(--color-accent-selected);
     }
 
     &:focus {
-      color: var(--color-hyperlink-focus);
+      color: var(--color-accent);
     }
   }
 
@@ -199,8 +199,8 @@
   }
 
   ::selection {
-    color: var(--color-white);
-    background-color: var(--color-blue-10) !important;
+    color: var(--color-accent-foreground);
+    background-color: var(--color-accent) !important;
   }
 }
 
