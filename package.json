@@ -6,9 +6,6 @@
   "engines": {
     "node": "^8.0.0"
   },
-  "scripts": {
-    "build": "node-sass-chokidar example/ -o example/"
-  },
   "dependencies": {
     "normalize.css": "^8.0.1"
   },
