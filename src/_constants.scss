@@ -37,8 +37,8 @@ $z-index-tutorial-tips: $z-index-flyout-layer + 8 * $z-index-medium-step;
 
 $input-height: 8*$grid-size;
 $option-height: 8*$grid-size;
+$button-height: 8*$grid-size;
 $dropdown-max-height: 50*$grid-size;
-
 
 // Layout
 
@@ -69,7 +69,6 @@ $screen-xl: 1366px;
 
 $interaction-timing: 200ms;
 $clickable-scale: 0.9;
-
 
 // Styles
 
