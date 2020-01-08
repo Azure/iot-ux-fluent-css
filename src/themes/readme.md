@@ -61,7 +61,7 @@ The files have the following structure:
   --color-main-nav-background-hover // Background for items in hover state
   --color-main-nav-background-selected // Background for the currently active item
   --color-main-nav-foreground-primary // Text color
-  --color-main-nav-foreground-secondary: #dadada // Borders and separators color
+  --color-main-nav-foreground-secondary // Borders and separators color
 
   // Alert - Global notifications
   --color-global-background-success
