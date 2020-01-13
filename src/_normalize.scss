@@ -20,6 +20,21 @@
     font-family: var(--font-family-default);
     font-size: var(--font-size-default);
     line-height: var(--line-height-default);
+    height: 100vh;
+    color: var(--color-foreground-default);
+  }
+
+  body > div#mount {
+    height: 100%;
+    width: 100%;
+    
+    // Set positioning to relative so that everything flows from shell
+    position: relative;
+
+    // Flex will help us position the masthead and workspace to take the full height of the 
+    // viewport correctly
+    display: flex;
+    flex-direction: column;
   }
 
   * {
