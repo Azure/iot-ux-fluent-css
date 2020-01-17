@@ -5,21 +5,23 @@ The Azure IoT Fluent CSS Library is a minimal set of styles, themes and colors t
 
 Usage
 -----
-Install as a package via npm with the command `npm install @microsoft/azure-iot-ux-fluent-css`.
+Install as a package via npm with the command:
 
-In your custom.scss, you’ll import the library's source Sass files. You are free to pick and choose the parts that you need. 
+ `npm install @microsoft/azure-iot-ux-fluent-css`.
+
+In your `custom.scss`, you’ll import the library's source Sass files. You are free to pick and choose the parts that you need.
 
 ```sass import
 @import "~@microsoft/azure-iot-ux-fluent-css/src/colors";
 @import "~@microsoft/azure-iot-ux-fluent-css/src/mixins";
 ```
 
-With that setup in place, you can begin to modify any of the Sass variables and maps in your custom.scss. 
+With that setup in place, you can begin to modify any of the Sass variables and maps in your custom.scss.
 
 Theming
 -------
 
-To theme your app, wrap the themed properties in @themify mixin. 
+To theme your app, wrap the themed properties in `@themify` mixin.
 
 ```
 .symbol {
@@ -32,11 +34,11 @@ To theme your app, wrap the themed properties in @themify mixin.
     @include themify {
         fill: themed('color-fill-tile-symbol');
         stroke: themed('color-stroke-tile-symbol');
-    }    
+    }
 }
 ```
 
-The above SCSS will generate two separate theme variations. 
+The above SCSS will generate two separate theme variations.
 
 ```
 .symbol {
@@ -49,7 +51,7 @@ The above SCSS will generate two separate theme variations.
 
 .theme-dark .symbol {
     fill: #FFFFFF;
-    stroke: #FFFFFF; 
+    stroke: #FFFFFF;
 }
 
 .theme-light .symbol {
@@ -62,11 +64,11 @@ This technique is relatively efficient, as only the necessary css markups that v
 
 Customization
 -------------
-It is easy to customize and build on top of the Common IoT Fluent CSS Library. The library includes the colors in a Sass map of key value pairs. All Sass maps include the !default flag and can be overridden and extended without modifying the library's source code. 
+It is easy to customize and build on top of the Common IoT Fluent CSS Library. The library includes the colors in a Sass map of key value pairs. All Sass maps include the !default flag and can be overridden and extended without modifying the library's source code.
 
 ### Modify map
 
-To modify an existing color in our $themes map, simply redefine the key value pair in your custom Sass file:
+To modify an existing color in our `$themes` map, simply redefine the key value pair in your custom Sass file:
 
 ```
 $theme-dark: (
@@ -86,22 +88,22 @@ $theme-dark: (
 
 ### Remove from map
 
-To remove colors from $themes, use map-remove:
+To remove colors from `$themes`, use map-remove:
 
 ```
 $theme-dark: map-remove($theme-dark, "color-fill-tile-symbol");
 ```
 
-### Extend $themes with a custom theme
+### Extend `$themes` with a custom theme
 
-To extend the $themes map with new themes, add the new map of colors:
+To extend the `$themes` map with new themes, add the new map of colors:
 
 ```
 $themes: (
     christmas: (
         color-fill-tile-symbol: #ff4136,
         color-stroke-tile-symbol: #36FF53
-    )    
+    )
 );
 ```
 
