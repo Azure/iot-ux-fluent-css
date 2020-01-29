@@ -42,7 +42,8 @@ $dropdown-max-height: 50*$grid-size;
 
 // Layout
 
-$layout-nav-item-height: 2.5rem;
+$layout-nav-item-height: 2.75rem;
+$layout-header-xlarge-height: $layout-nav-item-height * 4;
 $layout-header-large-height: $layout-nav-item-height * 3;
 $layout-header-medium-height: $layout-nav-item-height * 2;
 $layout-header-small-height: $layout-nav-item-height;
