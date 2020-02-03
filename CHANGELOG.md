@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v7.1.2
+### Fixed
+- Added sufficient contrast to toggle on dark theme.
+
 ## v7.1.1
 ### Changed
 - Updated `$layout-nav-item-height` to align with office fabric's fluent command bar update.
