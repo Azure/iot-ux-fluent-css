@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v7.1.3
+### Changed
+- Changed `--color-text-active` in `dark/_color.fluent.scss` to `--color-white`
+
 ## v7.1.2
 ### Fixed
 - Added sufficient contrast to toggle on dark theme.
