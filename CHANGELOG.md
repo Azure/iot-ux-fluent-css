@@ -2,7 +2,7 @@
 
 ## v8.0.0
 ## Changed
-- Removed mapping and made each theme to have its own palette that shares the same naming convention
+- Deprecated mapping and made each theme to have its own palette that shares the same naming convention
 - Updated icon sizes to a smaller subset
 
 ## v7.1.3

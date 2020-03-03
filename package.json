@@ -1,7 +1,7 @@
 {
   "name": "@microsoft/azure-iot-ux-fluent-css",
   "description": "Azure IoT common styles library for CSS, Colors and Themes",
-  "version": "8.0.0-prerelease.2",
+  "version": "8.0.0",
   "license": "MIT",
   "engines": {
     "node": "^8.0.0"
