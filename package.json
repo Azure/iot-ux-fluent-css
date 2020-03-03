@@ -9,9 +9,6 @@
   "dependencies": {
     "normalize.css": "^8.0.1"
   },
-  "devDependencies": {
-    "node-sass-chokidar": "^1.2.2"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Azure/iot-ux-fluent-css"
