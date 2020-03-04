@@ -34,7 +34,11 @@
 
     // Icons
     --icon-font-family: "icons";
-    --icon-size-compact: 0.75rem;
-    --icon-size-standard: 1rem;
-    --icon-size-large: 2.5rem;
+    --icon-size-base: 1rem;
+    --icon-size-xsmall: var(--icon-size-base);
+    --icon-size-small: calc(1 * var(--icon-size-base));
+    --icon-size-medium: calc(2 * var(--icon-size-base));	
+    --icon-size-large: calc(3 * var(--icon-size-base));	
+    --icon-size-xlarge: calc(4 * var(--icon-size-base));	
+    --icon-size-xxlarge: calc(5 * var(--icon-size-base)); 
 }
