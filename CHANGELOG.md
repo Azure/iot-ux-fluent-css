@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v8.0.0
+## Changed
+- Deprecated mapping and made each theme to have its own palette that shares the same naming convention
+- Updated icon sizes to a smaller subset
+
 ## v7.1.3
 ### Changed
 - Changed `--color-text-active` in `dark/_color.fluent.scss` to `--color-white`

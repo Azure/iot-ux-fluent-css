@@ -20,6 +20,19 @@
     font-family: var(--font-family-default);
     font-size: var(--font-size-default);
     line-height: var(--line-height-default);
+    color: var(--color-foreground-default);
+  }
+
+  #root {
+    height: 100vh;
+    
+    // Set positioning to relative so that everything flows from shell
+    position: relative;
+
+    // Flex will help us position the masthead and workspace to take the full height of the 
+    // viewport correctly
+    display: flex;
+    flex-direction: column;
   }
 
   * {
@@ -143,14 +156,14 @@
 
   a {
     text-decoration: none;
-    color: var(--color-hyperlink-rest);
+    color: var(--color-accent-hover);
 
     &:hover {
-      color: var(--color-hyperlink-hover);
+      color: var(--color-accent-selected);
     }
 
     &:focus {
-      color: var(--color-hyperlink-focus);
+      color: var(--color-accent);
     }
   }
 
@@ -199,8 +212,8 @@
   }
 
   ::selection {
-    color: var(--color-white);
-    background-color: var(--color-blue-10) !important;
+    color: var(--color-accent-foreground);
+    background-color: var(--color-accent) !important;
   }
 }
 
