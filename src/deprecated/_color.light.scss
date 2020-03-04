@@ -29,17 +29,17 @@
     --color-bg-titlebar: var(--color-grey-30);
     --color-border-panel: var(--color-grey-40);
     --color-border-grid: var(--color-grey-40);
-    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-black-transparent-tenth);
-    --shadow-popup-panel: -3px 3px 10px -3px var(--color-black-transparent-primary);
-    --shadow-balloon: 0 8px 10px 0 var(--color-black-transparent-tenth);
+    --shadow-container-panel: 0 25.6px 57.6px 0 var(--color-dark-transparent-tenth);
+    --shadow-popup-panel: -3px 3px 10px -3px var(--color-dark-transparent-primary);
+    --shadow-balloon: 0 8px 10px 0 var(--color-dark-transparent-tenth);
 
     // Controls
-    --color-bg-blastshield: var(--color-black-transparent-third);
+    --color-bg-blastshield: var(--color-dark-transparent-third);
     --color-bg-balloon: var(--color-white);
     --color-bg-form: var(--color-white);
     --color-bg-table: var(--color-white);
     --color-bg-searchbar-active: var(--color-white);
-    --color-bg-searchbar-rest: var(--color-white-transparent-third);
+    --color-bg-searchbar-rest: var(--color-light-transparent-third);
     --color-bg-searchbar-focus: var(--color-white);
     --color-icon-searchbar-btn: var(--color-white);
     --color-bg-thumbnail: var(--color-text-20);
