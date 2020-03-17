@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": false,
+        "rootDir": "lib-build",
+        "sourceMap": true,
+        "declaration": true,
+        "types": [
+            "@types/node"
+        ]
+    },
+    "include": [
+        "lib-build/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
