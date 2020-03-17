@@ -3,7 +3,7 @@
  */
 
  :root {
-    // Main Palette Colors
+    /* Main Palette Colors */
     --color-white: #FFFFFF;
     --color-grey-10: #FAF9F8;
     --color-grey-20: #F3F2F1;
@@ -16,7 +16,7 @@
     --color-grey-90: #0D0E0F;
     --color-black: #000000;
 
-    // Accent colors
+    /* Accent colors */
     --color-blue-10: #136BFB;
     --color-blue-20: #0065D9;
     --color-blue-30: #0053B3;
@@ -25,7 +25,7 @@
     --color-blue-60: #2F7FDB;
     --color-blue-70: #8DAACB;
 
-    // Status
+    /* Status */
     --color-status-10: #879092;
     --color-status-20: #D58E00;
     --color-status-30: #A50606;
@@ -34,18 +34,18 @@
     --color-status-60: #FF2828;
     --color-status-70: #89FF98;
 
-    // Alert
+    /* Alert */
     --color-global-10: #FFF4CE;
     --color-global-20: #DFF6DD;
     --color-global-30: #CEF1FF;
     --color-global-40: #FDE7E9;
 
-    // Text
+    /* Text */
     --color-text-10: #323130;
     --color-text-20: #666666;
     --color-text-30: #A6A6A6;
 
-    // Data Colors
+    /* Data Colors */
     --LT-Azul: #118DFF;
     --DM-Azul: #118DFF;
     --LT-Atlantic: #3A4BC6;
@@ -69,8 +69,7 @@
     --LT-Empty-data: #868886;
     --DM-Empty-data: #868886;
 
-    // @todo remove
-    // [Deprecated] Legacy colors 
+    /* [Deprecated] Legacy colors  */
     --color-green-1: #01b8aa;
     --color-green-2: #6be8dc;
     --color-green-3: #59cec3;
