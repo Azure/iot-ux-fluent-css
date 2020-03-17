@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v8.0.1
+## Changed
+- Change non-scss files to use css
+- Added codegen to generate theme-related typescript files
+
 ## v8.0.0
 ## Changed
 - Deprecated mapping and made each theme to have its own palette that shares the same naming convention
