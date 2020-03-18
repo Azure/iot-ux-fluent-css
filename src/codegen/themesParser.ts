@@ -83,11 +83,9 @@ export default class ThemesParser {
                     .replace(/\/\*/, '') // Remove start of comment
                     .replace(/\*\//, '') // Remove end of comment
                     .trim()
-                    .replace(/([-_ ][a-z])/gi, (g) => 
-                        g.toUpperCase()
-                        .replace(/[-_ ]/, '')) // Make CammelCase
-                    .replace(/^./g, (g) => 
-                        g.toLowerCase()); // Ensure first char is lowercase
+                    .replace(/([-_ ][a-z])/gi, (g) => g.toUpperCase().replace(/[-_ ]/, ''))
+                    .replace(/^./g, (g) => g.toLowerCase()); // Ensure cammelCase
+                
                 colorValues[currentSection] = {};
             } else if (insideComment && line.match(CSS_COMMENT_END_MATCH)) {
                 insideComment = false;
