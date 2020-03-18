@@ -156,14 +156,15 @@
 
   a {
     text-decoration: none;
-    color: var(--color-accent-hover);
+    color: var(--color-accent);
 
-    &:hover {
-      color: var(--color-accent-selected);
+    &:hover,
+    &:focus {
+      color: var(--color-accent-hover);
     }
 
-    &:focus {
-      color: var(--color-accent);
+    &:active {
+      color: var(--color-accent-selected);
     }
   }
 
