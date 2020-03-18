@@ -73,7 +73,7 @@ async function generateTSFiles(themes: ThemesData) {
     const sections: { [sectionName: string]: string } = {};
     let typesDefined = false;
 
-    defaultThemesFile.writeLine('import { CustomTheme } from \'./themeTypes\';');
+    defaultThemesFile.writeLine('import { CustomTheme } from \'azure-iot-fluent-css\';');
     defaultThemesFile.writeLine();
     defaultThemesFile.writeLine('export const DefaultThemes: {');
     defaultThemesFile.writeLine('[theme: string]: CustomTheme', 1);
@@ -125,7 +125,7 @@ async function generateTSFiles(themes: ThemesData) {
     defaultThemesFile.writeLine('};');
 
     //  ============= UTILS
-    utilsFile.writeLine('import { CustomTheme } from \'./themeTypes\';')
+    utilsFile.writeLine('import { CustomTheme } from \'azure-iot-fluent-css\';')
     utilsFile.writeLine();
     utilsFile.writeLine('export function createCustomThemeStylesheet(theme: CustomTheme) {');
     utilsFile.writeLine('let embeddedStyles = \'\\n/** Custom theme **/\\n:root[theme="custom"] {\\n\\n\';', 1);
