@@ -9,3 +9,8 @@
 
 # Codegen
 /src/codegen/
+
+# no .tsx or .ts files, but include .d.ts
+*.tsx
+*.ts
+!*.d.ts

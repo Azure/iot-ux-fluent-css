@@ -59,21 +59,20 @@ async function parseAndValidateThemeFiles() {
 async function generateTSFiles(themes: ThemesData) {
     const utilsFile = new OutputWritter(join(OUTPUT_PATH, './colorUtils.ts'));
     const defaultThemesFile = new OutputWritter(join(OUTPUT_PATH, './defaultThemes.ts'));
-    const typesFile = new OutputWritter(join(OUTPUT_PATH, './themeTypes.d.ts'));
+    const typesFile = new OutputWritter(join(OUTPUT_PATH, './themeTypes.ts'));
 
-    typesFile.writeLine('declare module \'azure-iot-fluent-css\' {');
     const themeDefs = Object.keys(themes);
-    typesFile.writeLine(`export type DefinedThemes = '${themeDefs.join('\' | \'')}'`, 1);
+    typesFile.writeLine(`export type DefinedThemes = '${themeDefs.join('\' | \'')}'`);
     typesFile.writeLine();
 
-    typesFile.writeLine('export interface ThemeColorDefinition { }', 1);
+    typesFile.writeLine('export interface ThemeColorDefinition { }');
     typesFile.writeLine();
 
     const allProperties = new Set<string>();
     const sections: { [sectionName: string]: string } = {};
     let typesDefined = false;
 
-    defaultThemesFile.writeLine('import { CustomTheme } from \'azure-iot-fluent-css\';');
+    defaultThemesFile.writeLine('import { CustomTheme } from \'./themeTypes\';');
     defaultThemesFile.writeLine();
     defaultThemesFile.writeLine('export const DefaultThemes: {');
     defaultThemesFile.writeLine('[theme: string]: CustomTheme', 1);
@@ -87,7 +86,7 @@ async function generateTSFiles(themes: ThemesData) {
                 const sectionTypeName = `${sectionName.replace(/^./, g => g.toUpperCase())}Colors`;
                 sections[sectionName] = sectionTypeName;
                 
-                typesFile.writeLine(`export interface ${sectionTypeName} extends ThemeColorDefinition {`, 1);
+                typesFile.writeLine(`export interface ${sectionTypeName} extends ThemeColorDefinition {`);
             }
 
             for (const [property, value] of Object.entries(sectionVariables)) {
@@ -95,14 +94,14 @@ async function generateTSFiles(themes: ThemesData) {
 
                 if (!typesDefined) {
                     allProperties.add(property);
-                    typesFile.writeLine(`'${property}': string;`, 2);
+                    typesFile.writeLine(`'${property}': string;`, 1);
                 }
             }
 
             defaultThemesFile.writeLine('},', 2);
 
             if (!typesDefined) {
-                typesFile.writeLine('}', 1);
+                typesFile.writeLine('}');
                 typesFile.writeLine();
             }
         }
@@ -113,19 +112,18 @@ async function generateTSFiles(themes: ThemesData) {
             typesFile.writeLine('export interface CustomTheme {', 1);
 
             for (const [sectionName, sectionTypeName] of Object.entries(sections)) {
-                typesFile.writeLine(`${sectionName}?: ${sectionTypeName};`, 2);
+                typesFile.writeLine(`${sectionName}?: ${sectionTypeName};`);
             }
 
-            typesFile.writeLine('}', 1);
+            typesFile.writeLine('}');
             typesDefined = true;
         }
     }
 
-    typesFile.writeLine('}');
     defaultThemesFile.writeLine('};');
 
     //  ============= UTILS
-    utilsFile.writeLine('import { CustomTheme } from \'azure-iot-fluent-css\';')
+    utilsFile.writeLine('import { CustomTheme } from \'./themeTypes\';')
     utilsFile.writeLine();
     utilsFile.writeLine('export function createCustomThemeStylesheet(theme: CustomTheme) {');
     utilsFile.writeLine('let embeddedStyles = \'\\n/** Custom theme **/\\n:root[theme="custom"] {\\n\\n\';', 1);
