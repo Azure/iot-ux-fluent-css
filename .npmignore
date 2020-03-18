@@ -6,3 +6,6 @@
 
 # Configs
 .config/
+
+# Codegen
+/src/codegen/

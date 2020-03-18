@@ -4,8 +4,9 @@
   "version": "8.0.1",
   "license": "MIT",
   "scripts": {
-    "codegen": "ts-node ./lib-build/index/ts",
-    "prepublish": "npm run codegen"
+    "build": "tsc",
+    "codegen": "ts-node ./src/codegen/index.ts",
+    "prepublish": "npm run codegen && npm run build"
   },
   "engines": {
     "node": "^8.0.0"

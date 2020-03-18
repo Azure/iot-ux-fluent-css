@@ -59,13 +59,14 @@ async function parseAndValidateThemeFiles() {
 async function generateTSFiles(themes: ThemesData) {
     const utilsFile = new OutputWritter(join(OUTPUT_PATH, './colorUtils.ts'));
     const defaultThemesFile = new OutputWritter(join(OUTPUT_PATH, './defaultThemes.ts'));
-    const typesFile = new OutputWritter(join(OUTPUT_PATH, './themeTypes.ts'));
+    const typesFile = new OutputWritter(join(OUTPUT_PATH, './themeTypes.d.ts'));
 
+    typesFile.writeLine('declare module \'azure-iot-fluent-css\' {');
     const themeDefs = Object.keys(themes);
-    typesFile.writeLine(`export type DefinedThemes = '${themeDefs.join('\' | \'')}'`);
+    typesFile.writeLine(`export type DefinedThemes = '${themeDefs.join('\' | \'')}'`, 1);
     typesFile.writeLine();
 
-    typesFile.writeLine('export interface ThemeColorDefinition { }');
+    typesFile.writeLine('export interface ThemeColorDefinition { }', 1);
     typesFile.writeLine();
 
     const allProperties = new Set<string>();
@@ -75,82 +76,83 @@ async function generateTSFiles(themes: ThemesData) {
     defaultThemesFile.writeLine('import { CustomTheme } from \'./themeTypes\';');
     defaultThemesFile.writeLine();
     defaultThemesFile.writeLine('export const DefaultThemes: {');
-    defaultThemesFile.writeLine('[theme: string]: CustomTheme', true);
+    defaultThemesFile.writeLine('[theme: string]: CustomTheme', 1);
     defaultThemesFile.writeLine('} = {');
     for (const [themeName, themeSections] of Object.entries(themes)) {
-        defaultThemesFile.writeLine(`${themeName}: {`, true);
+        defaultThemesFile.writeLine(`${themeName}: {`, 1);
         for (const [sectionName, sectionVariables] of Object.entries(themeSections)) {
-            defaultThemesFile.writeLine(`    ${sectionName}: {`, true);
+            defaultThemesFile.writeLine(`${sectionName}: {`, 2);
 
             if (!typesDefined) {
                 const sectionTypeName = `${sectionName.replace(/^./, g => g.toUpperCase())}Colors`;
                 sections[sectionName] = sectionTypeName;
                 
-                typesFile.writeLine(`export interface ${sectionTypeName} extends ThemeColorDefinition {`);
+                typesFile.writeLine(`export interface ${sectionTypeName} extends ThemeColorDefinition {`, 1);
             }
 
             for (const [property, value] of Object.entries(sectionVariables)) {
-                defaultThemesFile.writeLine(`        '${property}': '${value}',`, true);
+                defaultThemesFile.writeLine(`'${property}': '${value}',`, 3);
 
                 if (!typesDefined) {
                     allProperties.add(property);
-                    typesFile.writeLine(`'${property}': string;`, true);
+                    typesFile.writeLine(`'${property}': string;`, 2);
                 }
             }
 
-            defaultThemesFile.writeLine('    },', true);
+            defaultThemesFile.writeLine('},', 2);
 
             if (!typesDefined) {
-                typesFile.writeLine('}');
+                typesFile.writeLine('}', 1);
                 typesFile.writeLine();
             }
         }
 
-        defaultThemesFile.writeLine('},', true);
+        defaultThemesFile.writeLine('},', 1);
 
         if (!typesDefined) {
-            typesFile.writeLine('export interface CustomTheme {');
+            typesFile.writeLine('export interface CustomTheme {', 1);
 
             for (const [sectionName, sectionTypeName] of Object.entries(sections)) {
-                typesFile.writeLine(`${sectionName}?: ${sectionTypeName};`, true);
+                typesFile.writeLine(`${sectionName}?: ${sectionTypeName};`, 2);
             }
 
-            typesFile.writeLine('}');
+            typesFile.writeLine('}', 1);
             typesDefined = true;
         }
     }
 
+    typesFile.writeLine('}');
     defaultThemesFile.writeLine('};');
 
     //  ============= UTILS
     utilsFile.writeLine('import { CustomTheme } from \'./themeTypes\';')
     utilsFile.writeLine();
     utilsFile.writeLine('export function createCustomThemeStylesheet(theme: CustomTheme) {');
-    utilsFile.writeLine('let embeddedStyles = \'\\n/** Custom theme **/\\n:root[theme="custom"] {\\n\\n\';', true);
+    utilsFile.writeLine('let embeddedStyles = \'\\n/** Custom theme **/\\n:root[theme="custom"] {\\n\\n\';', 1);
     utilsFile.writeLine();
-    utilsFile.writeLine('for (const [themeSection, values] of Object.entries(theme)) {', true);
-    utilsFile.writeLine('    embeddedStyles += `    /* ${themeSection} */\\n`;', true);
+    utilsFile.writeLine('for (const [themeSection, values] of Object.entries(theme)) {', 1);
+    utilsFile.writeLine('embeddedStyles += `    /* ${themeSection} */\\n`;', 2);
     utilsFile.writeLine();
-    utilsFile.writeLine('    for (const [propertyName, propertyValue] of Object.entries(values)) {', true)
-    utilsFile.writeLine('        embeddedStyles += `    ${propertyName}: ${propertyValue};\\n`;', true);
-    utilsFile.writeLine('    }', true);
+    utilsFile.writeLine('for (const [propertyName, propertyValue] of Object.entries(values)) {', 2)
+    utilsFile.writeLine('embeddedStyles += `    ${propertyName}: ${propertyValue};\\n`;', 3);
+    utilsFile.writeLine('}', 2);
     utilsFile.writeLine();
-    utilsFile.writeLine('    embeddedStyles += \'\\n\';', true);
-    utilsFile.writeLine('}', true);
-    utilsFile.writeLine('return `<style type="text/css">${embeddedStyles}</style>`;', true);
+    utilsFile.writeLine('embeddedStyles += \'\\n\';', 2);
+    utilsFile.writeLine('}', 1);
+    utilsFile.writeLine('return `<style type="text/css">${embeddedStyles}</style>`;', 1);
     utilsFile.writeLine('}');
     utilsFile.writeLine();
 
     utilsFile.writeLine('export function clearThemeProperties(DOMElement: HTMLElement) {');
-    utilsFile.writeLine('for (const color of [', true);
+    utilsFile.writeLine('for (const color of [', 1);
 
     for (const property of allProperties) {
-        utilsFile.writeLine(`    '${property}',`, true);
+        utilsFile.writeLine(`'${property}',`, 2);
     }
 
-    utilsFile.writeLine(']) {', true);
-    utilsFile.writeLine('    DOMElement.style.removeProperty(color);', true);
-    utilsFile.writeLine('}', true);
+    utilsFile.writeLine(']) {', 1);
+    utilsFile.writeLine('DOMElement.style.removeProperty(color);', 2);
+    utilsFile.writeLine('}', 1);
     utilsFile.writeLine('}');
 
     defaultThemesFile.flush();

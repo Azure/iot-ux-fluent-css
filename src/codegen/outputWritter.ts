@@ -35,11 +35,13 @@ export class OutputWritter {
         }
     }
 
-    public writeLine(line: string = '', indented: boolean = false) {
-        if (indented) {
-            this.ensureSizeAvailable(4);
-            this.buffer.write(OUTPUT_INDENT, this.head);
-            this.head += 4;
+    public writeLine(line: string = '', indentationLevel: number = 0) {
+        if (indentationLevel) {
+            this.ensureSizeAvailable(4 * indentationLevel);
+            for (let i = 0; i < indentationLevel; i++) {
+                this.buffer.write(OUTPUT_INDENT, this.head);
+                this.head += 4;
+            }
         }
 
         const lineLength = Buffer.byteLength(line);

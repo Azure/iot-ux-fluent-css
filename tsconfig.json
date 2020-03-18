@@ -6,15 +6,15 @@
         "experimentalDecorators": true,
         "forceConsistentCasingInFileNames": true,
         "noImplicitAny": false,
-        "rootDir": "lib-build",
-        "sourceMap": true,
+        "rootDir": "src",
+        "sourceMap": false,
         "declaration": true,
         "types": [
             "@types/node"
         ]
     },
     "include": [
-        "lib-build/**/*"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules"
