@@ -336,5 +336,5 @@ node_modules
 package-lock.json
 
 # Codegen built files
-codegen/**/*.js
-codegen/**/*.d.ts
+src/codegen/**/*.jss
+src/codegen/**.d.ts
