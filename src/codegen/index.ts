@@ -109,10 +109,10 @@ async function generateTSFiles(themes: ThemesData) {
         defaultThemesFile.writeLine('},', 1);
 
         if (!typesDefined) {
-            typesFile.writeLine('export interface CustomTheme {', 1);
+            typesFile.writeLine('export interface CustomTheme {');
 
             for (const [sectionName, sectionTypeName] of Object.entries(sections)) {
-                typesFile.writeLine(`${sectionName}?: ${sectionTypeName};`);
+                typesFile.writeLine(`${sectionName}?: ${sectionTypeName};`, 1);
             }
 
             typesFile.writeLine('}');

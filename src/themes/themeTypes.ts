@@ -119,14 +119,14 @@ export interface DataColors extends ThemeColorDefinition {
     '--data-color-42': string;
 }
 
-    export interface CustomTheme {
-contentBackground?: ContentBackgroundColors;
-state?: StateColors;
-accent?: AccentColors;
-status?: StatusColors;
-foreground?: ForegroundColors;
-masthead?: MastheadColors;
-mainNav?: MainNavColors;
-alert?: AlertColors;
-data?: DataColors;
+export interface CustomTheme {
+    contentBackground?: ContentBackgroundColors;
+    state?: StateColors;
+    accent?: AccentColors;
+    status?: StatusColors;
+    foreground?: ForegroundColors;
+    masthead?: MastheadColors;
+    mainNav?: MainNavColors;
+    alert?: AlertColors;
+    data?: DataColors;
 }
