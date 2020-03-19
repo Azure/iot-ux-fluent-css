@@ -3,8 +3,9 @@
   "description": "Azure IoT common styles library for CSS, Colors and Themes",
   "version": "8.0.1",
   "license": "MIT",
-  "main": "src/index.ts",
-  "types": "src/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "build": "tsc",
     "codegen": "ts-node ./src/codegen/index.ts",

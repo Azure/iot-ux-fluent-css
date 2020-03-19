@@ -71,7 +71,7 @@ export default class ThemesParser {
      * @remarks This parsing method asumes these rules, it doesn't validate them.
      */
     private static async parseCSSFile(filePath: string, globalVariables: PropertySection = {}): Promise<ThemeDefinition> {
-        const colorValues = {};
+        const colorValues: ThemeDefinition = {};
         const rl = createInterface({ input: createReadStream(filePath) });
 
         let insideComment = false;

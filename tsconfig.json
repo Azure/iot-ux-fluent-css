@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target": "es2017",
         "module": "commonjs",
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "forceConsistentCasingInFileNames": true,
-        "noImplicitAny": false,
+        "outDir": "./lib",
+        "strict": true,
         "rootDir": "src",
         "sourceMap": false,
         "declaration": true,
