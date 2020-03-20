@@ -5,6 +5,7 @@ The Azure IoT Fluent CSS Library is a minimal set of styles, themes and colors t
 
 Usage
 -----
+
 Install as a package via npm with the command `npm install @microsoft/azure-iot-ux-fluent-css`.
 
 In your scss entry point you should import the normalize Sass file. This will import all the styles to the DOM and you should be able to use them freely in your css code.
