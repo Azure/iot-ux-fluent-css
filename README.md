@@ -29,7 +29,7 @@ To theme your app, just make sure your html element has the `theme` attribute se
     transform: translate(-50%, -50%);
     padding: $gutter-small;
     fill: var(--color-foreground-default);
-    stroke: var('--color-foreground-default);
+    stroke: var(--color-foreground-default);
 }
 ```
 
