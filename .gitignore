@@ -334,3 +334,6 @@ node_modules
 
 # Built files
 lib/
+codegen/**/*.js
+codegen/**/*.d.ts
+codegen/**/*.js.map

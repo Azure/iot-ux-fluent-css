@@ -1,6 +1,7 @@
 import { EOL } from "os";
 import { promisify } from "util";
-import { writeFile } from "fs";
+import { writeFile, mkdir } from "fs";
+import { dirname } from "path";
 
 const OUTPUT_INDENT = '    ';
 
@@ -63,6 +64,7 @@ export class OutputWritter {
     }
 
     public async flush() {
+        await promisify(mkdir)(dirname(this.outputFilePath), { recursive: true });
         await promisify(writeFile)(this.outputFilePath, this.buffer.slice(0, this.head), { flag: 'w+', encoding: 'utf8' });
     }
 }

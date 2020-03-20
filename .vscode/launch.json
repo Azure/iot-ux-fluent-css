@@ -8,14 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-			"args": ["${workspaceFolder}\\lib-build\\index.ts"],
-			"runtimeArgs": ["-r", "ts-node/register"],
-			"cwd": "${workspaceRoot}",
-			"protocol": "inspector",
-			"internalConsoleOptions": "openOnSessionStart",
-			"env": {
-				"TS_NODE_IGNORE": "false"
-			}
+            "program": "${workspaceFolder}\\codegen\\index.js",
+            "outFiles": ["${workspaceFolder}\\codegen\\**\\*.js"]
         }
     ]
 }

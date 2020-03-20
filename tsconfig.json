@@ -5,17 +5,16 @@
         "moduleResolution": "node",
         "experimentalDecorators": true,
         "forceConsistentCasingInFileNames": true,
-        "outDir": "./lib",
         "strict": true,
-        "rootDir": "src",
-        "sourceMap": false,
+        "rootDir": "codegen",
+        "sourceMap": true,
         "declaration": true,
         "types": [
             "@types/node"
         ]
     },
     "include": [
-        "src/**/*"
+        "codegen/**/*"
     ],
     "exclude": [
         "node_modules"

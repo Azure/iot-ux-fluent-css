@@ -2,7 +2,7 @@ import ThemesParser, { ThemeDefinition, ThemesData } from './themesParser';
 import { OutputWritter } from './outputWritter';
 import { join } from 'path';
 
-const OUTPUT_PATH = './src/themes/';
+const OUTPUT_PATH = './lib/';
 
 interface Theme {
     name: string;
@@ -60,6 +60,13 @@ async function generateTSFiles(themes: ThemesData) {
     const utilsFile = new OutputWritter(join(OUTPUT_PATH, './colorUtils.ts'));
     const defaultThemesFile = new OutputWritter(join(OUTPUT_PATH, './defaultThemes.ts'));
     const typesFile = new OutputWritter(join(OUTPUT_PATH, './themeTypes.ts'));
+    const indexFile = new OutputWritter(join(OUTPUT_PATH, './index.ts'));
+
+    indexFile.writeLine(`export * from './colorUtils';`);
+    indexFile.writeLine(`export * from './themeTypes';`);
+    indexFile.writeLine(`export * from './defaultThemes';`);
+
+    indexFile.flush();
 
     const themeDefs = Object.keys(themes);
     typesFile.writeLine(`export type DefinedThemes = '${themeDefs.join('\' | \'')}'`);

@@ -8,8 +8,7 @@
 .config/
 
 # Codegen
-/src/codegen/
-/lib/codegen/
+/codegen/
 
 # no .tsx or .ts files, but include .d.ts
 *.tsx
