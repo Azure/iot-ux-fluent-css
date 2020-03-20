@@ -1,24 +1,23 @@
 :root[theme="dark"] {
-  // ---- General
 
-  // Content background
+  /* Content background */
   --color-content-background-primary: #292D30;
-  --color-content-background-secondary: #25282a; //#0d0e0f;
+  --color-content-background-secondary: #25282a;
 
-  // State
+  /* State */
   --color-state-hover: #31373e;
   --color-state-selected: #434343;
   --color-state-selected-hover: #b3b0ad;
   --color-state-disabled: #31373e;
 
-  // Accent
+  /* Accent */
   --color-accent: #60aaff;
   --color-accent-hover: #136bfb;
   --color-accent-selected: #2f7fbd;
   --color-accent-selected-hover: #8daacb;
   --color-accent-foreground: #ffffff;
 
-  // Status
+  /* Status */
   --color-status-success: #89ff98;
   --color-status-success-foreground: #323130;
   --color-status-informational: #879092;
@@ -28,16 +27,14 @@
   --color-status-danger: #ff2828;
   --color-status-danger-foreground: #ffffff;
 
-  // Foreground
+  /* Foreground */
   --color-foreground-default: #ffffff;
   --color-foreground-complementary: #323130;
   --color-foreground-inactive: #f2f2f2;
   --color-foreground-disabled: #a6a6a6;
   --color-foreground-secondary: #434343;
 
-  // ---- Component specific
-
-  // Masthead
+  /* Masthead */
   --color-masthead-background: #3c3c41;
   --color-masthead-foreground: #ffffff;
   --color-masthead-button-hover: #666666;
@@ -45,16 +42,15 @@
   --color-search-background-hover: #ffffff;
   --color-search-text-hover: #000000;
   --color-search-text-placeholder: #666666;
-  --color-search-button-foreground: #ffffff;
 
-  // Main nav
+  /* Main nav */
   --color-main-nav-background: #31373e;
   --color-main-nav-background-hover: #434343;
   --color-main-nav-background-selected: #292D30;
   --color-main-nav-foreground-primary: #ffffff;
   --color-main-nav-foreground-secondary: #434343;
 
-  // Alert
+  /* Alert */
   --color-global-background-success: #dff6dd;
   --color-global-foreground-success: #323130;
   --color-global-background-informational: #cef1ff;
@@ -64,19 +60,21 @@
   --color-global-background-error: #fde7e9;
   --color-global-foreground-error: #a50606;
 
-  // Data Colors
-  // @todo uncomment this when we update the color picker for fluent support
-  // --data-color-1: #118dff;
-  // --data-color-2: #4e4dff;
-  // --data-color-3: #ff9254;
-  // --data-color-4: #c83d95;
-  // --data-color-5: #00c7e2;
-  // --data-color-6: #9911b0;
-  // --data-color-7: #ffadc1;
-  // --data-color-8: #e04854;
-  // --data-color-9: #fcd641;
-  // --data-color-10: #1ce099;
-  // --data-color-empty: #868886;
+  /* Data */
+  /* 
+   * @todo uncomment this when we update the color picker for fluent support
+   * --data-color-1: #118dff;
+   * --data-color-2: #4e4dff;
+   * --data-color-3: #ff9254;
+   * --data-color-4: #c83d95;
+   * --data-color-5: #00c7e2;
+   * --data-color-6: #9911b0;
+   * --data-color-7: #ffadc1;
+   * --data-color-8: #e04854;
+   * --data-color-9: #fcd641;
+   * --data-color-10: #1ce099;
+   * --data-color-empty: #868886;
+   */
   --data-color-1: #01b8aa;
   --data-color-2: #6be8dc;
   --data-color-3: #59cec3;

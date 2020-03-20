@@ -1,25 +1,23 @@
 :root,
 :root[theme="light"] {
-  // ---- General
-
-  // Content background
+  /* Content background */
   --color-content-background-primary: #ffffff;
   --color-content-background-secondary: #faf9f8;
 
-  // State
+  /* State */
   --color-state-hover: #f3f2f1;
   --color-state-selected: #dadada;
   --color-state-selected-hover: #c8c8c8;
   --color-state-disabled: #f3f2f1;
 
-  // Accent
+  /* Accent */
   --color-accent: #136bfb;
   --color-accent-hover: #0065d9;
   --color-accent-selected: #0053b3;
   --color-accent-selected-hover: #00418c;
   --color-accent-foreground: #ffffff;
 
-  // Status
+  /* Status */
   --color-status-success: #3bb44a;
   --color-status-success-foreground: #323130;
   --color-status-informational: #879092;
@@ -29,16 +27,14 @@
   --color-status-danger: #a50606;
   --color-status-danger-foreground: #ffffff;
 
-  // Foreground
+  /* Foreground */
   --color-foreground-default: #323130;
   --color-foreground-complementary: #ffffff;
   --color-foreground-inactive: #666666;
   --color-foreground-disabled: #a6a6a6;
   --color-foreground-secondary: #dadada;
 
-  // ---- Component specific
-
-  // Masthead
+  /* Masthead */
   --color-masthead-background: #3c3c41;
   --color-masthead-foreground: #ffffff;
   --color-masthead-button-hover: #666666;
@@ -46,16 +42,15 @@
   --color-search-background-hover: #ffffff;
   --color-search-text-hover: #000000;
   --color-search-text-placeholder: #666666;
-  --color-search-button-foreground: #ffffff;
 
-  // Main nav
+  /* Main nav */
   --color-main-nav-background: #f3f2f1;
   --color-main-nav-background-hover: #dadada;
   --color-main-nav-background-selected: #ffffff;
   --color-main-nav-foreground-primary: #323130;
   --color-main-nav-foreground-secondary: #dadada;
 
-  // Alert
+  /* Alert */
   --color-global-background-success: #dff6dd;
   --color-global-foreground-success: #323130;
   --color-global-background-informational: #cef1ff;
@@ -65,20 +60,21 @@
   --color-global-background-error: #fde7e9;
   --color-global-foreground-error: #a50606;
 
-  // ---- Data
-
-  // @todo uncomment this when we update the color picker for fluent support
-  // --data-color-1: #118dff;
-  // --data-color-2: #3a4bc6;
-  // --data-color-3: #e66c37;
-  // --data-color-4: #c83d95;
-  // --data-color-5: #009eb3;
-  // --data-color-6: #750985;
-  // --data-color-7: #835dd0;
-  // --data-color-8: #e04854;
-  // --data-color-9: #bd8608;
-  // --data-color-10: #18a03c;
-  // --data-color-empty: #868886;
+  /* Data */
+  /* 
+   * @todo uncomment this when we update the color picker for fluent support
+   * --data-color-1: #118dff;
+   * --data-color-2: #3a4bc6;
+   * --data-color-3: #e66c37;
+   * --data-color-4: #c83d95;
+   * --data-color-5: #009eb3;
+   * --data-color-6: #750985;
+   * --data-color-7: #835dd0;
+   * --data-color-8: #e04854;
+   * --data-color-9: #bd8608;
+   * --data-color-10: #18a03c;
+   * --data-color-empty: #868886;
+   */
   --data-color-1: #01b8aa;
   --data-color-2: #99e3dd;
   --data-color-3: #67d4cc;

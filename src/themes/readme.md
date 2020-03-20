@@ -54,7 +54,6 @@ The files have the following structure:
   --color-search-background-hover
   --color-search-text-hover
   --color-search-text-placeholder
-  --color-search-button-foreground
 
   // Main nav
   --color-main-nav-background

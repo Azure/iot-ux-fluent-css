@@ -332,5 +332,8 @@ ASALocalRun/
 # Node modules
 node_modules
 
-# Package-lock
-package-lock.json
+# Built files
+lib/
+codegen/**/*.js
+codegen/**/*.d.ts
+codegen/**/*.js.map

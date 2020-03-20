@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "rootDir": "codegen",
+        "sourceMap": true,
+        "declaration": true,
+        "types": [
+            "@types/node"
+        ]
+    },
+    "include": [
+        "codegen/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
