@@ -1,7 +1,7 @@
 :root[theme="dark"] {
 
   /* Content background */
-  --color-content-background-primary: #292D30;
+  --color-content-background-primary: #292d30;
   --color-content-background-secondary: #25282a;
 
   /* State */
@@ -51,7 +51,7 @@
   /* Main nav */
   --color-main-nav-background: #31373e;
   --color-main-nav-background-hover: #434343;
-  --color-main-nav-background-selected: #292D30;
+  --color-main-nav-background-selected: #292d30;
   --color-main-nav-foreground-primary: #ffffff;
   --color-main-nav-foreground-secondary: #434343;
 
