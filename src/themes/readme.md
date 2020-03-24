@@ -43,6 +43,10 @@ The files have the following structure:
   --color-foreground-secondary // border lines
   --color-foreground-tertiary // less important separations, like borders between rows on grid
 
+  // Shimmer
+  --color-background-shimmer
+  --color-foreground-shimmer
+
   // ---- Component specific
   // This are colors for specific components that shouldn't change
   // based on the main or accent colors
@@ -94,6 +98,12 @@ All of the colors on this section have to be provided as they cannot be calculat
 ## Foreground
 
 `color-foreground-default` is the main color of this section and has to be provided. All others are steps from this colors based on the following logic:
+
+@todo
+
+## Shimmer
+
+Shimmer colors have to be calculated related to `color-content-background-primary` and `color-foreground-default`.
 
 @todo
 

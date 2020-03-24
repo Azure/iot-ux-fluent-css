@@ -35,6 +35,10 @@
   --color-foreground-secondary: #434343;
   --color-foreground-tertiary: #31373e;
 
+  /* Shimmer */
+  --color-background-shimmer: #434343;
+  --color-foreground-shimmer: #292d30;
+
   /* Masthead */
   --color-masthead-background: #3c3c41;
   --color-masthead-foreground: #ffffff;
