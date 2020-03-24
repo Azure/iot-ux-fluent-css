@@ -4,7 +4,7 @@
 ## Changed
 - Added shimmer colors
 - Added foreground tertiary for less important separations
-- Removed deprecated colors
+- Removed utils generated file since it's not needed with dynamic stylesheet generation approach
 
 ## v8.0.1
 ## Changed
