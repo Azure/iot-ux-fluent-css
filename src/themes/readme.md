@@ -41,6 +41,7 @@ The files have the following structure:
   --color-foreground-inactive
   --color-foreground-disabled
   --color-foreground-secondary // border lines
+  --color-foreground-tertiary // less important separations, like borders between rows on grid
 
   // ---- Component specific
   // This are colors for specific components that shouldn't change
