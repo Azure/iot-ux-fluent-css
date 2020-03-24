@@ -57,12 +57,10 @@ async function parseAndValidateThemeFiles() {
 }
 
 async function generateTSFiles(themes: ThemesData) {
-    const utilsFile = new OutputWritter(join(OUTPUT_PATH, './colorUtils.ts'));
     const defaultThemesFile = new OutputWritter(join(OUTPUT_PATH, './defaultThemes.ts'));
     const typesFile = new OutputWritter(join(OUTPUT_PATH, './themeTypes.ts'));
     const indexFile = new OutputWritter(join(OUTPUT_PATH, './index.ts'));
 
-    indexFile.writeLine(`export * from './colorUtils';`);
     indexFile.writeLine(`export * from './themeTypes';`);
     indexFile.writeLine(`export * from './defaultThemes';`);
 
@@ -129,40 +127,8 @@ async function generateTSFiles(themes: ThemesData) {
 
     defaultThemesFile.writeLine('};');
 
-    //  ============= UTILS
-    utilsFile.writeLine('import { CustomTheme } from \'./themeTypes\';')
-    utilsFile.writeLine();
-    utilsFile.writeLine('export function createCustomThemeStylesheet(theme: CustomTheme) {');
-    utilsFile.writeLine('let embeddedStyles = \'\\n/** Custom theme **/\\n:root[theme="custom"] {\\n\\n\';', 1);
-    utilsFile.writeLine();
-    utilsFile.writeLine('for (const [themeSection, values] of Object.entries(theme)) {', 1);
-    utilsFile.writeLine('embeddedStyles += `    /* ${themeSection} */\\n`;', 2);
-    utilsFile.writeLine();
-    utilsFile.writeLine('for (const [propertyName, propertyValue] of Object.entries(values)) {', 2)
-    utilsFile.writeLine('embeddedStyles += `    ${propertyName}: ${propertyValue};\\n`;', 3);
-    utilsFile.writeLine('}', 2);
-    utilsFile.writeLine();
-    utilsFile.writeLine('embeddedStyles += \'\\n\';', 2);
-    utilsFile.writeLine('}', 1);
-    utilsFile.writeLine('return `<style type="text/css">${embeddedStyles}</style>`;', 1);
-    utilsFile.writeLine('}');
-    utilsFile.writeLine();
-
-    utilsFile.writeLine('export function clearThemeProperties(DOMElement: HTMLElement) {');
-    utilsFile.writeLine('for (const color of [', 1);
-
-    for (const property of allProperties) {
-        utilsFile.writeLine(`'${property}',`, 2);
-    }
-
-    utilsFile.writeLine(']) {', 1);
-    utilsFile.writeLine('DOMElement.style.removeProperty(color);', 2);
-    utilsFile.writeLine('}', 1);
-    utilsFile.writeLine('}');
-
     defaultThemesFile.flush();
     typesFile.flush();
-    utilsFile.flush();
 }
 
 async function main() {

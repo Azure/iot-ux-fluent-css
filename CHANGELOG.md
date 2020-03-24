@@ -1,5 +1,11 @@
 # CHANGELOG
 
+# v8.0.2
+## Changed
+- Added shimmer colors
+- Added foreground tertiary for less important separations
+- Removed utils generated file since it's not needed with dynamic stylesheet generation approach
+
 ## v8.0.1
 ## Changed
 - Change non-scss files to use css

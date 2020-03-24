@@ -1,7 +1,7 @@
 :root[theme="dark"] {
 
   /* Content background */
-  --color-content-background-primary: #292D30;
+  --color-content-background-primary: #292d30;
   --color-content-background-secondary: #25282a;
 
   /* State */
@@ -33,6 +33,11 @@
   --color-foreground-inactive: #f2f2f2;
   --color-foreground-disabled: #a6a6a6;
   --color-foreground-secondary: #434343;
+  --color-foreground-tertiary: #31373e;
+
+  /* Shimmer */
+  --color-background-shimmer: #434343;
+  --color-foreground-shimmer: #292d30;
 
   /* Masthead */
   --color-masthead-background: #3c3c41;
@@ -46,7 +51,7 @@
   /* Main nav */
   --color-main-nav-background: #31373e;
   --color-main-nav-background-hover: #434343;
-  --color-main-nav-background-selected: #292D30;
+  --color-main-nav-background-selected: #292d30;
   --color-main-nav-foreground-primary: #ffffff;
   --color-main-nav-foreground-secondary: #434343;
 

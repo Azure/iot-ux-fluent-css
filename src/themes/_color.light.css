@@ -33,6 +33,11 @@
   --color-foreground-inactive: #666666;
   --color-foreground-disabled: #a6a6a6;
   --color-foreground-secondary: #dadada;
+  --color-foreground-tertiary: #f3f2f1;
+
+  /* Shimmer */
+  --color-background-shimmer: #dadada;
+  --color-foreground-shimmer: #faf9f8;
 
   /* Masthead */
   --color-masthead-background: #3c3c41;
