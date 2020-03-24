@@ -1,5 +1,11 @@
 # CHANGELOG
 
+# v8.0.2
+## Changed
+- Added shimmer colors
+- Added foreground tertiary for less important separations
+- Removed deprecated colors
+
 ## v8.0.1
 ## Changed
 - Change non-scss files to use css
