@@ -1,18 +1,22 @@
 # CHANGELOG
 
-# v8.0.2
-## Changed
+## v8.0.3
+### Changed
+- Removed deprecated colors
+
+## v8.0.2
+### Changed
 - Added shimmer colors
 - Added foreground tertiary for less important separations
 - Removed utils generated file since it's not needed with dynamic stylesheet generation approach
 
 ## v8.0.1
-## Changed
+### Changed
 - Change non-scss files to use css
 - Added codegen to generate theme-related typescript files
 
 ## v8.0.0
-## Changed
+### Changed
 - Deprecated mapping and made each theme to have its own palette that shares the same naming convention
 
 ## v7.1.3
