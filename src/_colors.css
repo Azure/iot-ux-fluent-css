@@ -20,13 +20,6 @@
 }
 
 /**
- * Import deprecated color theme mappings
- */
-@import "./deprecated/color.palette";
-@import "./deprecated/color.light";
-@import "./deprecated/color.dark";
-
-/**
  * Import palettes for different supported themes
  */
 @import "./themes/color.light";
