@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v8.0.4
+### Fixed
+- Foreground disabled, selected hover and foreground inactive in dark to have better contrast
+
+### Changed
+- Added separate colors for links to not use accent color and modified normalize to use them
+
 ## v8.0.3
 ### Changed
 - Removed deprecated colors
