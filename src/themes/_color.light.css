@@ -1,8 +1,7 @@
-:root,
 :root[theme="light"] {
   /* Content background */
   --color-content-background-primary: #ffffff;
-  --color-content-background-secondary: #faf9f8;
+  --color-content-background-secondary: #f7f7f7;
 
   /* State */
   --color-state-hover: #f3f2f1;
@@ -64,6 +63,11 @@
   --color-global-foreground-warning: #323130;
   --color-global-background-error: #fde7e9;
   --color-global-foreground-error: #a50606;
+
+  /* Link */
+  --color-link-default: #136bfb;
+  --color-link-hover: #0065d9;
+  --color-link-selected: #0065d9;
 
   /* Data */
   /* 

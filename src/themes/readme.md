@@ -8,24 +8,24 @@ The files have the following structure:
 :root[theme="THEME_NAME"] {
   // ---- General
 
-  // Content background
+  /* Content background */
   --color-content-background-primary // Content area, command bar background, tiles background, cards background
   --color-content-background-secondary // background for panel and dashboard, color for placeholder on tiles in edit mode
 
-  // State
+  /* State */
   --color-state-hover // hover, focus
   --color-state-selected // selected
   --color-state-selected-hover // selected hover
   --color-state-disabled // background for disabled elements
 
-  // Accent
+  /* Accent */
   --color-accent // Main accent color
   --color-accent-hover // Accent shade for hover
   --color-accent-selected  // Accent shade for selected
   --color-accent-selected-hover // Accent shade for selected hover
   --color-accent-foreground // Foreground color to be used on top of the accent color
 
-  // Status
+  /* Status */
   --color-status-success
   --color-status-success-foreground // Foreground to be used on top of the status success color
   --color-status-informational
@@ -35,7 +35,7 @@ The files have the following structure:
   --color-status-danger
   --color-status-danger-foreground // Foreground to be used on top of the status danger color
 
-  // Foreground
+  /* Foreground */
   --color-foreground-default // Default color for foreground (text, icons)
   --color-foreground-complementary // complementary color to foreground-default
   --color-foreground-inactive
@@ -43,7 +43,7 @@ The files have the following structure:
   --color-foreground-secondary // border lines
   --color-foreground-tertiary // less important separations, like borders between rows on grid
 
-  // Shimmer
+  /* Shimmer */
   --color-background-shimmer
   --color-foreground-shimmer
 
@@ -51,7 +51,7 @@ The files have the following structure:
   // This are colors for specific components that shouldn't change
   // based on the main or accent colors
 
-  // Masthead
+  /* Masthead */
   --color-masthead-background
   --color-masthead-foreground
   --color-masthead-button-hover
@@ -60,14 +60,14 @@ The files have the following structure:
   --color-search-text-hover
   --color-search-text-placeholder
 
-  // Main nav
+  /* Main nav */
   --color-main-nav-background
   --color-main-nav-background-hover // Background for items in hover state
   --color-main-nav-background-selected // Background for the currently active item
   --color-main-nav-foreground-primary // Text color
   --color-main-nav-foreground-secondary // Borders and separators color
 
-  // Alert - Global notifications
+  /* Alert - Global notifications */
   --color-global-background-success
   --color-global-foreground-success
   --color-global-background-informational
@@ -76,6 +76,11 @@ The files have the following structure:
   --color-global-foreground-warning
   --color-global-background-error
   --color-global-foreground-error
+
+  /* Link */
+  --color-link-default // Foreground color for links in their default state
+  --color-link-hover // Foreground color for links in hover and focus state
+  --color-link-selected // Foreground color for links in pressed state
 ````
 
 Each section has colors that either have to be defined, or can be calculated from other colors (both in the same section, in a different section or from the default light or dark themes).
@@ -121,3 +126,9 @@ Shimmer colors have to be calculated related to `color-content-background-primar
 ## Alert
 
 All of the colors on this section have to be provided as they cannot be calculated.
+
+## Link
+
+`color-link-default` is the main color of this section and has to be provided. All other are steps from this colors based on the following logic:
+
+@todo
