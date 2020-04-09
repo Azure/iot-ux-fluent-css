@@ -129,6 +129,6 @@ All of the colors on this section have to be provided as they cannot be calculat
 
 ## Link
 
-`color-link-default` is the main color of this section and has to be provided. All other are strps from this colors based on the following logic:
+`color-link-default` is the main color of this section and has to be provided. All other are steps from this colors based on the following logic:
 
 @todo
