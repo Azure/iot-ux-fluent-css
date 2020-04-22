@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.0.5
+### Added
+- Content background featured color for the background area behind featured items, to make them stand out and more distinct from the rest.
+
 ## v8.0.4
 ### Fixed
 - Foreground disabled, selected hover and foreground inactive in dark to have better contrast
