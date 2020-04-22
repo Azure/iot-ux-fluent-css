@@ -11,6 +11,7 @@ The files have the following structure:
   /* Content background */
   --color-content-background-primary // Content area, command bar background, tiles background, cards background
   --color-content-background-secondary // background for panel and dashboard, color for placeholder on tiles in edit mode
+  --color-content-background-featured // Background color for the area behind featured items to make them stand out more
 
   /* State */
   --color-state-hover // hover, focus
