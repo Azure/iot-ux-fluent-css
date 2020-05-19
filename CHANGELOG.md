@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v8.0.6
+### Changed
+- Updated `--color-search-background` to `--color-light-transparent-tenth` in both light and dark
+- Updated `--color-status-success` and `--color-status-warning` in light mode to increase hue.
+
 ## v8.0.5
 ### Added
 - Content background featured color for the background area behind featured items, to make them stand out and more distinct from the rest.
