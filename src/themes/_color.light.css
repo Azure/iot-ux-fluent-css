@@ -18,11 +18,11 @@
   --color-accent-foreground: #ffffff;
 
   /* Status */
-  --color-status-success: #3bb44a;
+  --color-status-success: #36a643;
   --color-status-success-foreground: #323130;
   --color-status-informational: #879092;
   --color-status-informational-foreground: #323130;
-  --color-status-warning: #d58e00;
+  --color-status-warning: #c28100;
   --color-status-warning-foreground: #323130;
   --color-status-danger: #a50606;
   --color-status-danger-foreground: #ffffff;
@@ -43,7 +43,7 @@
   --color-masthead-background: #3c3c41;
   --color-masthead-foreground: #ffffff;
   --color-masthead-button-hover: #666666;
-  --color-search-background: var(--color-light-transparent-third);
+  --color-search-background: var(--color-light-transparent-tenth);
   --color-search-background-hover: #ffffff;
   --color-search-text-hover: #000000;
   --color-search-text-placeholder: #666666;
