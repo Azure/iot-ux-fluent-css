@@ -8,6 +8,7 @@
 @import "depth";
 @import "constants";
 @import "mixins";
+@import "responsive";
 
 :root[dir='rtl'] {
   direction: rtl;
@@ -36,13 +37,10 @@
     flex-direction: column;
   }
 
-  * {
-    @include box-sizing(border-box);
-  }
-
+  *,
   *:before,
   *:after {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
   }
 
   // Reset fonts for relevant elements
@@ -96,11 +94,9 @@
   h1,
   .h1,
   h2,
-  .h2,
-  h3,
-  .h3 {
-    margin-top: ($gutter-small / 2);
-    margin-bottom: ($gutter-small / 2);
+  .h2 {
+    margin-top: $space-sm;
+    margin-bottom: $space-sm;
 
     small,
     .small {
@@ -108,14 +104,16 @@
     }
   }
 
+  h3,
+  .h3,
   h4,
   .h4,
   h5,
   .h5,
   h6,
   .h6 {
-    margin-top: ($gutter-small / 2);
-    margin-bottom: ($gutter-small / 2);
+    margin-top: $space-xs;
+    margin-bottom: $space-xs;
 
     small,
     .small {
@@ -169,7 +167,7 @@
   // -------------------------
 
   p {
-    margin: 0 0 $gutter-normal / 2;
+    margin: 0 0 $space-lg;
   }
 
   label {
@@ -194,32 +192,12 @@
   ul,
   ol {
     margin-top: 0;
-    margin-bottom: $gutter-normal / 2;
+    margin-bottom: $space-lg;
 
     ul,
     ol {
       margin-bottom: 0;
     }
-  }
-
-  // Description Lists
-  dl {
-    margin-top: 0; // Remove browser default
-    margin-bottom: $gutter-normal;
-  }
-
-  dt,
-  dd {
-    line-height: var(--line-height-default);
-    min-height: var(--line-height-default);
-  }
-
-  dt {
-    font-weight: bold;
-  }
-
-  dd {
-    margin-left: 0; // Undo browser default
   }
 
   // define some common css classes that everyone needs to use. These
@@ -242,7 +220,7 @@
   .focus-visible {
     &:focus {
       outline: 1px solid var(--color-accent);
-      outline-offset: -1px;
+      outline-offset: -2px;
     }
     
     &:focus:not(:focus-visible) {
@@ -251,7 +229,7 @@
     
     &:focus-visible {
       outline: 1px solid var(--color-accent);
-      outline-offset: -1px;
+      outline-offset: -2px;
     }
   }
 }

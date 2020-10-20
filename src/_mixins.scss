@@ -9,22 +9,3 @@
         @content;
     }
 }
-
-/// Box sizing
-///
-/// @param {String} $boxmodel - The box model e.g. border-box
-///
-@mixin box-sizing($boxmodel) {
-    -webkit-box-sizing: $boxmodel;
-    -moz-box-sizing: $boxmodel;
-    box-sizing: $boxmodel;
-}
-
-
-/// WebKit-style focus
-///
-@mixin tab-focus() {
-    // WebKit-specific. Other browsers will keep their default outline style.
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-}

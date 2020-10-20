@@ -2,28 +2,14 @@
  * General constants
  */
 
-// [DEPRECATED] Gutters
-
-$gutter-xxsmall: 0.5rem;
-$gutter-xsmall: 0.75rem;
-$gutter-small: 1rem;
-$gutter-normal: 1.25rem;
-$gutter-big: 2rem;
-$gutter-bigger: 2.5rem;
-
-
-// [DEPRECATED] Grid size
-
-$grid-size: 0.25rem;
-
 // Spacing
 
-$space-base: 0.25rem; // 4px
-$space-xs: 0.5rem; // 8px
-$space-sm: 1rem; // 16px
-$space-md: 1.5rem; // 24px
-$space-lg: 2rem; // 32px
-$space-xl: 4rem; // 64px
+$space-base: 0.25rem;
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
 
 // Z Index
 
@@ -67,18 +53,25 @@ $layout-chart-y-axis-width: $gutter-bigger;
 $layout-chart-x-axis-height: $gutter-big;
 $layout-chart-axis-tick-size: 0.375rem;
 
-// Media query breakpoints:
-
-$screen-sm: 480px;
-$screen-md: 640px;
-$screen-lg: 1024px;
-$screen-xl: 1366px;
-$screen-xxl: 1920px;
-
 /// Interaction constants
 
 $interaction-timing: 200ms;
 $clickable-scale: 0.9;
+
+/********* [DEPRECATED]  *************************/
+
+// Gutters
+
+$gutter-xxsmall: 0.5rem;
+$gutter-xsmall: 0.75rem;
+$gutter-small: 1rem;
+$gutter-normal: 1.25rem;
+$gutter-big: 2rem;
+$gutter-bigger: 2.5rem;
+
+// Grid size
+
+$grid-size: 0.25rem;
 
 // Styles
 
