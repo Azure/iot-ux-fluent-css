@@ -29,30 +29,6 @@ $z-index-flyouts-dropdown: $z-index-flyout-layer + 6 * $z-index-medium-step;
 $z-index-flyouts-inline-btn: $z-index-flyout-layer + 7 * $z-index-medium-step;
 $z-index-tutorial-tips: $z-index-flyout-layer + 8 * $z-index-medium-step;
 
-// The basis for larger building blocks
-
-$input-height: 8*$grid-size;
-$option-height: 8*$grid-size;
-$button-height: 8*$grid-size;
-$dropdown-max-height: 50*$grid-size;
-
-// Layout
-
-$layout-nav-item-height: 2.75rem;
-$layout-header-xlarge-height: $layout-nav-item-height * 4;
-$layout-header-large-height: $layout-nav-item-height * 3;
-$layout-header-medium-height: $layout-nav-item-height * 2;
-$layout-header-small-height: $layout-nav-item-height;
-$layout-split-panel-width: 18.75rem;
-$layout-thumbnail-size: 6.25rem;
-$layout-centered-text-width: 25rem;
-$layout-masthead-height: 3rem;
-$layout-nav-collapsed-width: 3rem;
-$layout-nav-expanded-width: 12.5rem;
-$layout-chart-y-axis-width: $gutter-bigger;
-$layout-chart-x-axis-height: $gutter-big;
-$layout-chart-axis-tick-size: 0.375rem;
-
 /// Interaction constants
 
 $interaction-timing: 200ms;
@@ -79,3 +55,29 @@ $grid-size: 0.25rem;
     font-family: var(--font-family-semibold);
     font-weight: var(--font-weight-semibold);
 }
+
+// The basis for larger building blocks
+
+$input-height: 8*$grid-size;
+$option-height: 8*$grid-size;
+$button-height: 8*$grid-size;
+$dropdown-max-height: 50*$grid-size;
+
+// Layout
+
+$layout-nav-item-height: 2.75rem;
+$layout-header-xlarge-height: $layout-nav-item-height * 4;
+$layout-header-large-height: $layout-nav-item-height * 3;
+$layout-header-medium-height: $layout-nav-item-height * 2;
+$layout-header-small-height: $layout-nav-item-height;
+$layout-split-panel-width: 18.75rem;
+$layout-thumbnail-size: 6.25rem;
+$layout-centered-text-width: 25rem;
+$layout-masthead-height: 3rem;
+$layout-nav-collapsed-width: 3rem;
+$layout-nav-expanded-width: 12.5rem;
+$layout-chart-y-axis-width: $gutter-bigger;
+$layout-chart-x-axis-height: $gutter-big;
+$layout-chart-axis-tick-size: 0.375rem;
+
+/*************************************************/
