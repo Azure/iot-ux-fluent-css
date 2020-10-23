@@ -70,21 +70,31 @@
   --color-link-hover: #136bfb;
   --color-link-selected: #2f7fbd;
 
+  /* IoTC internal data viz */  
+  --color-azul: #118dff;
+  --color-foreground-azul: #ffffff;
+  --color-atlantic: #4e4dff;
+  --color-foreground-atlantic: #ffffff;
+  --color-mango: #ff9254;
+  --color-foreground-mango: #323130;
+  --color-blush: #c83d95;
+  --color-foreground-blush: #ffffff;
+  --color-pacific: #00c7e2;
+  --color-foreground-pacific: #323130;
+  --color-grape: #9911b0;
+  --color-foreground-grape: #ffffff;
+  --color-lilac: #ffadc1;
+  --color-foreground-lilac: #323130;
+  --color-scarlet: #e04854;
+  --color-foreground-scarlet: #ffffff;
+  --color-sahara: #fcd641;
+  --color-foreground-sahara: #323130;
+  --color-leaf: #1ce099;
+  --color-foreground-leaf: #323130;
+  --color-empty-data: #8A8886;
+  --color-foreground-empty-data: #ffffff;
+
   /* Data */
-  /* 
-   * @todo uncomment this when we update the color picker for fluent support
-   * --data-color-1: #118dff;
-   * --data-color-2: #4e4dff;
-   * --data-color-3: #ff9254;
-   * --data-color-4: #c83d95;
-   * --data-color-5: #00c7e2;
-   * --data-color-6: #9911b0;
-   * --data-color-7: #ffadc1;
-   * --data-color-8: #e04854;
-   * --data-color-9: #fcd641;
-   * --data-color-10: #1ce099;
-   * --data-color-empty: #868886;
-   */
   --data-color-1: #01b8aa;
   --data-color-2: #6be8dc;
   --data-color-3: #59cec3;
