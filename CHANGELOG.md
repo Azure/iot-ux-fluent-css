@@ -17,6 +17,7 @@
 ### Added
 - Added new spacing and sizing constants to align to new design system.
 - Added `.focus-visible` class to unify keyboard only focus behavior where supported (fallback to regular focus behavior)
+- Added IoTC internal data viz colors for system defined visualization coloring.
 
 ## v8.0.6
 ### Changed
