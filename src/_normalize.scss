@@ -8,6 +8,7 @@
 @import "depth";
 @import "constants";
 @import "mixins";
+@import "responsive";
 
 :root[dir='rtl'] {
   direction: rtl;
@@ -17,6 +18,7 @@
   body {
     margin: 0;
     padding: 0;
+
     font-family: var(--font-family-default);
     font-size: var(--font-size-default);
     line-height: var(--line-height-default);
@@ -35,13 +37,10 @@
     flex-direction: column;
   }
 
-  * {
-    @include box-sizing(border-box);
-  }
-
+  *,
   *:before,
   *:after {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
   }
 
   // Reset fonts for relevant elements
@@ -58,41 +57,37 @@
   // Headings
   // -------------------------
 
-  .hero {
-    font-family: var(--font-family-light);
+  .type-hero {
+    font-family: var(--font-family-semilight);
+    font-weight: var(--font-weight-semilight);
+
     font-size: var(--font-size-hero);
     line-height: var(--line-height-hero);
     min-height: var(--line-height-hero);
-    font-weight: var(--font-weight-hero);
   }
 
   h1,
-  .h1 {
-    font-weight: normal;
-  }
-
   h2,
   h3,
   h4,
   h5,
   h6,
+  .h1,
   .h2,
   .h3,
   .h4,
   .h5,
   .h6 {
-    font-weight: var(--font-weight-headings);
+    font-weight: var(--font-weight-semibold);
     font-family: var(--font-family-semibold);
   }
 
   h1,
   .h1,
   h2,
-  .h2,
-  h3,
-  .h3 {
-    margin-top: ($gutter-small / 2);
-    margin-bottom: ($gutter-small / 2);
+  .h2 {
+    margin-top: $space-sm;
+    margin-bottom: $space-sm;
 
     small,
     .small {
@@ -100,14 +95,16 @@
     }
   }
 
+  h3,
+  .h3,
   h4,
   .h4,
   h5,
   .h5,
   h6,
   .h6 {
-    margin-top: ($gutter-small / 2);
-    margin-bottom: ($gutter-small / 2);
+    margin-top: $space-xs;
+    margin-bottom: $space-xs;
 
     small,
     .small {
@@ -137,17 +134,31 @@
   }
 
   h4,
-  .h4 {
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
     min-height: var(--line-height-h4);
+  }
+
+  .semibold {
+    font-family: var(--font-family-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .semilight {
+    font-family: var(--font-family-semilight);
+    font-weight: var(--font-weight-semilight);
   }
 
   // Body text
   // -------------------------
 
   p {
-    margin: 0 0 $gutter-normal / 2;
+    margin: 0 0 $space-lg;
   }
 
   label {
@@ -172,32 +183,12 @@
   ul,
   ol {
     margin-top: 0;
-    margin-bottom: $gutter-normal / 2;
+    margin-bottom: $space-lg;
 
     ul,
     ol {
       margin-bottom: 0;
     }
-  }
-
-  // Description Lists
-  dl {
-    margin-top: 0; // Remove browser default
-    margin-bottom: $gutter-normal;
-  }
-
-  dt,
-  dd {
-    line-height: var(--line-height-default);
-    min-height: var(--line-height-default);
-  }
-
-  dt {
-    font-weight: bold;
-  }
-
-  dd {
-    margin-left: 0; // Undo browser default
   }
 
   // define some common css classes that everyone needs to use. These
@@ -215,6 +206,22 @@
   ::selection {
     color: var(--color-accent-foreground);
     background-color: var(--color-accent) !important;
+  }
+
+  .focus-visible {
+    &:focus {
+      outline: 1px solid var(--color-accent);
+      outline-offset: -2px;
+    }
+    
+    &:focus:not(:focus-visible) {
+      outline: 0;
+    }
+    
+    &:focus-visible {
+      outline: 1px solid var(--color-accent);
+      outline-offset: -2px;
+    }
   }
 }
 

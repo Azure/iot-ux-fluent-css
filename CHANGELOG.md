@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v8.1.0
+### Changed
+- Updated `_normalize.scss` to use new spacing and sizing constants.
+- Removed unused dl and dt normalization.
+- Removed unused `--font-family-din-regular`
+- **[BREAKING]** Changed `--font-family-light` to `--font-family-semilight`
+- Marked old spacing classes as deprecated in favor of new ones.
+- Marked `%semibold` as deprecated in favor of `.semibold` css class and added a `.semilight` class
+- **[BREAKING]** Changed `--line-weight-headings` to `--line-weight-semibold`
+- **[BREAKING]** Changed `--line-weight-hero` to `--line-weight-semilight`
+- **[BREAKING]** Moved media query breakpoints to its own `_responsive.scss` file, updated breakpoints to align to fluent and added mobile first mixins to easily use these breakpoints.
+- Removed unused `box-sizing` and `tab-focus` mixins.
+- Updated `--font-size-hero`, `--line-height-hero`, `--font-size-h1` and `--line-height-h1` to align to fluent.
+
+### Added
+- Added new spacing and sizing constants to align to new design system.
+- Added `.focus-visible` class to unify keyboard only focus behavior where supported (fallback to regular focus behavior)
+- Added IoTC internal data viz colors for system defined visualization coloring.
+
 ## v8.0.6
 ### Changed
 - Updated `--color-search-background` to `--color-light-transparent-tenth` in both light and dark

@@ -2,18 +2,42 @@
  * General constants
  */
 
-// Gutters
+// Spacing
 
-$gutter-xxsmall: 0.5rem;
-$gutter-xsmall: 0.75rem;
-$gutter-small: 1rem;
-$gutter-normal: 1.25rem;
-$gutter-big: 2rem;
-$gutter-bigger: 2.5rem;
+$space-base: 0.25rem;
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
 
-// Grid size
+// Sizes
 
-$grid-size: 0.25rem;
+$size-10: 0.75rem;
+$size-20: 1rem;
+$size-30: 1.5rem;
+$size-40: 2rem;
+$size-50: 2.75rem;
+$size-60: 3rem;
+$size-70: 4rem;
+$size-80: 8rem;
+$size-90: 10rem;
+$size-100: 12.5rem;
+$size-110: 16rem;
+$size-120: 21.25rem;
+$size-130: 40.25rem;
+$size-140: 58.75rem;
+
+// Max sizes
+
+$max-size-10: 15rem;
+$max-size-20: 20rem;
+$max-size-30: 25rem;
+$max-size-40: 30rem;
+$max-size-50: 40rem;
+$max-size-60: 50rem;
+$max-size-70: 60rem;
+$max-size-80: 70rem;
 
 // Z Index
 
@@ -32,6 +56,33 @@ $z-index-flyouts-masthead: $z-index-flyout-layer + 5 * $z-index-medium-step;
 $z-index-flyouts-dropdown: $z-index-flyout-layer + 6 * $z-index-medium-step;
 $z-index-flyouts-inline-btn: $z-index-flyout-layer + 7 * $z-index-medium-step;
 $z-index-tutorial-tips: $z-index-flyout-layer + 8 * $z-index-medium-step;
+
+/// Interaction constants
+
+$interaction-timing: 200ms;
+$clickable-scale: 0.9;
+
+/********* [DEPRECATED]  *************************/
+
+// Gutters
+
+$gutter-xxsmall: 0.5rem;
+$gutter-xsmall: 0.75rem;
+$gutter-small: 1rem;
+$gutter-normal: 1.25rem;
+$gutter-big: 2rem;
+$gutter-bigger: 2.5rem;
+
+// Grid size
+
+$grid-size: 0.25rem;
+
+// Styles
+
+%semibold {
+    font-family: var(--font-family-semibold);
+    font-weight: var(--font-weight-semibold);
+}
 
 // The basis for larger building blocks
 
@@ -57,22 +108,4 @@ $layout-chart-y-axis-width: $gutter-bigger;
 $layout-chart-x-axis-height: $gutter-big;
 $layout-chart-axis-tick-size: 0.375rem;
 
-// Media query breakpoints:
-
-$screen-xs: 320px;
-$screen-sm: 480px;
-$screen-md: 640px;
-$screen-lg: 1024px;
-$screen-xl: 1366px;
-
-/// Interaction constants
-
-$interaction-timing: 200ms;
-$clickable-scale: 0.9;
-
-// Styles
-
-%semibold {
-    font-family: var(--font-family-semibold);
-    font-weight: 600;
-}
+/*************************************************/
