@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.1
+### Changed
+- Updated color section from `IoTC internal data viz` to `IoTC visualizations`
+
 ## v8.1.0
 ### Changed
 - Updated `_normalize.scss` to use new spacing and sizing constants.
