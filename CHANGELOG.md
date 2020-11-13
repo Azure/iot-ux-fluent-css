@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.3
+### Changed
+- Update `focus-visible` outline color from `foreground-default` to `foreground-inactive`
+
 ## v8.1.2
 ### Changed
 - Update `focus-visible` class to align to FluentUI
