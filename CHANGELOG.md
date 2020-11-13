@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v8.1.2
+### Changed
+- Update `focus-visible` class to align to FluentUI
+- Remove focus states on anchor tags normalization
+
 ## v8.1.1
 ### Changed
 - Updated color section from `IoTC internal data viz` to `IoTC visualizations`

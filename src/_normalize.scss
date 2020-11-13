@@ -169,8 +169,7 @@
     text-decoration: none;
     color: var(--color-link-default);
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: var(--color-link-hover);
     }
 
@@ -210,8 +209,8 @@
 
   .focus-visible {
     &:focus {
-      outline: 1px solid var(--color-accent);
-      outline-offset: -2px;
+      outline: 1px solid var(--color-foreground-default);
+      outline-offset: -1px;
     }
     
     &:focus:not(:focus-visible) {
@@ -219,8 +218,8 @@
     }
     
     &:focus-visible {
-      outline: 1px solid var(--color-accent);
-      outline-offset: -2px;
+      outline: 1px solid var(--color-foreground-default);
+      outline-offset: -1px;
     }
   }
 }
