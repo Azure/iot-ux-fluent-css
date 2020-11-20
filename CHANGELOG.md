@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.4
+### Changed
+- Remove unused semi-transparent colors.
+
 ## v8.1.3
 ### Changed
 - Update `focus-visible` outline color from `foreground-default` to `foreground-inactive`
