@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.5
+### Changed
+- Added new `$size-115` and `$max-size-90` that accomodate for needs in page templates.
+
 ## v8.1.4
 ### Changed
 - Remove unused semi-transparent colors.
