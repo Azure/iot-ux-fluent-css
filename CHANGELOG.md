@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v8.1.6
+### Changed
+- Added `--color-content-background-tertiary` to be used as background below cards
+- Added `$space-default`
+- Updated `H1` typography size and line height
+- Updated `$max-size-90` to 120rem
+
 ## v8.1.5
 ### Changed
 - Added new `$size-115` and `$max-size-90` that accomodate for needs in page templates.
