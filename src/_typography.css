@@ -4,7 +4,7 @@
 
 :root {
     --font-size-hero: 2.75rem;
-    --font-size-h1: 1.75rem;
+    --font-size-h1: 1.5rem;
     --font-size-h2: 1.25rem;
     --font-size-h3: 1rem;
     --font-size-h4: 0.875rem;
@@ -22,7 +22,7 @@
     --font-weight-semilight: 300;
 
     --line-height-hero: 3.25rem;
-    --line-height-h1: 2.25rem;
+    --line-height-h1: 2rem;
     --line-height-h2: 1.75rem;
     --line-height-h3: 1.5rem;
     --line-height-h4: 1.25rem;
