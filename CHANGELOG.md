@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.7
+### Changed
+- Updated `$max-size-60` to 46.25rem
+
 ## v8.1.6
 ### Changed
 - Added `--color-content-background-tertiary` to be used as background below cards
