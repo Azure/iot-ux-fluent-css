@@ -2,6 +2,10 @@
 
 ## v8.1.7
 ### Changed
+- Fixed app height on webkit based browsers to take all available space instead of 100vh
+
+## v8.1.7
+### Changed
 - Updated `$max-size-60` to 46.25rem
 
 ## v8.1.6
