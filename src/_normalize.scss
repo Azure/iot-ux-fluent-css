@@ -15,7 +15,15 @@
 }
 
 :global {
+  :root {
+    // Fix webkit mobile bug with handling 100vh hiding it over the sticky browser footer
+    height: -webkit-fill-available;
+  }
+
   body {
+    height: 100vh;
+    height: -webkit-fill-available;
+
     margin: 0;
     padding: 0;
 
@@ -26,7 +34,8 @@
   }
 
   #root {
-    height: 100vh;
+    height: 100%;
+    height: -webkit-fill-available;
     
     // Set positioning to relative so that everything flows from shell
     position: relative;
