@@ -16,13 +16,20 @@
 
 :global {
   :root {
-    // Fix webkit mobile bug with handling 100vh hiding it over the sticky browser footer
-    height: -webkit-fill-available;
+    // Safari correctly handles `height: 100%` on the html element to the whole viewport height,
+    // but it doesn't for the body or root element, so we use it here, and then use flex
+    // to size everything correctly. This approach will guarantee that all browsers fill
+    // the entire viewport in the same way with html, body and app root
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   body {
-    height: 100vh;
-    height: -webkit-fill-available;
+    flex: 1;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 
     margin: 0;
     padding: 0;
@@ -33,14 +40,17 @@
     color: var(--color-foreground-default);
   }
 
-  #root {
-    height: 100%;
-    height: -webkit-fill-available;
-    
+  // Ensure that the root of the React app uses the full page height
+  // We use an attribute selector rather than #__next, because CSS IDs may not
+  // begin with an underscore.
+  [id="root"], [id="__next"] {
+    flex: 1;
+    min-height: 100%;
+
     // Set positioning to relative so that everything flows from shell
     position: relative;
 
-    // Flex will help us position the masthead and workspace to take the full height of the 
+    // Flex will help us position the masthead and workspace to take the full height of the
     // viewport correctly
     display: flex;
     flex-direction: column;
@@ -221,11 +231,11 @@
       outline: 1px solid var(--color-foreground-inactive);
       outline-offset: -1px;
     }
-    
+
     &:focus:not(:focus-visible) {
       outline: 0;
     }
-    
+
     &:focus-visible {
       outline: 1px solid var(--color-foreground-inactive);
       outline-offset: -1px;

@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## v8.1.7
+## v8.1.9
+## Fixed
+- Make HTML be the only one to take available space, all the other elements take 100%.
+- Include nextjs root element in normalize CSS for react root.
+
+## v8.1.8
 ### Changed
 - Fixed app height on webkit based browsers to take all available space instead of 100vh
 
@@ -139,11 +144,11 @@
 
 ## v5.0.2
 ### Changed
-- reverted changes on color background input for dark-theme 
+- reverted changes on color background input for dark-theme
 
 ## v5.0.1
 ### Changed
-- changed to transparent the color background on input for dark-theme 
+- changed to transparent the color background on input for dark-theme
 
 ## v5.0.0
 ### Changed
