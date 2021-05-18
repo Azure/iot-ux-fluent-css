@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.10
+### Changed
+- Added $size-75 sizing constant (6rem)
+
 ## v8.1.9
 ## Fixed
 - Make HTML be the only one to take available space, all the other elements take 100%.
