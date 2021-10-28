@@ -217,6 +217,19 @@
     white-space: nowrap;
   }
 
+  .ellipsis-left {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+    text-align: left;
+  
+    @include rtl {
+        direction: ltr;
+        text-align: right;
+    }
+  }
+
   .hidden {
     display: none !important;
   }
