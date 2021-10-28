@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v8.1.11
+### Changed
+- Added global class ellipsis-left to display tree structure-type items where the
+text at the end of the string is more relevant than the text at the beginning
+
 ## v8.1.10
 ### Changed
 - Added $size-75 sizing constant (6rem)
