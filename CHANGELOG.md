@@ -6,6 +6,7 @@
 - Added `--color-search-text`
 - Updated `--color-search-text-hover`
 - Updated `--color-search-text-placeholder`
+- Added `--color-search-text-placeholder-selected`
 
 ## v8.1.11
 ### Changed
