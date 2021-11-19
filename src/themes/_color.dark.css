@@ -44,10 +44,12 @@
   --color-masthead-background: #3c3c41;
   --color-masthead-foreground: #ffffff;
   --color-masthead-button-hover: #666666;
-  --color-search-background: rgba(255, 255, 255, 0.1);
+  --color-search-background: rgba(255, 255, 255, 0.85);
   --color-search-background-hover: #ffffff;
-  --color-search-text-hover: #000000;
-  --color-search-text-placeholder: #666666;
+  --color-search-text: #323130;
+  --color-search-text-hover: #605E5C;
+  --color-search-text-placeholder: #605E5C;
+  --color-search-text-placeholder-selected: #A19F9D;
 
   /* Main nav */
   --color-main-nav-background: #31373e;

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v8.1.12
+### Changed
+- Updated `--color-search-background` to be 85% white
+- Added `--color-search-text`
+- Updated `--color-search-text-hover`
+- Updated `--color-search-text-placeholder`
+- Added `--color-search-text-placeholder-selected`
+
 ## v8.1.11
 ### Changed
 - Added global class ellipsis-left to display tree structure-type items where the
