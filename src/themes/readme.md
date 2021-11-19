@@ -61,6 +61,7 @@ The files have the following structure:
   --color-search-background-hover
   --color-search-text-hover
   --color-search-text-placeholder
+  --color-search-text-placeholder-selected
 
   /* Main nav */
   --color-main-nav-background
