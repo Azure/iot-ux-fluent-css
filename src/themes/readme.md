@@ -42,6 +42,7 @@ The files have the following structure:
   --color-foreground-complementary // complementary color to foreground-default
   --color-foreground-inactive
   --color-foreground-disabled
+  --color-foreground-primary // border lines that need to have accessible levels of contrast (such as around inputs)
   --color-foreground-secondary // border lines
   --color-foreground-tertiary // less important separations, like borders between rows on grid
 

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v8.1.13
+### Changed
+- Added `--color-foreground-primary`
+
 ## v8.1.12
 ### Changed
 - Updated `--color-search-background` to be 85% white
