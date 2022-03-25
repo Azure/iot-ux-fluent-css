@@ -78,6 +78,8 @@ The files have the following structure:
   --color-global-foreground-informational
   --color-global-background-warning
   --color-global-foreground-warning
+  --color-global-background-severe-warning
+  --color-global-foreground-severe-warning
   --color-global-background-error
   --color-global-foreground-error
 

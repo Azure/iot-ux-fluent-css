@@ -21,7 +21,7 @@
   /* Status */
   --color-status-success: #89ff98;
   --color-status-success-foreground: #323130;
-  --color-status-informational: #879092;
+  --color-status-informational: #797775;
   --color-status-informational-foreground: #ffffff;
   --color-status-warning: #f2c80f;
   --color-status-warning-foreground: #323130;
@@ -62,12 +62,14 @@
   /* Alert */
   --color-global-background-success: #dff6dd;
   --color-global-foreground-success: #323130;
-  --color-global-background-informational: #cef1ff;
-  --color-global-foreground-informational: #00418c;
+  --color-global-background-informational: #eff6fc;
+  --color-global-foreground-informational: #323130;
   --color-global-background-warning: #fff4ce;
   --color-global-foreground-warning: #323130;
+  --color-global-background-severe-warning: #fed9cc;
+  --color-global-foreground-severe-warning: #323130;
   --color-global-background-error: #fde7e9;
-  --color-global-foreground-error: #a50606;
+  --color-global-foreground-error: #323130;
 
   /* Link */
   --color-link-default: #60aaff;
@@ -141,4 +143,8 @@
   --data-color-40: #e247db;
   --data-color-41: #d313d3;
   --data-color-42: #921e9b;
+
+  /* IGNORE-SECTION - CSS setup */
+  color-scheme: dark;
+  accent-color: var(--color-accent);
 }

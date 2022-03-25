@@ -12,20 +12,20 @@
   --color-state-disabled: #f3f2f1;
 
   /* Accent */
-  --color-accent: #136bfb;
-  --color-accent-hover: #0065d9;
-  --color-accent-selected: #0053b3;
-  --color-accent-selected-hover: #00418c;
+  --color-accent: #0078d4;
+  --color-accent-hover: #106ebe;
+  --color-accent-selected: #005a9e;
+  --color-accent-selected-hover: #004578;
   --color-accent-foreground: #ffffff;
 
   /* Status */
-  --color-status-success: #36a643;
-  --color-status-success-foreground: #323130;
-  --color-status-informational: #879092;
-  --color-status-informational-foreground: #323130;
-  --color-status-warning: #c28100;
-  --color-status-warning-foreground: #323130;
-  --color-status-danger: #a50606;
+  --color-status-success: #107c10;
+  --color-status-success-foreground: #ffffff;
+  --color-status-informational: #666666;
+  --color-status-informational-foreground: #ffffff;
+  --color-status-warning: #d83b01;
+  --color-status-warning-foreground: #ffffff;
+  --color-status-danger: #a80000;
   --color-status-danger-foreground: #ffffff;
 
   /* Foreground */
@@ -62,17 +62,19 @@
   /* Alert */
   --color-global-background-success: #dff6dd;
   --color-global-foreground-success: #323130;
-  --color-global-background-informational: #cef1ff;
-  --color-global-foreground-informational: #00418c;
+  --color-global-background-informational: #eff6fc;
+  --color-global-foreground-informational: #323130;
   --color-global-background-warning: #fff4ce;
   --color-global-foreground-warning: #323130;
+  --color-global-background-severe-warning: #fed9cc;
+  --color-global-foreground-severe-warning: #323130;
   --color-global-background-error: #fde7e9;
-  --color-global-foreground-error: #a50606;
+  --color-global-foreground-error: #323130;
 
   /* Link */
-  --color-link-default: #136bfb;
-  --color-link-hover: #0065d9;
-  --color-link-selected: #0065d9;
+  --color-link-default: #106ebe;
+  --color-link-hover: #005a9e;
+  --color-link-selected: #004578;
   
   /* IoTC visualizations */  
   --color-azul: #118dff;
@@ -141,4 +143,8 @@
   --data-color-40: #b887ad;
   --data-color-41: #7d4f73;
   --data-color-42: #53354d;
+
+  /* IGNORE-SECTION - CSS setup */
+  color-scheme: light;
+  accent-color: var(--color-accent);
 }

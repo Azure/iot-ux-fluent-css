@@ -15,6 +15,7 @@ const CSS_SECTION_MATCH = new RegExp(/\/\*(.*)\*\//, 'gi');
 
 const CSS_COMMENT_START_MATCH = new RegExp(/\/\*/, 'gi');
 const CSS_COMMENT_END_MATCH = new RegExp(/\*\//, 'gi');
+const IGNORE_SECTION_MARK = 'IGNORE-SECTION';
 
 interface PropertySection {
     [property: string]: string;
@@ -75,19 +76,24 @@ export default class ThemesParser {
         const rl = createInterface({ input: createReadStream(filePath) });
 
         let insideComment = false;
+        let ignore = false;
         let currentSection = '';
         for await (const line of rl) {
             const sectionMatch = line.match(CSS_SECTION_MATCH);
             if (!insideComment && sectionMatch) {
-                currentSection = sectionMatch[0]
-                    .replace(/\/\*/, '') // Remove start of comment
-                    .replace(/\*\//, '') // Remove end of comment
-                    .trim()
-                    .replace(/([-_ ][a-z])/gi, (g) => g.toUpperCase().replace(/[-_ ]/, ''))
-                    .replace(/^./g, (g) => g.toLowerCase()); // Ensure cammelCase
+                ignore = sectionMatch[0].includes(IGNORE_SECTION_MARK);
+
+                if (!ignore) {
+                    currentSection = sectionMatch[0]
+                        .replace(/\/\*/, '') // Remove start of comment
+                        .replace(/\*\//, '') // Remove end of comment
+                        .trim()
+                        .replace(/([-_ ][a-z])/gi, (g) => g.toUpperCase().replace(/[-_ ]/, ''))
+                        .replace(/^./g, (g) => g.toLowerCase()); // Ensure cammelCase
                 
-                colorValues[currentSection] = {};
-            } else if (insideComment && line.match(CSS_COMMENT_END_MATCH)) {
+                    colorValues[currentSection] = {};
+                }
+            } else if (!insideComment && line.match(CSS_COMMENT_END_MATCH)) {
                 insideComment = false;
                 continue;
             } else if (line.match(CSS_COMMENT_START_MATCH)) {
@@ -95,7 +101,7 @@ export default class ThemesParser {
                 continue;
             }
 
-            if (!insideComment && line) {
+            if (!ignore && !insideComment && line) {
                 if (line.match(CSS_CUSTOM_PROPERTY_COLOR_MATCH) || line.match(CSS_CUSTOM_PROPERTY_DATA_COLOR_MATCH)) {
                     const withoutSemiColon = line.replace(';', '');
                     let [propertyName, value] = withoutSemiColon.split(':');
