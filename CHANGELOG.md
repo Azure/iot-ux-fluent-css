@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v8.2.0
+## Changed
+- Updated colors to match fluent colors for light theme
+- Added `--color-global-background-severe-warning` and `--color-global-foreground-severe-warning`
+- Added `color-scheme` and `accent-color` CSS rules to themes to have a better default browser support.
+- Added support for `IGNORE-SECTION` on codegen code to allow for CSS rules on theme files.
+
 ## v8.1.13
 ### Changed
 - Added `--color-foreground-primary`
