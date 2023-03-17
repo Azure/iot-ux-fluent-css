@@ -1,7 +1,10 @@
 # CHANGELOG
+## v8.2.1
+### Changed
+- Updated the file type of _colors.css to _colors.scss as IoTC is now using sass as opposed to node-sass and .scss are required to render styles.
 
 ## v8.2.0
-## Changed
+### Changed
 - Updated colors to match fluent colors for light theme
 - Added `--color-global-background-severe-warning` and `--color-global-foreground-severe-warning`
 - Added `color-scheme` and `accent-color` CSS rules to themes to have a better default browser support.
