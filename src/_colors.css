@@ -1,0 +1,5 @@
+/**
+ * Import palettes for different supported themes
+ */
+@import "./themes/color.light";
+@import "./themes/color.dark";
