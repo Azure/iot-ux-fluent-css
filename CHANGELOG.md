@@ -1,7 +1,7 @@
 # CHANGELOG
 ## v8.2.1
 ### Changed
-- Updated the file type of _colors.css to _colors.scss as IoTC is now using sass as opposed to node-sass and .scss are required to render styles.
+- Added an additional instance of _colors with the file extensions .scss as IoTC is now using sass as opposed to node-sass and .scss are required to render styles.
 
 ## v8.2.0
 ### Changed
