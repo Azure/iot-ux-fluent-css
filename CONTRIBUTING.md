@@ -146,7 +146,9 @@ Once the PR has been reviewed, follow these steps to cut a release:
 
 3. [Create a new github release](https://github.com/Azure/iot-ux-fluent-css/releases/new) on the new tag. Use the tag name as the release title and the copy the changelog into the description.
 
-4. Run `npm run publish` to publish the new version to npm
+4. Run `npm install` to generate the lib package, this is required to be in the npm packge you will publish.
+
+5. Run `npm run publish` to publish the new version to npm
 
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project
