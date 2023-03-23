@@ -1,4 +1,8 @@
 # CHANGELOG
+## v8.2.2
+### Changed
+- Previous version didn't push to the registry properly, this version fixes that.
+
 ## v8.2.1
 ### Changed
 - Added an additional instance of _colors with the file extensions .scss as IoTC is now using sass as opposed to node-sass and .scss are required to render styles.
